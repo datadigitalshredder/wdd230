@@ -49,6 +49,11 @@ footer {
     box-shadow : 0 2px 5px 0 #1a1a1a;
 }
 
+hr {
+    height: 1.5px; 
+    width:100%;
+    color: black;
+}
 #lastmod {
     margin-top: -10px;
     color: darkblue;
