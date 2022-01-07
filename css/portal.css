@@ -1,0 +1,57 @@
+body {
+    /* Center the page on the screen */
+    margin: 0 auto;
+    max-width: 600px;
+    /* Page outline */
+    padding: 1em;
+    /* border: 1px solid #CCC; */
+    border-radius: 1em;
+    background-color: whitesmoke;
+
+}
+
+img {
+    border-radius: .5em;
+    align-items: center;
+    height: 90%;
+    margin: 15px;
+    box-shadow : 0 2px 5px 0 #1a1a1a;
+
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    grid-template-columns: 200px auto; 
+    align-items: center;
+    /* justify-items: center; */
+    text-align: center;
+    gap: 10px;
+    background-color: turquoise;
+    border-radius: .5em;
+    /* border: solid #1a1a1a; */
+    box-shadow : 0 2px 5px 0 #1a1a1a;   
+}
+
+h1 {
+    /* text-align: center;
+    justify-content: center; */
+    margin: auto;
+    color: rgb(224, 221, 221);
+}
+
+footer {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    background-color: turquoise;
+    border-radius: .5em;  
+    box-shadow : 0 2px 5px 0 #1a1a1a;
+}
+
+#lastmod {
+    margin-top: -10px;
+    color: darkblue;
+}
+
