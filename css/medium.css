@@ -1,12 +1,12 @@
 @media only screen and (min-width: 32.5em) {
     header {
         
-        background-color: rgb(64, 224, 85);
+        background-color: #4c9cc9;
         border-radius: .1em;   
     }
     
     footer {
-        background-color: rgb(64, 224, 85);
+        background-color: #4c9cc9;
         border-radius: .1em;  
     }
 }
