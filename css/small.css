@@ -24,7 +24,7 @@ header {
     align-items: center;
     text-align: center;
     gap: 10px;
-    background-color: turquoise;
+    background-color: #215473;
     border-radius: .5em;
     box-shadow : 0 2px 5px 0 #1a1a1a;   
 }
@@ -39,7 +39,7 @@ footer {
     display: flex; 
     flex-direction: column;
     align-items: center;
-    background-color: turquoise;
+    background-color: #215473;
     border-radius: .5em;  
     box-shadow : 0 2px 5px 0 #1a1a1a;
 }
@@ -48,7 +48,7 @@ hr {
     height: .1px; 
     width:100%;
     color:black;
-    border-top: solid black;
+    border-top: solid grey;
 }
 #lastmod {
     margin-top: -10px;
