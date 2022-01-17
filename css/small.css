@@ -31,7 +31,7 @@ header {
 
 h1 {
     margin: auto;
-    color: rgb(224, 221, 221);
+    color: white;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -45,9 +45,10 @@ footer {
 }
 
 hr {
-    height: 1.5px; 
+    height: .1px; 
     width:100%;
-    color: black;
+    color:black;
+    border-top: solid black;
 }
 #lastmod {
     margin-top: -10px;
