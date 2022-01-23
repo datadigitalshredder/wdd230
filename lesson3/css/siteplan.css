@@ -30,7 +30,6 @@ footer {
 }
 nav {
 	background-color: #416165;
-	margin: 0 auto;
     padding: 10px;
     align-items: center;
 	justify-content: center;
@@ -42,7 +41,6 @@ nav ul {
 	list-style-type: none;
 	overflow: hidden;
     padding: 10px;
-    margin: 0 auto;
     align-items: center;
 	justify-content: center;
 }
@@ -84,9 +82,12 @@ p {
 div img {
     border-radius: 50%;
 }
-table {
+table {   
     font-size: 20px;
     padding: 10px;
+}
+th {
+    text-align: left;
 }
 footer {
     color: white;
