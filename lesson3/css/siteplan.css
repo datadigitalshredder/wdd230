@@ -1,0 +1,162 @@
+/* Baseline view, small screen */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header,
+footer {
+	background-color: #0B3948;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: .5em;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+}
+footer {
+    font-size: 20px;
+}
+header,
+main,
+footer {
+	max-width: 750px;
+	margin: 0 auto;
+}
+nav {
+	background-color: #416165;
+	margin: 0 auto;
+    padding: 10px;
+    align-items: center;
+	justify-content: center;
+	width: 720px;
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+    border-radius: .5em;
+}
+nav ul {
+	list-style-type: none;
+	overflow: hidden;
+    padding: 10px;
+    margin: 0 auto;
+    align-items: center;
+	justify-content: center;
+}
+nav ul li a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 0.75rem;
+	text-decoration: none;
+	font-size: 0.95rem;
+}
+nav a:visited {
+    color: red;
+  }
+  
+nav a:hover { 
+color: yellow; 
+}
+
+nav a:active {
+color: purple;
+}
+main {
+	display: grid;
+	grid-template-columns: 1fr;
+	font-size: 0.8rem;
+}
+h1, p {
+    margin: 0 auto;
+    padding: 10px;
+}
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+.persona {
+    padding: 10px;
+}
+div img {
+    border-radius: 50%;
+}
+table {
+    font-size: 20px;
+    padding: 10px;
+}
+footer {
+    color: white;
+}
+.site-header {
+    background-color: #0B3948;
+    color: white;
+    font-size: 40px;
+}
+.primary-navigation {
+    background-color: #416165;
+    color: white;
+    font-size: 30px;
+}
+.footer {
+    background-color: #416165;
+    color: white;
+    font-size: 20px;
+}
+.h1 {
+    background-color: #0B3948;
+    color: white;
+    font-size: 30px;
+}
+.h2 {
+    background-color: white;
+    color: black;
+    font-size: 25px;
+}
+.h3 {
+    background-color: white;
+    color: black;
+    font-size: 20px;
+}
+.p {
+    background-color: white;  
+    color: black;
+    font-size: 16px;
+}
+
+/* Tablet view, medium screen */
+@media only screen and (min-width: 37.5em) {
+	h1 {
+		font-size: 1.5rem;
+	}
+    header {
+        max-width: 1200px;
+        display: grid;
+        grid-template-columns: 300px auto; 
+        align-items: center;
+    }
+    main, footer {
+        max-width: 1200px;
+    }
+    nav {
+        margin-left: 5px;
+    }
+    nav ul { 
+        display: flex; 
+    }
+    nav ul li { 
+        flex: 1 1 auto; 
+    } 
+}
+
+/* Desktop view, large view */
+@media only screen and (min-width: 60em) {
+	h1 {
+		font-size: 2rem;
+	}
+	nav a {
+		font-size: 1.1rem;
+	}
+}
