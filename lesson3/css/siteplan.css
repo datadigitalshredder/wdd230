@@ -26,6 +26,7 @@ main,
 footer {
 	max-width: 750px;
 	margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
 }
 nav {
 	background-color: #416165;
