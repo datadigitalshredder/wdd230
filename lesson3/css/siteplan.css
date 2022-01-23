@@ -34,7 +34,7 @@ nav {
     padding: 10px;
     align-items: center;
 	justify-content: center;
-	width: 720px;
+	max-width: 720px;
 	box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
     border-radius: .5em;
 }
