@@ -27,7 +27,7 @@ button.addEventListener('click', function() {
     listChapter.appendChild(listBtn);
 
     // populate the button textContent with an X
-    listBtn.textContent = 'X';
+    listBtn.textContent = '❌';
 
     // append the list element with the li element just created and appended with text and the delete button
     list.appendChild(listChapter);
