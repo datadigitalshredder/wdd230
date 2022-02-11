@@ -29,8 +29,9 @@
         grid-template-rows: repeat(3, 1fr);
         justify-content: center;
         align-content: center;
+        margin-top: 1rem;
         gap: .25rem;
-        /*height: 45rem;*/
+        height: 42rem;
     }
     /* -------------*/
     /* Placing the image and text in large screens */
@@ -75,42 +76,46 @@
     .hero {
         grid-area: 1/2/3/3;
         margin: .25rem auto;
+<<<<<<< HEAD
         align-items: center;
         /*height: 33rem;*/
         width: 95%;
         height: auto;
         /*align-items: stretch;*/
         justify-content: center;
+=======
+        height: 27rem;
+        width: 94%;
+        align-items: stretch;
+>>>>>>> b99eee53ab0c7deb42d109a7773e0e2835f48f96
     }
     .join {
         grid-area: 3/1/4/2;
         margin: .25rem auto;
+<<<<<<< HEAD
         display: flex;
         flex-direction: column;
         /*margin-top: 0;*/
         width: 89%;
         /*height: 15rem;*/
+=======
+        width: 88%;
+        height: 10rem;
+>>>>>>> b99eee53ab0c7deb42d109a7773e0e2835f48f96
     }
     
     .news {
         grid-area: 3/2/4/3;
         margin: .25rem auto;
+<<<<<<< HEAD
         width: 95%;
         /*height: 15rem;*/
+=======
+        width: 94%;
+        height: 10rem;
+>>>>>>> b99eee53ab0c7deb42d109a7773e0e2835f48f96
     }
-    
-    /*.event-weather {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, 1fr);
-        margin-top: .25rem;
-        margin-bottom: .25rem;
-        padding: 0;
-        justify-content: start;
-        align-content: start;
-        width: 95%;
-        height: 29.5rem;
-    }*/
+
     .event {
         grid-area: 1/1/2/2;
         margin: .1rem auto;
@@ -133,7 +138,11 @@
         
         padding: 0;
         width: 95%;
+<<<<<<< HEAD
         /*height: 98.8%;*/
+=======
+        height: 42rem;
+>>>>>>> b99eee53ab0c7deb42d109a7773e0e2835f48f96
         
         margin-top: .25rem;
         margin-bottom: .25rem;

@@ -23,7 +23,7 @@ weekDay = now.getDay();
 let message;
 // Step 5: Using an if statement, if the day of the week is a weekday (i.e. Monday - Friday), set the message variable to the string 'Hang in there!'
 if (weekDay >= 1 && weekDay <= 2) {
-    message = '🤝🏼 Come join us this week for the chamber meet and greet Wednesday at 7:00 p.m.!';
+    message = '🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.!';
 }
 // Step 6: Using an else statement, set the message variable to 'Woohoo!  It is the weekend!'
 // else {
