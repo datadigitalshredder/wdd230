@@ -6,9 +6,8 @@
     nav ul.open {
         display: block;
     }
-    /* -------------*/
     /* Placing the image and text in medium screens */
-    .town-photo {
+    .hero-div {
         position: relative;
         text-align: center;
         color: #0B3948;
@@ -20,9 +19,8 @@
         font-family:'Roboto', sans-serif; 
         font-size: 26px;
     }
-    .town-photo img {
+    .hero-div img {
         width: 100%;
-        /*max-height: 100%;*/
         display: block;
         border-radius: 0;
     }
@@ -30,26 +28,22 @@
         padding: 0;
         width: 100%;
     }
-    .town-photo {
+    .hero-div {
         height: 100%;
     }
     /* ---------------*/ 
     .spotlight {
-        display: flex;
-        flex-direction: row;
+        /*display: flex;
+        flex-direction: row;*/
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
         column-gap: .25rem;
-        /*justify-content: space-around;*/
-        /*align-content: space-around;*/
-        /*height: 10rem;*/
-        /*width: 98%;*/
         margin: 0 auto;
     }
     .spotlight1,.spotlight2,.spotlight3 {
         margin: .2rem auto;
-        /*height: 7.5rem;*/
-        /*width: 30%;*/
         border: 1px solid black;
-        /*height: 100%;	*/
     }
     .join-action {
         position: absolute;
@@ -64,39 +58,26 @@
         grid-template-columns: 2fr 1fr;
         gap: .25rem;
         padding: 0;
-
-        /*align-content: start;*/
-        /*width: 100%;
-        /*height: 13rem;*/
         margin: .25rem auto;  
     }
-
     .event {
         grid-area: 1/1/2/2;
         margin: .25rem auto;
-        /*padding: 1rem;
-        margin-left: 0;*/
-        /*width: 95%;*/
-        /*margin-left: 0;*/
         padding-right: 0;
         justify-items: center;
     }
     .weather {
         grid-area: 1/2/2/3;
-        /*padding: 1rem;*/
         margin: .25rem auto;
 
         padding-right: 0;
         justify-items: center;
         align-items: center;
-        /*width: 92%;*/
     }
     .footer-items {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-       /* justify-content: center;*/
         align-items: center;
-        /*align-content: center;*/
         background-color: #0B3948;
         margin: 0 auto;
         padding: 5px;

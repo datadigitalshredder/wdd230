@@ -17,6 +17,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:ital,wght@1,100;1,300&display=swap" rel="stylesheet">
         <script defer src="js/chamber.js"></script>
+        <script defer src="js/windchill.js"></script>
     </head>
 <body>
     <header>
@@ -52,8 +53,15 @@
     <main>
         <section class='boxes'>
             <div class='hero'>
-                <div class="town-photo">
-                    <img src="images/zvishavanephoto.jpg" alt="Zvishavane town photo">
+                <div class="hero-div">
+                    <picture class="wdd230img">
+                        <source media="(max-width:400px)" srcset="images/wdd230-org200.jpg">
+                        <source media="(max-width:1000px)" srcset="images/wdd230-org500.jpg">
+                        <source media="(max-width:1600px)" srcset="images/wdd230-org800.jpg">
+                        <img src="images/wdd230-org1100.jpg" alt="Week 6 Big Image Test">
+                        <!-- <div>Week 6 wdd230 big image test</div> -->
+                    </picture>
+                    <!-- <img src="images/zvishavanephoto.jpg" alt="Zvishavane town photo"> -->
                     <div class="top-left">
                         <h1><strong>Welcome to Zvishavane</strong></h1>
                     </div>
@@ -113,10 +121,10 @@
                     <p class="event-text1">Join us for the grant opening of the Diamond Shack, this Thursday at 1:00 p.m. <span><a href="#">more info...</a></span></p>
                 </div>
                 <div class='weather'>
-                    <h2 class="weather-header"><strong>Weather</strong></h2>
+                    <h2 class="weather-header"><strong>Currently:</strong></h2>
                     <div class="weather-box">
                         <img src="images/weather.png" alt="The weather icon" width="48px">
-                        <span id="weather-temp" class="weather-temp">33 &#8451;</span>
+                        <p><span id="weather-temp" class="weather-temp"><strong>45</strong></span> <strong>&#176;F</strong></p>
                     </div>
                     <table class="weather-tb">
                         <tr>
@@ -125,7 +133,7 @@
                         </tr>
                         <tr>
                             <td>Wind Speed:</td>
-                            <td><span id="windspeed"></span></td>
+                            <td><span id="windspeed">3</span> mph</td>
                         </tr>
                         <tr>
                             <td>Wind Chill:</td>
