@@ -23,19 +23,24 @@
         grid-area: 1/3/2/4;
     }
     
-    .boxes {
+    .main {
         display: grid;
-        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(3, auto);
-        justify-content: center;
-        align-content: center;
-        gap: .25rem;
+        /*justify-content: center;
+        align-content: center;*/
+        gap: .1rem;
+        width: 95%;
     }
     /* Placing the image and text in large screens */
-    .hero-div {
+    /*.hero-div {
         position: relative;
         text-align: center;
         color: #0B3948;
+    }*/
+    .action-call {
+        bottom: 20px;
+        right: 20px;
     }
     .top-left {
         position: absolute;
@@ -44,40 +49,97 @@
         font-family:'Roboto', sans-serif; 
         font-size: 20px;
     }
-    .hero-div img {
-        max-width: 100%;
-        height: 100%;
-        display: block;
-        border-radius: 0;
-    }
-    div.hero {
-        padding: 0;
-        width: 100%;
-    }
-    .hero-div {
-        height: 100%;
-    }
+    
+    
+    /*.hero-div {
+        /*height: 100%;
+    }*/
     /* ---------------*/ 
-    .event-weather {
+    /*.event-weather {
         grid-area: 1/1/3/2;
         display: flex;
         flex-direction: column;
         border: none;
 
+    }*/
+    .event {
+        grid-area: 1/1/2/2;
+        /*margin: 0 auto;
+        /*align-items: start;*/
+        /*width: 50%;
+        /*height: 100%;*/
+    }
+    .weather {
+        grid-area: 2/1/3/2;
+        /*margin: .1rem auto;
+        /*align-items: end;*/
+        /*width: 50%;
+        /*height: 100%;*/
     }
     .hero {
-        grid-area: 1/2/3/3;
-        margin: .25rem auto;
-        align-items: center;
-        width: 95%;
-        height: auto;
+        grid-area: 1/2/3/4;
+        width: 90%;
+        /*margin: .25rem auto;
+        padding: 0;*/
+        /*align-items: center;*/
     }
+    .hero img {
+        height: 100%;
+    }
+    .spotlight {
+        grid-area: 1/4/4/5;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        /*margin: .25rem auto;
+        /*padding: 0;*/
+        width: 65%;
+        
+        /*margin-top: .25rem;
+        margin-bottom: .25rem;*/
+    }
+    .spotlight1 {
+        grid-area: 1/1/2/2;
+        width: 90%;
+        /*grid-column: 1;
+        grid-row: 1;
+        /*height: 100%;*/
+       
+        /*margin: .25rem auto;*/
+    	
+    }
+    .spotlight2 {
+        grid-area: 2/1/3/2;
+        width: 90%;
+        /*grid-column: 1;
+        grid-row: 2;
+        /*height: 100%;*/
+        /*width: 80%;
+        margin: .25rem auto;*/
+    }
+    .spotlight3 {
+        grid-area: 3/1/4/2;
+        width: 90%;
+        /*grid-column: 1;
+        grid-row: 3;
+        /*height: 100%;*/
+        /*width: 80%;
+        margin: .25rem auto;*/
+        display: block;
+    }
+    /*.hero img {
+        width: 100%;
+        height: 100%;
+    }*/
+        /*display: block;
+        border-radius: 0;
+    }*/
     .join {
         grid-area: 3/1/4/2;
-        margin: .25rem auto;
+        /*margin: .25rem auto;
         display: flex;
         flex-direction: column;
-        width: 89%;
+        width: 89%;*/
     }
     .join-action {
         position: absolute;
@@ -89,40 +151,9 @@
         margin-top: 55%;
     }
     .news {
-        grid-area: 3/2/4/3;
-        margin: .25rem auto;
-        width: 95%;
+        grid-area: 3/2/4/4;
+        /*margin: .25rem auto;
+        width: 95%;*/
     }
-
-    .event {
-        grid-area: 1/1/2/2;
-        margin: .1rem auto;
-        align-items: start;
-        width: 90%;
-        height: 100%;
-    }
-    .weather {
-        grid-area: 2/1/3/2;
-        margin: .1rem auto;
-        align-items: end;
-        width: 90%;
-        height: 100%;
-    }
-    .spotlight {
-        grid-area: 1/3/4/4;
-        display: flex;
-        flex-direction: column;
-        margin: .25rem auto;
-        
-        padding: 0;
-        width: 95%;
-        margin-top: .25rem;
-        margin-bottom: .25rem;
-    }
-    .spotlight1,.spotlight2,.spotlight3 {
-        height: 100%;
-        width: 80%;
-        margin: .25rem auto;
-    	
-    }
+    
 }

@@ -7,10 +7,9 @@
         display: block;
     }
     /* Placing the image and text in medium screens */
-    .hero-div {
-        position: relative;
-        text-align: center;
-        color: #0B3948;
+    .action-call {
+        bottom: 15px;
+        right: 15px;
     }
     .top-left {
         position: absolute;
@@ -19,32 +18,41 @@
         font-family:'Roboto', sans-serif; 
         font-size: 26px;
     }
-    .hero-div img {
-        width: 100%;
-        display: block;
-        border-radius: 0;
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: .1rem;
+        width: 95%;
     }
-    div.hero {
+    .hero {
+        grid-area: 1/1/2/4;
         padding: 0;
         width: 100%;
     }
-    .hero-div {
-        height: 100%;
+    .news {
+        grid-area: 2/1/3/4;
     }
-    /* ---------------*/ 
     .spotlight {
-        /*display: flex;
-        flex-direction: row;*/
+        grid-area: 3/1/4/4;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 1fr;
-        column-gap: .25rem;
-        margin: 0 auto;
     }
-    .spotlight1,.spotlight2,.spotlight3 {
-        margin: .2rem auto;
-        border: 1px solid black;
+    .join {
+        grid-area: 4/1/5/4;
+        
     }
+    .event {
+        grid-area: 5/1/6/3;
+        width: 92.5%;
+    }
+    .weather {
+        grid-column: 3 / 4;
+        grid-row: 5;
+        width: 85%;
+    }
+
     .join-action {
         position: absolute;
         top: 10px;
@@ -52,27 +60,6 @@
     }
     .join-text {
         margin-top: 15%;
-    }
-    .event-weather {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        gap: .25rem;
-        padding: 0;
-        margin: .25rem auto;  
-    }
-    .event {
-        grid-area: 1/1/2/2;
-        margin: .25rem auto;
-        padding-right: 0;
-        justify-items: center;
-    }
-    .weather {
-        grid-area: 1/2/2/3;
-        margin: .25rem auto;
-
-        padding-right: 0;
-        justify-items: center;
-        align-items: center;
     }
     .footer-items {
         display: grid;
