@@ -23,14 +23,16 @@
         grid-area: 1/3/2/4;
     }
     
+    picture .wdd230img {
+        width: 95%;
+    }
     .main {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(3, auto);
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(3, 1fr);
         /*justify-content: center;
         align-content: center;*/
         gap: .1rem;
-        width: 95%;
     }
     /* Placing the image and text in large screens */
     /*.hero-div {
@@ -62,9 +64,12 @@
         border: none;
 
     }*/
+    picture .wdd230img {
+        width: 95%;
+    }
     .event {
         grid-area: 1/1/2/2;
-        width: 85%;
+        width: 80%;
         /*margin: 0 auto;
         /*align-items: start;*/
         /*width: 50%;
@@ -72,13 +77,14 @@
     }
     .weather {
         grid-area: 2/1/3/2;
+        width: 80%;
         /*margin: .1rem auto;
         /*align-items: end;*/
         /*width: 50%;
         /*height: 100%;*/
     }
     .hero {
-        grid-area: 1/2/3/4;
+        grid-area: 1/2/3/5;
         /*width: 90%;*/
         /*margin: .25rem auto;
         padding: 0;*/
@@ -88,20 +94,21 @@
         height: 100%;
     }
     .spotlight {
-        grid-area: 1/4/4/5;
+        grid-area: 1/5/4/6;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3, 1fr);
-        /*margin: .25rem auto;
-        /*padding: 0;*/
-        width: 65%;
+        margin: .25rem auto;
+        padding: 0;
+        /*width: 65%;*/
         
         /*margin-top: .25rem;
         margin-bottom: .25rem;*/
     }
     .spotlight1 {
         grid-area: 1/1/2/2;
-        width: 90%;
+        width: 85%;
+        margin: .25rem auto;
         /*grid-column: 1;
         grid-row: 1;
         /*height: 100%;*/
@@ -111,7 +118,8 @@
     }
     .spotlight2 {
         grid-area: 2/1/3/2;
-        width: 90%;
+        width: 85%;
+        margin: .25rem auto;
         /*grid-column: 1;
         grid-row: 2;
         /*height: 100%;*/
@@ -119,14 +127,16 @@
         margin: .25rem auto;*/
     }
     .spotlight3 {
+        display: block;
         grid-area: 3/1/4/2;
-        width: 90%;
+        width: 85%;
+        margin: .25rem auto;
         /*grid-column: 1;
         grid-row: 3;
         /*height: 100%;*/
         /*width: 80%;
         margin: .25rem auto;*/
-        display: block;
+        
     }
     /*.hero img {
         width: 100%;
@@ -140,8 +150,8 @@
         width: 85%;
         /*margin: .25rem auto;
         display: flex;
-        flex-direction: column;
-        width: 89%;*/
+        flex-direction: column;*/
+        width: 80%;
     }
     .join-action {
         position: absolute;
@@ -153,9 +163,9 @@
         margin-top: 55%;
     }
     .news {
-        grid-area: 3/2/4/4;
-        /*margin: .25rem auto;
-        width: 95%;*/
+        grid-area: 3/2/4/5;
+        /*margin: .25rem auto;*/
+        width: 93.5%;
     }
     
 }

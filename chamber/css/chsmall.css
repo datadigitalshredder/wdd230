@@ -89,7 +89,12 @@ nav button {
     border-radius: .5em;
 	grid-column: 1/5;
 }
-
+.message {
+	margin: .5rem 2vw;
+	padding: 5px;
+	background-color: #416165;;
+	color: red;
+}
 p {
 	font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -147,7 +152,7 @@ main {
   }
 .top-left h1 {
 	font-family: 'Montserrat', sans-serif;
-	text-shadow: 1px 1px white;
+	text-shadow: 1px 1px black;
 }
 
 /* ---------------*/ 
@@ -161,7 +166,7 @@ main {
 }
 .hero img {
 	width: 100%;
-	max-height: 100%;
+	/*max-height: 100%;*/
 	display: block;
 	border-radius: 0;
 }
@@ -193,6 +198,20 @@ main {
 	display: none;
 }
 
+.spotlight1 h2, .spotlight2 h2, .spotlight3 h2 {
+	font-family: 'Montserrat', sans-serif;
+	color: black;
+}
+.spotlight1 h3, .spotlight2 h3, .spotlight3 h3 {
+	font-family: 'Roboto', sans-serif;
+	color: white;
+}
+
+.spotlight1 p, .spotlight2 p, .spotlight3 p {
+	font-family: 'Roboto', sans-serif;
+	color: white;
+}
+
 .news-header, .event-header, .weather-temp, .weather-header {
 	text-align: center;
 	font-size: 25px;
@@ -206,6 +225,9 @@ main {
 
 table td {
 	font-family: 'Roboto', sans-serif;
+}
+.event-text1 a {
+	color: white;
 }
 footer,.footer-items {
 	display: grid;

@@ -39,14 +39,15 @@
             </ul>
         </nav>
         <div class="banner">
+            <div>
+                <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
+            </div>
             <aside></aside>
             <section>
-                <p>
-                    <span id="message2"></span>
-                </p>
-                <p>
-                    <span id="message1"></span>
-                </p>
+                <button onclick="todaysMessage()" class="message"><strong>Today's message</strong></button>
+                <div id="todaysMessage">
+                    <span id="message"></span>
+                </div>
             </section>
         </div>
     </header>
