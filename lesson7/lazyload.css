@@ -1,0 +1,25 @@
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    height: auto;
+    border: 1px solid red;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+img {
+    min-width: 50px;
+    min-height: 50px;
+    border: 1px solid black;
+}
+
+/*picture img[data-src] {
+    filter: blur(0.2em);
+}
+  
+picture img {
+filter: blur(0em);
+transition: filter 0.5s;
+}*/
