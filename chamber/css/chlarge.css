@@ -90,9 +90,9 @@
         padding: 0;*/
         /*align-items: center;*/
     }
-    .hero img {
+    /*.hero img {
         height: 100%;
-    }
+    }*/
     .spotlight {
         grid-area: 1/5/4/6;
         display: grid;

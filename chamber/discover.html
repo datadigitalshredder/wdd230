@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Chamber of Commerce Website Discover Page">
+        <title>Discover | Zvishavane Chamber of Commerce</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" href="css/chsmall.css">
+        <link rel="stylesheet" href="css/chmedium.css">
+        <link rel="stylesheet" href="css/chlarge.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:ital,wght@1,100;1,300&display=swap" rel="stylesheet">
+        <script defer src="js/chamber.js"></script>
+        <script defer src="js/windchill.js"></script>
+        <script defer src="js/discover_lazyloading.js"></script>
+
+    </head>
+<body>
+    <header>
+        <picture>
+            <img src="images/zvishavanelogowebp.webp" alt="Logo of Zvishavane town chamber of commerce">
+        </picture>
+        <p><strong>ZVISHAVANE<br> Chamber of Commerce</strong></p>
+        <div class='social'>
+            <a class="social-1" href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png" alt="Facebook icon"></a>
+            <a class="social-2" href="https://linkedin.com/" target="_blank"><img src="images/linkedin.png" alt="Linkedin icon"></a>
+        </div>
+        <nav>
+            <button id='hamburgerBtn'><span>&#9776;</span><span>X</span></button>
+            <ul id='primaryNav'>
+                <li class='active'><a href="index.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="banner">
+            <div>
+                <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
+            </div>
+            <aside></aside>
+            <section>
+                <button onclick="todaysMessage()" class="message"><strong>Today's message</strong></button>
+                <div id="todaysMessage">
+                    <span id="message"></span>
+                </div>
+            </section>
+        </div>
+    </header>
+    <main class="discover">
+        <section class="discover-container">
+            <h1 class="welcome">
+                Zvishavane Town at a Glance
+            </h1>
+            <section class="discover-gallery" class="img1">
+                <picture class="discover-img"><img src="images/placeholder.png" data-src="images/zvishavane_dustytown.jpg" alt="Panoromic photo view of Zvishavane dusty town"></picture>
+                <div class="img-detail">Surrounded by several mines, including and asbestos mine, Zvishavane town conspiciously dusty</div>
+            </section>
+            <section class="discover-gallery" class="img2">
+                <picture class="discover-img"><img data-src="images/zvishavane_mandava.jpg" alt="Photo of town stadium"></picture>
+                <div class="img-detail">This is the home stadium for the Zvishavane Football Club</div>
+            </section>
+            <section class="discover-gallery" class="img3">
+                <picture class="discover-img"><img data-src="images/zvishavane_mainhill.jpg" alt="Photo of main Zvishavane town site"></picture>
+                <div class="img-detail">A panaromic view welcomes you to the town</div>
+            </section>
+            <section class="discover-gallery" class="img4">
+                <picture class="discover-img"><img data-src="images/zvishavane_hotel.jpg" alt="Photo of Zvishavane town hotel"></picture>
+                <div class="img-detail">Our tourists are well looked after in this cozy, five-star hotel</div>
+            </section>
+            <section class="discover-gallery" class="img5">
+                <picture class="discover-img"><img data-src="images/zvishavane_river.jpg" alt="Photo of Save river in Zvishavane"></picture>
+                <div class="img-detail">Save river is a significant tributary of the Limpopo river</div>
+            </section>
+            <section class="discover-gallery" class="img6">
+                <picture class="discover-img"><img data-src="images/zvishavane_bluemountain.jpg" alt="Photo of blue Zvishavane mountain"></picture>
+                <div class="img-detail">Sunsets and horizons in this town can be colorful</div>
+            </section>
+            <section class="discover-gallery" class="img7">
+                <picture class="discover-img"><img data-src="images/zvishavane_garlic_farming.jpg" alt="Photo of garlic farm in Zvishavane"></picture>
+                <div class="img-detail">Although the town is considered dry in the country, garlic farming thrives</div>
+            </section>
+            <section class="discover-gallery" class="img8">
+                <picture class="discover-img"><img data-src="images/zvishavane_buchwa.jpg" alt="Photo of Buchwa mountain, iron mine"></picture>
+                <div class="img-detail">A noticably peak mountain in the region rich in iron ore</div>
+            </section> 
+            <section class="discover-gallery" class="img9">
+                <picture class="discover-img"><img data-src="images/zvishavane_train.jpg" alt="Photo of 20th century train"></picture>
+                <div class="img-detail">Tried and trusted. This train model has been around since the early 1900s. The town's rail system connects us to the rest of Southern Africa</div>
+            </section>
+            <section class="discover-gallery" class="img10">
+                <picture class="discover-img"><img data-src="images/zvishavane_homes2.jpg" alt="Photo of apartments in Zvishavane"></picture>
+                <div class="img-detail">Thinking about a affortable place to rent or buy, the town has different home designs for different life styles</div>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <div class='footer-items'>
+            <picture>
+                <img src="images/zvishavanelogowebp.webp" alt="Logo of Zvishavane town chamber of commerce"  class='footer-img'>
+            </picture>
+            <div class='address'>
+                <p class='footer'><strong>ZVISHAVANE<br> Chamber of Commerce</strong></p>
+                <p class="footer">13 First Street, Zvishavane, Zimbabwe</p>
+            </div>
+            <div class='info'>
+                <p class='footer'>information@zvishavanecc.com</p>
+                <p class='footer'>+263 (051) 165849</p>
+                <p class='footer'><a href=''>📍Location Map</a></p>
+            </div>
+        </div>
+        <hr>
+        <div>
+            <p class='lastmod'>© <span id="year"></span> .:|:. Zvishavane Chamber of Commerce .:|:. Innocent Hove .:|:. <span id="lastmod"></span></p>
+        </div>
+    </footer>
+</body>
+</html>

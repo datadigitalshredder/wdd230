@@ -3,7 +3,8 @@
 	margin: 0 auto;
 	padding: 0;
 }
-
+/*------------*/
+/* HOME PAGE */
 header {
 	margin: 0 auto;
 	display: grid;
@@ -282,4 +283,37 @@ nav ul.open {
 
 #hamburgerBtn.open span:nth-child(2) {
 	display: block;
+}
+
+/*---------------*/
+/* DISCOVER PAGE */
+.discover {
+	max-width: 300px;
+}
+
+.discover.discover-container {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;	
+}
+
+.discover h1 {
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+}
+
+.discover-gallery {
+	width: 300px;
+	border: 1px solid grey;
+	text-align: center;
+	margin: 5px;
+}
+
+.discover-img img {
+	border-radius: 0;
+	width: 100%;	
+}
+
+.img-detail {
+	font-family: 'Roboto', sans-serif;
 }
