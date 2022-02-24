@@ -17,17 +17,17 @@ const lastmod = document.querySelector('#lastmod');
 lastmod.innerHTML = `<strong>Last updated</strong>: ${document.lastModified}`;
 
 let weekDay;
-// Step 3: Using the variable declared in Step 1, assign the value of the variable declared in Step 2 to the day of the week ( hint: getDay() )
+// Assign the to the day of the week ( hint: getDay() )
 weekDay = now.getDay();
-// Step 4: Declare a variable to hold a message that will be displayed
+// Declare a variable to hold a message that will be displayed
 let message;
-// Step 5: Using an if statement, if the day of the week is a weekday (i.e. Monday - Friday), set the message variable to the string 'Hang in there!'
+// Using an if statement, if the day of the week is Monday or Tuesday, set a message
 if (weekDay >= 1 && weekDay <= 2) {
     message = '🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.!';
 }
-// Step 6: Using an else statement, set the message variable to 'Woohoo!  It is the weekend!'
+// Using an else statement, set the message variable to set another message
 else {
-   message = '🤝🏼 Come join us NEXT WEEK Wednesday at 7:00 p.m. for the chamber meet and greet!';
+   message = '🤝🏼 Come join us next Wednesday at 7:00 p.m. for the chamber meet and greet!';
 }
 /* SWITCH, CASE, BREAK */
 
@@ -63,10 +63,8 @@ switch (weekDay) {
 
 /* OUTPUT */
 
-// Step 1: Assign the value of the first message variable to the HTML element with an ID of message1. PRINTS WHETHER IT'S WEEKEND OR NOT
+// Assign the value of the message variable to the HTML element with an ID of message, following the if block. 
 document.querySelector('#message').textContent = message;
-// Step 2: Assign the value of the second message variable to the HTML element with an ID of message1. PRINTS DAY OF WEEK
-// document.querySelector('#message2').textContent = message1;
 
 // The hamburger button
 function toggleMenu (){
@@ -77,7 +75,7 @@ function toggleMenu (){
 const x = document.getElementById('hamburgerBtn');
 x.onclick = toggleMenu;
 
-// The message functionality
+// The message toggle functionality
 function todaysMessage() {
     let x = document.getElementById("todaysMessage");
     if (x.style.display === "none") {
@@ -97,10 +95,30 @@ let numVisits = Number(window.localStorage.getItem("visits-ls"));
 if (numVisits !== 0) {
 	visitsDisplay.textContent = numVisits;
 } else {
-	visitsDisplay.textContent = `This is your first visit!`;
+	visitsDisplay.textContent = `This is your first visit. Welcome to Zvishavane Town!`;
 }
 
 // increment the number of visits.
 numVisits++;
 // store the new number of visits value
 localStorage.setItem("visits-ls", numVisits);
+
+// LAST VISITED DAYS
+const lastVisit = localStorage.getItem('lastvisit');
+
+const conversionFactor = 24 * 60 * 60 * 1000;
+
+let daysSinceVisit = Date.now() - lastVisit;
+
+let numberOfDays = Math.round(daysSinceVisit / conversionFactor);
+//console.log(numberOfDays);
+
+localStorage.setItem('lastvisit', Date.now());
+
+const lastVisitsDisplay = document.querySelector(".lastvisit");
+//let numVisits = Number(window.localStorage.getItem("visits-ls"));
+if (numVisits !== 0) {
+    lastVisitsDisplay.textContent = numberOfDays;
+} else {
+    lastVisitsDisplay.textContent = `N/A`;
+}
