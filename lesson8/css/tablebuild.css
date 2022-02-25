@@ -18,13 +18,13 @@ th, td {
     color: #fff;
 }
 .table-headers1:nth-child(n) {
-    background-color: #0058B3;
+    background-color: #00a6d7;
 }
 tbody tr:nth-child(even) {
     background-color: #C5FCF9;
 }
 .child:nth-child(3) {
-    background-color: #0058B3;
+    background-color: #00a6d7;
 }
 
 @media only screen and (min-width: 37.5em) {
