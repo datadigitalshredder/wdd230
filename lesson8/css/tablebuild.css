@@ -10,17 +10,21 @@ table {
     line-height: 1.5em;
     box-shadow: 15px 15px 15px 0 #96B7D6;
 }
+
 th, td {
     border: 1px solid grey;
 }
 .table-headers th {
     color: #fff;
 }
-.child:nth-child(3) {
-    background-color: #4529C3;
-}
 .table-headers1:nth-child(n) {
-    background-color: #7B9FF2;
+    background-color: #0058B3;
+}
+tbody tr:nth-child(even) {
+    background-color: #C5FCF9;
+}
+.child:nth-child(3) {
+    background-color: #0058B3;
 }
 
 @media only screen and (min-width: 37.5em) {
