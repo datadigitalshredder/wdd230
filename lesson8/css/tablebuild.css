@@ -3,12 +3,29 @@
     font-family: 'Ubuntu', sans-serif;
 }
 table {
-    margin: 5rem auto;
-    width: 400px;
+    margin: 1rem auto;
+    width: 300px;
+    font-size: 1rem;
+    line-height: 1.5em;
 }
 th, td {
     border: 1px solid grey;
 }
 .table-headers th {
     color: #fff;
+}
+.child:nth-child(3) {
+    background-color: #4529C3;
+}
+.table-headers1:nth-child(n) {
+    background-color: #7B9FF2;
+}
+
+@media only screen and (min-width: 37.5em) {
+    table {
+        margin: 5rem auto;
+        width: 600px;
+        font-size: 2rem;
+        line-height: 2.5em;
+    }
 }
