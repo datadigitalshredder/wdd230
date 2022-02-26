@@ -32,9 +32,9 @@
         <nav>
             <button id='hamburgerBtn'><span>&#9776;</span><span>X</span></button>
             <ul id='primaryNav'>
-                <li class='active'><a href="index.html">Discover</a></li>
+                <li><a href="index.html">Discover</a></li>
                 <li><a href="directory.html">Directory</a></li>
-                <li><a href="join.html">Join</a></li>
+                <li class='active'><a href="join.html">Join</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -61,28 +61,27 @@
                 <label class="top">Phone <input type="tel" name="phone" placeholder="+263712355512" required></label>
                 <label class="top">Email *<input type="email" name="email" placeholder="someone@gmail.com"></label>
             </fieldset>
+            <!--<fieldset>
+                <legend>Business Information</legend>
+            </fieldset> -->
             <fieldset>
-                <!-- <legend>Business Information</legend>
-            </fieldset>
-            <fieldset> -->
                 <legend>Membership Level</legend>
                 <div>Membership</div>
-                <label class="sbs"><input type="radio" name="membership" value="Non-Profit"> Non-Profit</label>
-                <label class="sbs"><input type="radio" name="membership" value="Bronze"> Bronze</label>
-                <label class="sbs"><input type="radio" name="membership" value="Silver"> Silver</label>
-                <label class="sbs"><input type="radio" name="membership" value="Gold"> Gold</label>
-                <div>Membership Details
-                    
-                </div>
-                
+                <label class="side"><input type="radio" name="membership" value="Non-Profit"> Non-Profit</label>
+                <label class="side"><input type="radio" name="membership" value="Bronze"> Bronze</label>
+                <label class="side"><input type="radio" name="membership" value="Silver"> Silver</label>
+                <label class="side"><input type="radio" name="membership" value="Gold"> Gold</label>
+                <div>Membership Details 
+                </div> 
             </fieldset>
             <fieldset>
                 <legend>Business Description</legend>
                 <label class="top">Business Position Title* <input type="text" name="bposition" pattern="" min=""></label>
                 <label class="top">Business name* <input type="text" name="bname" required></label>
-                <label class="top">Business Description* <input type="textarea" name="bdescription" pattern="" min=""></label>
+                <label class="top">Business Description <input type="textarea" name="bdescription" pattern="^[A-Za-z -]+$" min-length="7"></label>
+                <input type="hidden" name="completionDate" class="hidden">
+
             </fieldset>
-            <input type="date" name="completionDate" pattern="hidden" class="hidden">
             <input type="submit" value="Send My Application" class="submitBtn">
         </form>
     </main>
