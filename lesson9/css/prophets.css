@@ -1,0 +1,56 @@
+* {
+    text-align: center;
+}
+
+header {
+    margin: 1rem auto;
+    /*max-width: 1200px;*/
+    font-size: 1rem;
+    line-height: 1.5em;
+    padding: 2rem;
+    box-shadow: 15px 15px 15px 0 #96B7D6;
+}
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: #4949ff;
+    
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #4949ff;
+}
+
+p {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+section {
+    border: 2px solid #4949ff;
+    background-color: #a3a3ff;
+    margin: .5rem auto;
+    width: 370px;
+}
+footer {
+    font-family: 'Montserrat', sans-serif;
+    margin: 1rem auto;
+}
+@media only screen and (min-width: 37.5em) {
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: .25rem;
+        width: 850px;
+        margin: .5rem auto;
+    }
+}
+
+@media only screen and (min-width: 64rem) {
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0;
+        width: 1200px;
+        margin: 0;
+    }
+}
