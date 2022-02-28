@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Zvishavane Chamber of Commerce Website Join Page">
+        <title>Join | Zvishavane Chamber of Commerce</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" href="css/chsmall.css">
+        <link rel="stylesheet" href="css/chmedium.css">
+        <link rel="stylesheet" href="css/chlarge.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:ital,wght@1,100;1,300&display=swap" rel="stylesheet">
+        <script defer src="js/chamber.js"></script>
+        <script defer src="js/windchill.js"></script>
+</head>
+<body>
+    <header>
+        <picture>
+            <img src="images/zvishavanelogowebp.webp" alt="Logo of Zvishavane town chamber of commerce">
+        </picture>
+        <p><strong>ZVISHAVANE<br> Chamber of Commerce</strong></p>
+        <div class='social'>
+            <a class="social-1" href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png" alt="Facebook icon"></a>
+            <a class="social-2" href="https://linkedin.com/" target="_blank"><img src="images/linkedin.png" alt="Linkedin icon"></a>
+        </div>
+        <nav>
+            <button id='hamburgerBtn'><span>&#9776;</span><span>X</span></button>
+            <ul id='primaryNav'>
+                <li><a href="index.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li class='active'><a href="join.html">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="banner">
+            <!--<div>
+                <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
+            </div> -->
+            <aside></aside>
+            <!-- <section>
+                <button onclick="todaysMessage()" class="message"><strong>Today's message</strong></button>
+                <div id="todaysMessage">
+                    <span id="message"></span>
+                </div>
+            </section> -->
+        </div>
+    </header>
+    <main>
+        <h1>Join the Chamber Application</h1>
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>Applicant Information</legend>
+                <label class="top">First name* <input type="text" name="fname" required autocomplete></label>
+                <label class="top">Last name* <input type="text" name="lname" required autocomplete></label>
+                <label class="top">Phone <input type="tel" name="phone" placeholder="+263712355512" required></label>
+                <label class="top">Email *<input type="email" name="email" placeholder="someone@gmail.com"></label>
+            </fieldset>
+            <!--<fieldset>
+                <legend>Business Information</legend>
+            </fieldset> -->
+            <fieldset>
+                <legend>Membership Level</legend>
+                <div>Membership</div>
+                <label class="side"><input type="radio" name="membership" value="Non-Profit"> Non-Profit</label>
+                <label class="side"><input type="radio" name="membership" value="Bronze"> Bronze</label>
+                <label class="side"><input type="radio" name="membership" value="Silver"> Silver</label>
+                <label class="side"><input type="radio" name="membership" value="Gold"> Gold</label>
+                <div>Membership Details 
+                </div> 
+            </fieldset>
+            <fieldset>
+                <legend>Business Description</legend>
+                <label class="top">Business Position Title* <input type="text" name="bposition" pattern="" min=""></label>
+                <label class="top">Business name* <input type="text" name="bname" required></label>
+                <label class="top">Business Description <input type="textarea" name="bdescription" pattern="^[A-Za-z -]+$" min-length="7"></label>
+                <input type="hidden" name="completionDate" class="hidden">
+
+            </fieldset>
+            <input type="submit" value="Send My Application" class="submitBtn">
+        </form>
+    </main>
+    <footer>
+        <div class='footer-items'>
+            <picture>
+                <img src="images/zvishavanelogowebp.webp" alt="Logo of Zvishavane town chamber of commerce"  class='footer-img'>
+            </picture>
+            <div class='address'>
+                <p class='footer'><strong>ZVISHAVANE<br> Chamber of Commerce</strong></p>
+                <p class="footer">13 First Street, Zvishavane, Zimbabwe</p>
+            </div>
+            <div class='info'>
+                <p class='footer'>information@zvishavanecc.com</p>
+                <p class='footer'>+263 (051) 165849</p>
+                <p class='footer'><a href=''>📍Location Map</a></p>
+            </div>
+        </div>
+        <hr>
+        <div>
+            <p class='lastmod'>© <span id="year"></span> .:|:. Zvishavane Chamber of Commerce .:|:. Innocent Hove .:|:. <span id="lastmod"></span></p>
+        </div>
+    </footer>
+
+    
+</body>
+</html>
