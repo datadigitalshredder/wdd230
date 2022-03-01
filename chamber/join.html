@@ -51,7 +51,7 @@
             </section> -->
         </div>
     </header>
-    <main>
+    <main class="join-form">
         <h1>Join the Chamber Application</h1>
         <form method="get" action="thanks.html">
             <fieldset>
@@ -60,6 +60,21 @@
                 <label class="top">Last name* <input type="text" name="lname" required autocomplete></label>
                 <label class="top">Phone <input type="tel" name="phone" placeholder="+263712355512" required></label>
                 <label class="top">Email *<input type="email" name="email" placeholder="someone@gmail.com"></label>
+                <label class="top">Province/ State
+                    <select name="province">
+                        <option value="">Please select &#9662;</option>
+                        <option value="bulawayo"> Bulawayo Province</option>
+                        <option value="harare"> Harare Province</option>
+                        <option value="manicaland"> Manicaland Province</option>
+                        <option value="mashcentral"> Mashonaland Central Province</option>
+                        <option value="mashest"> Mashonaland East Province</option>
+                        <option value="mashwest"> Mashonaland West Province</option>
+                        <option value="masvingo"> Masvingo Province</option>
+                        <option value="matebnorth"> Matebeleland North Province</option>
+                        <option value="matebsouth"> Matebeleland South Province</option>
+                        <option value="midlands"> Midlands Province</option>
+                    </select>
+                </label>
             </fieldset>
             <!--<fieldset>
                 <legend>Business Information</legend>
@@ -72,13 +87,14 @@
                 <label class="side"><input type="radio" name="membership" value="Silver"> Silver</label>
                 <label class="side"><input type="radio" name="membership" value="Gold"> Gold</label>
                 <div>Membership Details 
+
                 </div> 
             </fieldset>
             <fieldset>
                 <legend>Business Description</legend>
-                <label class="top">Business Position Title* <input type="text" name="bposition" pattern="" min=""></label>
+                <label class="top">Business Position Title <input type="text" name="bposition" pattern="^[A-Za-z -]+$" min-length="7"></label>
                 <label class="top">Business name* <input type="text" name="bname" required></label>
-                <label class="top">Business Description <input type="textarea" name="bdescription" pattern="^[A-Za-z -]+$" min-length="7"></label>
+                <label class="top">Business Description <input type="textarea" name="bdescription"></label>
                 <input type="hidden" name="completionDate" class="hidden">
 
             </fieldset>
