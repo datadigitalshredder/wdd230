@@ -169,3 +169,32 @@
     }
     
 }
+
+/*-----JOIN PAGE-----*/
+form label.side {
+    padding: .4rem 0;
+}
+
+.join-form {
+    max-width: 1200px;
+}
+
+.join-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+section.membership {
+    display: block;
+    background-color: #eee;
+	padding: 2%;
+	margin: 2%;
+    margin-top: 35rem;
+    height: 25rem;
+	border-radius: 10px;
+}
+
+section .membership-details p {
+    padding: 2%;
+}
+

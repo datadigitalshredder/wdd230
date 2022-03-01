@@ -43,63 +43,69 @@
                 <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
             </div> -->
             <aside></aside>
-            <!-- <section>
-                <button onclick="todaysMessage()" class="message"><strong>Today's message</strong></button>
+            <section>
+                <button onclick="todaysMessage()" class="message"><strong>Weekly reminder</strong></button>
                 <div id="todaysMessage">
                     <span id="message"></span>
                 </div>
-            </section> -->
+            </section>
         </div>
     </header>
     <main class="join-form">
-        <h1>Join the Chamber Application</h1>
-        <form method="get" action="thanks.html">
-            <fieldset>
-                <legend>Applicant Information</legend>
-                <label class="top">First name* <input type="text" name="fname" required autocomplete></label>
-                <label class="top">Last name* <input type="text" name="lname" required autocomplete></label>
-                <label class="top">Phone <input type="tel" name="phone" placeholder="+263712355512" required></label>
-                <label class="top">Email *<input type="email" name="email" placeholder="someone@gmail.com"></label>
-                <label class="top">Province/ State
-                    <select name="province">
-                        <option value="">Please select &#9662;</option>
-                        <option value="bulawayo"> Bulawayo Province</option>
-                        <option value="harare"> Harare Province</option>
-                        <option value="manicaland"> Manicaland Province</option>
-                        <option value="mashcentral"> Mashonaland Central Province</option>
-                        <option value="mashest"> Mashonaland East Province</option>
-                        <option value="mashwest"> Mashonaland West Province</option>
-                        <option value="masvingo"> Masvingo Province</option>
-                        <option value="matebnorth"> Matebeleland North Province</option>
-                        <option value="matebsouth"> Matebeleland South Province</option>
-                        <option value="midlands"> Midlands Province</option>
-                    </select>
-                </label>
-            </fieldset>
-            <!--<fieldset>
-                <legend>Business Information</legend>
-            </fieldset> -->
-            <fieldset>
-                <legend>Membership Level</legend>
-                <div>Membership</div>
-                <label class="side"><input type="radio" name="membership" value="Non-Profit"> Non-Profit</label>
-                <label class="side"><input type="radio" name="membership" value="Bronze"> Bronze</label>
-                <label class="side"><input type="radio" name="membership" value="Silver"> Silver</label>
-                <label class="side"><input type="radio" name="membership" value="Gold"> Gold</label>
-                <div>Membership Details 
-
-                </div> 
-            </fieldset>
-            <fieldset>
-                <legend>Business Description</legend>
-                <label class="top">Business Position Title <input type="text" name="bposition" pattern="^[A-Za-z -]+$" min-length="7"></label>
-                <label class="top">Business name* <input type="text" name="bname" required></label>
-                <label class="top">Business Description <input type="textarea" name="bdescription"></label>
+        <section class="main-form">
+            <h1>Join the Chamber Application</h1>
+            <form method="get" action="thanks.html" class="form">
+                <fieldset>
+                    <legend>Applicant Information</legend>
+                    <label class="top"> First name*<input type="text" name="fname" required="required" autocomplete></label>
+                    <label class="top"> Last name*<input type="text" name="lname" required="required" autocomplete></label>
+                    <label class="top"> Phone<input type="tel" name="phone" placeholder="+263712355512"></label>
+                    <label class="top"> E-mail*<input type="email" name="email" placeholder="someone@gmail.com" required="required"></label>
+                    <label class="top"> Province/ State
+                        <select name="province">
+                            <option value="">Please select &#9662;</option>
+                            <option value="bulawayo"> Bulawayo Province</option>
+                            <option value="harare"> Harare Province</option>
+                            <option value="manicaland"> Manicaland Province</option>
+                            <option value="mashcentral"> Mashonaland Central Province</option>
+                            <option value="mashest"> Mashonaland East Province</option>
+                            <option value="mashwest"> Mashonaland West Province</option>
+                            <option value="masvingo"> Masvingo Province</option>
+                            <option value="matebnorth"> Matebeleland North Province</option>
+                            <option value="matebsouth"> Matebeleland South Province</option>
+                            <option value="midlands"> Midlands Province</option>
+                        </select>
+                    </label>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Membership Level</legend>
+                        <div>Membership</div>
+                            <label class="side"><input type="radio" name="membership" value="Non-Profit"> Non-Profit</label>
+                            <label class="side"><input type="radio" name="membership" value="Bronze"> Bronze</label>
+                            <label class="side"><input type="radio" name="membership" value="Silver"> Silver</label>
+                            <label class="side"><input type="radio" name="membership" value="Gold"> Gold</label>
+                        </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Business Description</legend>
+                    <label class="top">Business Position Title <input type="text" name="bposition" pattern="^[A-Za-z -]+$" minlength="7"></label>
+                    <label class="top">Business name* <input type="text" name="bname" required></label>
+                    <label class="top" for="bdescription">Business Description</label>
+                    <textarea id="description" type="text" name="businessdescription" placeholder="Maximum 500 Characters" maxlength="1000"></textarea>
+                </fieldset>
                 <input type="hidden" name="completionDate" class="hidden">
-
-            </fieldset>
-            <input type="submit" value="Send My Application" class="submitBtn">
-        </form>
+                <input type="submit" value="Send My Application" class="submitBtn">
+            </form>
+        </section>
+        <section class="membership">
+            <div class="membership-details">Membership Details 
+                <p><strong>NP (Non-Profit) membership</strong> is for non-profit organizations. There is no joining fee</p>
+                <p><strong>Bronze membership</strong> is for small business operators. Benefits include networking, advocacy, credibility, and marketing through the chamber. The joining fee is US$500.00</p>
+                <p><strong>Silver membership</strong> is for medium business enterprises. Benefits include those of the bronze membership plus discounts on major business services such as payroll, insurance, and marketing. The joining fee is US$1,000.00</p>
+                <p><strong>Gold membership</strong> is for large scale and corporate businesses. In addition to all listed above, benefits include full access to the stock markets and up to 15% diacounts on shipping (imports and exports). The joining fee is US$2,000.00</p>
+            </div>
+        </section> 
     </main>
     <footer>
         <div class='footer-items'>

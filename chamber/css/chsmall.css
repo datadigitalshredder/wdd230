@@ -1,10 +1,16 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/*-----HOME PAGE-----*/
 * {
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0;
 }
-/*------------*/
-/* HOME PAGE */
+
 header {
 	margin: 0 auto;
 	display: grid;
@@ -317,24 +323,37 @@ nav ul.open {
 .img-detail {
 	font-family: 'Roboto', sans-serif;
 }
-/*------------------
------JOIN PAGE----*/
+
+/*-----JOIN PAGE-----*/
 
 .join-form {
 	display: flex;
 	flex-direction: column;
+	background-color: #416165;
+	max-width: 600px;
+	border: 1px solid #0B3948;
+	margin: 2% auto;
+	padding: 0 2%;
+	border-radius: 10px;
+}
+.form {
+	background-color: #eee;
+	padding: 2%;
+	margin: 2%;
+	border-radius: 10px;
 }
 .join-form h1 {
 	text-align: center;
+	font-family: 'Montserrat', sans-serif;
 }
 form fieldset {
     margin: 2rem 0;
-    border: 1px solid #445ba9;
+    border: 1px solid #0B3948;
     border-radius: 10px;
     padding: .5rem 2%;
 }
 form legend {
-    color: #455ba9;
+    color: #0B3948;
     margin: 0 1rem;
     padding: 0 .5rem;
 }
@@ -342,40 +361,48 @@ form label.top, form div {
     display: block;
     padding-top: 1rem;
     color: #9c2c13;
-    font-size: .8rem;
+    font-size: .9rem;
 }
-form label.top input, form label.top select {
+
+form label.top input, form label.top select, textarea {
     -webkit-appearance: none;
     display: block;
     font-size: 1rem;
-    border: 1px solid #999;
+    border: solid 1px #999;
     border-radius: 4px;
-    padding: .7rem;
-    color: #555;
+    padding: .75rem; /*Ensures that the input field is at least 44px tall for easy touching on the a mobile device*/
+	color: #555;
     width: 100%;
-    max-width: 20rem;
+    max-width: 25rem;
     background-color: rgba(0, 0, 0, 0.1);
 }
+textarea {
+	height: 20rem;
+	border: solid 2px #999;
+}
 
-form label.sbs {
+form label.side {
     display: block;
-    padding: .75rem 0;
+    padding: .75rem 0; /*Ensures that the input field is at least 44px tall for easy touching on the a mobile device*/
     color: #555;
 }
 
+section.membership {
+	display: none;
+}
 form input.submitBtn {
     border: none;
     background-color: #9c2c13;
     color: white;
-    border-radius: 1rem;
+    border-radius: 4px;
     padding: .75rem 1.5rem;
     margin: 0 0 2rem 2%;
     width: 96%;
     max-width: 20rem;
 }
 form label.top input:required {
-    border-left: red solid 6px;
+    border-top: 3px solid red;
 }
 form label.top input:required:valid {
-    border-left: green solid 6px;
+    border-top: 3px solid green;
 }
