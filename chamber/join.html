@@ -59,8 +59,8 @@
                     <legend>Applicant Information</legend>
                     <label class="top"> First name*<input type="text" name="fname" required="required" autocomplete></label>
                     <label class="top"> Last name*<input type="text" name="lname" required="required" autocomplete></label>
-                    <label class="top"> Phone<input type="tel" name="phone" placeholder="+263712355512"></label>
-                    <label class="top"> E-mail*<input type="email" name="email" placeholder="someone@gmail.com" required="required"></label>
+                    <label class="top"> Phone<input type="tel" name="phone" placeholder="+263755555555"></label>
+                    <label class="top"> E-mail*<input type="email" name="email" placeholder="someone@email.com" required="required"></label>
                     <label class="top"> Province/ State
                         <select name="province">
                             <option value="">Please select &#9662;</option>
@@ -80,32 +80,40 @@
                 
                 <fieldset>
                     <legend>Membership Level</legend>
-                        <div>Membership</div>
+                    <section class="membership">
+                        <div class="membership-buttons">Membership</div>
                             <label class="side"><input type="radio" name="membership" value="Non-Profit"> Non-Profit</label>
                             <label class="side"><input type="radio" name="membership" value="Bronze"> Bronze</label>
                             <label class="side"><input type="radio" name="membership" value="Silver"> Silver</label>
                             <label class="side"><input type="radio" name="membership" value="Gold"> Gold</label>
                         </div>
+                        <div class="membership-details">Membership Details 
+                            <p class="np"><strong>NP (Non-Profit) membership</strong> is for non-profit organizations. There is no joining fee</p>
+                            <p class="bronze"><strong>Bronze membership</strong> is for small business operators. Benefits include networking, advocacy, credibility, and marketing through the chamber. The joining fee is US$500.00</p>
+                            <p class="silver"><strong>Silver membership</strong> is for medium business enterprises. Benefits include those of the bronze membership plus discounts on major business services such as payroll, insurance, and marketing. The joining fee is US$1,000.00</p>
+                            <p class="gold"><strong>Gold membership</strong> is for large scale and corporate businesses. In addition to all listed above, benefits include full access to the stock markets and up to 15% diacounts on shipping (imports and exports). The joining fee is US$2,000.00</p>
+                        </div>
+                    </section>
                 </fieldset>
                 <fieldset>
                     <legend>Business Description</legend>
                     <label class="top">Business Position Title <input type="text" name="bposition" pattern="^[A-Za-z -]+$" minlength="7"></label>
                     <label class="top">Business name* <input type="text" name="bname" required></label>
                     <label class="top" for="bdescription">Business Description</label>
-                    <textarea id="description" type="text" name="businessdescription" placeholder="Maximum 500 Characters" maxlength="1000"></textarea>
+                    <textarea id="description" type="text" name="businessdescription" placeholder="Maximum of 500 Characters" maxlength="1000"></textarea>
                 </fieldset>
-                <input type="hidden" name="completionDate" class="hidden">
+                <input type="hidden" name="completionDate" id="hidden">
                 <input type="submit" value="Send My Application" class="submitBtn">
             </form>
         </section>
-        <section class="membership">
+        <!-- <section id="membership">
             <div class="membership-details">Membership Details 
                 <p><strong>NP (Non-Profit) membership</strong> is for non-profit organizations. There is no joining fee</p>
                 <p><strong>Bronze membership</strong> is for small business operators. Benefits include networking, advocacy, credibility, and marketing through the chamber. The joining fee is US$500.00</p>
                 <p><strong>Silver membership</strong> is for medium business enterprises. Benefits include those of the bronze membership plus discounts on major business services such as payroll, insurance, and marketing. The joining fee is US$1,000.00</p>
                 <p><strong>Gold membership</strong> is for large scale and corporate businesses. In addition to all listed above, benefits include full access to the stock markets and up to 15% diacounts on shipping (imports and exports). The joining fee is US$2,000.00</p>
             </div>
-        </section> 
+        </section> -->
     </main>
     <footer>
         <div class='footer-items'>
@@ -127,7 +135,5 @@
             <p class='lastmod'>© <span id="year"></span> .:|:. Zvishavane Chamber of Commerce .:|:. Innocent Hove .:|:. <span id="lastmod"></span></p>
         </div>
     </footer>
-
-    
 </body>
 </html>
