@@ -387,9 +387,15 @@ form label.side {
     color: #555;
 }
 
-section.membership {
+div.membership-buttons {
+	display: flex;
+	flex-direction: column;
+}
+
+div.membership-details {
 	display: none;
 }
+
 form input.submitBtn {
     border: none;
     background-color: #9c2c13;
@@ -406,3 +412,23 @@ form label.top input:required {
 form label.top input:required:valid {
     border-top: 3px solid green;
 }
+
+/*-----THANK PAGE-----*/
+main.thanks {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	max-width: 1200px;
+	background-color: #416165;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	margin: 2% auto;
+	padding: 2%;
+	border-radius: 4px;
+
+}
+
+/*main.thanks h1, main.thanks h2 {
+	
+}*/

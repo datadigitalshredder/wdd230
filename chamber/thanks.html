@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Zvishavane Chamber of Commerce Website Thanks Page">
+        <title>Thanks | Zvishavane Chamber of Commerce</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" href="css/chsmall.css">
+        <link rel="stylesheet" href="css/chmedium.css">
+        <link rel="stylesheet" href="css/chlarge.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:ital,wght@1,100;1,300&display=swap" rel="stylesheet">
+        <script defer src="js/chamber.js"></script>
+        <script defer src="js/windchill.js"></script>
+</head>
+<body>
+    <header>
+        <picture>
+            <img src="images/zvishavanelogowebp.webp" alt="Logo of Zvishavane town chamber of commerce">
+        </picture>
+        <p><strong>ZVISHAVANE<br> Chamber of Commerce</strong></p>
+        <div class='social'>
+            <a class="social-1" href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png" alt="Facebook icon"></a>
+            <a class="social-2" href="https://linkedin.com/" target="_blank"><img src="images/linkedin.png" alt="Linkedin icon"></a>
+        </div>
+        <nav>
+            <button id='hamburgerBtn'><span>&#9776;</span><span>X</span></button>
+            <ul id='primaryNav'>
+                <li><a href="index.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li class='active'><a href="join.html">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="banner">
+            <!--<div>
+                <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
+            </div> -->
+            <aside></aside>
+            <section>
+                <button onclick="todaysMessage()" class="message"><strong>Weekly reminder</strong></button>
+                <div id="todaysMessage">
+                    <span id="message"></span>
+                </div>
+            </section>
+        </div>
+    </header>
+    <main class="thanks">
+        <h1>Thank you for applying to join the Zvishavane Chamber of Commerce. Your membership is valuable to us!</h1>
+        <h2>We will have feedback for you within a week.</h2>
+    </main>
+    <footer>
+        <div class='footer-items'>
+            <picture>
+                <img src="images/zvishavanelogowebp.webp" alt="Logo of Zvishavane town chamber of commerce"  class='footer-img'>
+            </picture>
+            <div class='address'>
+                <p class='footer'><strong>ZVISHAVANE<br> Chamber of Commerce</strong></p>
+                <p class="footer">13 First Street, Zvishavane, Zimbabwe</p>
+            </div>
+            <div class='info'>
+                <p class='footer'>information@zvishavanecc.com</p>
+                <p class='footer'>+263 (051) 165849</p>
+                <p class='footer'><a href=''>📍Location Map</a></p>
+            </div>
+        </div>
+        <hr>
+        <div>
+            <p class='lastmod'>© <span id="year"></span> .:|:. Zvishavane Chamber of Commerce .:|:. Innocent Hove .:|:. <span id="lastmod"></span></p>
+        </div>
+    </footer>
+</body>
+</html>
