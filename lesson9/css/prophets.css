@@ -35,7 +35,13 @@ footer {
     font-family: 'Montserrat', sans-serif;
     margin: 1rem auto;
 }
-@media only screen and (min-width: 37.5em) {
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2px;
+}
+/*@media only screen and (min-width: 37.5em) {
     .cards {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -53,4 +59,4 @@ footer {
         width: 1200px;
         margin: 0;
     }
-}
+}*/
