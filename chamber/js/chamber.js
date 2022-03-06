@@ -122,3 +122,6 @@ if (numVisits !== 0) {
 } else {
     lastVisitsDisplay.textContent = `N/A`;
 }
+
+// JSON
+const requestUrl = "https://datadigitalshredder.github.io/wdd230/chamber/directory.html"
