@@ -1,0 +1,14 @@
+
+div {
+    background-color: skyblue;
+    border: 1px solid #eee;
+    width: 100%;
+    max-width: 400px;
+    margin: 10% auto;
+    border-radius: 5px;
+}
+h1, p, figure {
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}

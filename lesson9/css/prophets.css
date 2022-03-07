@@ -29,7 +29,13 @@ section {
     border: 2px solid #4949ff;
     background-color: #a3a3ff;
     margin: .5rem auto;
-    width: 370px;
+    width: 300px;
+}
+img {
+    /*margin: 0 90% 0 90% auto;*/
+    max-width: 65%;
+    max-height: 65%;
+   
 }
 footer {
     font-family: 'Montserrat', sans-serif;
