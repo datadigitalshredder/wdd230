@@ -1,0 +1,20 @@
+{
+    "companiies": [
+        {
+            "name": "Boltrec Engineering",
+            "address": "105 Railway Avenue Zvishavane",
+            "phone": "+263 773 253 955",
+            "open": "Monday to Friday 8am - 5pm",
+            "website": "https://boltrec.co.zw",
+            "logo":""
+        },
+        {
+            "name": "Mimosa Mining Company",
+            "address": "Private Bag 638 Zvishavane",
+            "phone": "+263 54 230000",
+            "open": "24-hour operation",
+            "website": null,
+            "logo": ""
+        }
+    ]
+}
