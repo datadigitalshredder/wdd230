@@ -34,6 +34,7 @@ fetch(apiURL)
         const desc = jsObject.weather[0].description;
         const windSpeed = jsObject.wind.speed * 3.6;
         //const weatherTimeStamp = jsObject.dt;
+
         // Data receiving time update:
         let unix_timestamp = jsObject.dt
         // Create a new JavaScript Date object based on the timestamp
@@ -47,7 +48,6 @@ fetch(apiURL)
         const seconds = "0" + date.getSeconds();
         // Will display time in 10:30:23 format
         const formattedTime = hours + ':' + minutes.substr(-2) + ':' + seconds.substr(-2);
-        
         const weatherTimeStamp = formattedTime;
 
         //document.querySelector('#icon-src').textContent = iconsrc;
