@@ -122,23 +122,27 @@
         <div class='weather'>
             <h2 class="weather-header"><strong>Weather:</strong></h2>
             <div class="weather-box">
-                <img src="images/weather.png" alt="The weather icon" width="48px">
-                <span id="weather-temp" class="weather-temp"><strong>45</strong></span> <strong>&#176;F</strong>
+                <!-- <img src="images/weather.png" alt="The weather icon" width="48px">
+                <span id="current-temp" class="weather-temp"><strong>45</strong></span> <strong>&#176;F</strong> -->
+
+                <!-- <p>The current temperature in Zvishavane, Zimbabwe is: <span id="current-temp" class="weather-temp"></span> &deg;C</p> -->
+                <figure style="text-transform:capitalize;"><img src="" alt="" id="weathericon" width="100px"><figcaption></figcaption></figure><p><span id="current-temp" class="weather-temp"></span> &deg;C</p>
             </div>
-            <p>Partly Cloudy</p>
+            <!-- <p>Partly Cloudy</p> -->
             <hr>
             <table class="weather-tb">
-                <!--<tr>
-                    <td></td>
-                    <td>Partly Cloudy</td>
-                </tr> -->
                 <tr>
-                    <td>Wind Speed</td>
-                    <td><span id="windspeed">:  3</span> mph</td>
+                    <td>Wind Speed:</td>
+                    <td><span id="windspeed"></span> k/h</td>
                 </tr>
                 <tr>
                     <td>Wind Chill:</td>
                     <td><span id="windchill"></span></td>
+                </tr>
+                
+                <tr class="weather-timestamp">
+                    <td>Data receiving time:</td>
+                    <td><span id="weather-timestamp"></span></td>
                 </tr>
             </table>
         </div>

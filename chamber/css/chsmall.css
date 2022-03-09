@@ -100,7 +100,7 @@ nav button {
 	margin: .5rem 2vw;
 	padding: 5px;
 	background-color: #416165;;
-	color: red;
+	color: white;
 }
 p {
 	font-family: 'Roboto', sans-serif;
@@ -187,6 +187,7 @@ main {
 	flex-wrap: wrap;
 	gap: 5px;
 	align-items: center;
+	text-align: center;
 }
 
 .spotlight {
@@ -225,6 +226,7 @@ main {
 	font-family: 'Montserrat', sans-serif;
 	color: black;
 }
+
 .news-text, .event-text, .event-text1, .weather p, .weather-box,.weather-temp,.weather-tb, .join-text{
 	color: white;
 	padding: .5rem;
@@ -233,6 +235,16 @@ main {
 table td {
 	font-family: 'Roboto', sans-serif;
 }
+figure figcaption {
+	font-family: 'Roboto', sans-serif;
+}
+
+tr.weather-timestamp td {
+	font-family: 'Roboto', sans-serif;
+	font-size: .8rem;
+	text-align: center;
+}
+
 .event-text1 a {
 	color: white;
 }
@@ -324,7 +336,7 @@ nav ul.open {
 	font-family: 'Roboto', sans-serif;
 }
 
-/*-----JOIN PAGE-----*/
+/*-----JOIN PAGE (FORMS)-----*/
 
 .join-form {
 	display: flex;
