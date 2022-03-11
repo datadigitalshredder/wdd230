@@ -1,5 +1,5 @@
 {
-    "companiies": [
+    "companies": [
         {
             "name": "Boltrec Engineering",
             "address": "105 Railway Avenue Zvishavane",
@@ -14,6 +14,86 @@
             "phone": "+263 54 230000",
             "open": "24-hour operation",
             "website": null,
+            "logo": ""
+        },
+        {
+            "name": "Sabi Gold Mine",
+            "address": "PO Box 93 Zvishavane",
+            "phone": "051 4380",
+            "open": "24-hour operation",
+            "website": null,
+            "logo": ""
+        },
+        {
+            "name": "Murowa Diamond Mine",
+            "address": "1 Kenilworth Road Newlands, Harare",
+            "phone": "+263 8677064622",
+            "open": "24-hour operation",
+            "website": null,
+            "logo": ""
+        },
+        {
+            "name": "Pote Holdings",
+            "address": "502 Ireland Road, Zvishavane",
+            "phone": "+263 392352821",
+            "open": "Daily",
+            "website": "https://makankainvestments.com",
+            "logo": ""
+        },
+        {
+            "name": "Midlands State University",
+            "address": "MSU Zvishavane, Zimbabwe",
+            "phone": "+263 8677000234",
+            "open":"Monday to Friday 8am - 5pm",
+            "website": "https://ww5.msu.ac.zw/",
+            "logo": ""
+        },
+        {
+            "name": "TK Engineering",
+            "address": "",
+            "phone": "",
+            "open": "",
+            "website": "",
+            "logo": ""
+        },
+        {
+            "name": "Rockville Country Club and Lodge",
+            "address": "Stand No. 543 Kosvoro Business Center, Zvishavane",
+            "phone": "+263 77 8717875",
+            "open": "Daily",
+            "website": "https://rockvillelodge.co.zw",
+            "logo": ""
+        },
+        {
+            "name": "BOLT Gas",
+            "address": "",
+            "phone": "",
+            "open": "",
+            "website": "",
+            "logo": ""
+        },
+        {
+            "name": "ZUVA Energy",
+            "address": "",
+            "phone": "",
+            "open": "",
+            "website": "",
+            "logo": ""
+        },
+        {
+            "name": "",
+            "address": "",
+            "phone": "",
+            "open": "",
+            "website": "",
+            "logo": ""
+        },
+        {
+            "name": "",
+            "address": "",
+            "phone": "",
+            "open": "",
+            "website": "",
             "logo": ""
         }
     ]
