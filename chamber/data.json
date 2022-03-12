@@ -21,6 +21,7 @@
             "address": "PO Box 93 Zvishavane",
             "phone": "051 4380",
             "open": "24-hour operation",
+            "website": "https://sabigoldmine.co.zw",
             "logo": "https://datadigitalshredder.github.io/wdd230/chamber/images/sabi.png"
         },
         {
@@ -28,6 +29,7 @@
             "address": "1 Kenilworth Road Newlands, Harare",
             "phone": "+263 8677064622",
             "open": "24-hour operation",
+            "website": "https://murowadiamondmine.co.zw",
             "logo": "https://datadigitalshredder.github.io/wdd230/chamber/images/murowa.jpg"
         },
         {
@@ -75,6 +77,7 @@
             "address": "805B Robert Mugabe Way, Zvishavane",
             "phone": "+263 051 1441",
             "open": "24-hour operation",
+            "website": "https://setmacmining.co.zw",
             "logo": "https://datadigitalshredder.github.io/wdd230/chamber/images/setmac.png"
         },
         {
