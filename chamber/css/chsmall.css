@@ -488,15 +488,14 @@ h1.directory {
     margin: 1rem auto;
 }*/
 
-/* div.cards {
-    display: flex;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+div.cards {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+    grid-template-columns: repeat(1, 1fr);
     gap: 2px;
-	
-	flex-direction: column;
-} */
-.cards {
+}
+/* .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2px;
-}
+} */

@@ -241,13 +241,10 @@
         padding: 2%;
         color: #0B3948;
     }
-    /* -----DIRECTORY PAGE-----
+    /*-----DIRECTORY PAGE-----*/
     div.cards {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 2px;
-        /* display: flex; */
-        /* flex-direction: column; */
-    } */
+    }
 }
 

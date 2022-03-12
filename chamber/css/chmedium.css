@@ -131,14 +131,11 @@
         grid-area: 6/2/7/3;
     }
 
-    /* -----DIRECTORY PAGE-----
+    /* -----DIRECTORY PAGE-----*/
     div.cards {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 2px;
-        /* display: flex; */
-        /* flex-direction: column; */
-    /* } */
+    }
 }
 
 
