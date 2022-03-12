@@ -36,7 +36,7 @@
             "name": "Pote Holdings",
             "address": "502 Ireland Road, Zvishavane",
             "phone": "+263 392352821",
-            "open": "Daily",
+            "open": "24-hour operation",
             "website": "https://makankainvestments.com",
             "logo": "https://datadigitalshredder.github.io/wdd230/chamber/images/pote.jpg"
         },
@@ -52,7 +52,7 @@
             "name": "TK Engineering",
             "address": "1690 Highlands Zvishavane",
             "phone": "+263 77 926 5903",
-            "open": "24 hour Operation",
+            "open": "24-hour operation",
             "website": "https://tk-engineering-mechanical-engineer.business.site/",
             "logo": "https://datadigitalshredder.github.io/wdd230/chamber/images/tk.jpg"
         },
@@ -60,7 +60,7 @@
             "name": "Rockville Country Club and Lodge",
             "address": "Stand No. 543 Kosvoro Business Center, Zvishavane",
             "phone": "+263 77 8717875",
-            "open": "Daily",
+            "open": "24-hour operation",
             "website": "https://rockvillelodge.co.zw",
             "logo": "https://datadigitalshredder.github.io/wdd230/chamber/images/rockville.png"
         },
@@ -76,7 +76,7 @@
             "name": "Setmac Mining (Pvt) Ltd",
             "address": "805B Robert Mugabe Way, Zvishavane",
             "phone": "+263 051 1441",
-            "open": "24 hour Operation",
+            "open": "24-hour operation",
             "website": null,
             "logo": "https://datadigitalshredder.github.io/wdd230/chamber/images/setmac.png"
         },
