@@ -11,7 +11,7 @@
         {
             "name": "Mimosa Mining Company",
             "address": "Dadaya Road Private Bag 638 Zvishavane",
-            "phone": "+263 54 230000",
+            "phone": "+263 (54) 230000",
             "open": "24-hour operation",
             "website": "https://www.facebook.com/Mimosa-Mining-Company-Pvt-Ltd-110522798972785/",
             "logo": "https://datadigitalshredder.github.io/wdd230/chamber/images/mimosa.jpg"
@@ -19,7 +19,7 @@
         {
             "name": "Sabi Gold Mine",
             "address": "PO Box 93 Zvishavane",
-            "phone": "051 4380",
+            "phone": "+263 (051) 4380",
             "open": "24-hour operation",
             "website": "https://sabigoldmine.co.zw",
             "logo": "https://datadigitalshredder.github.io/wdd230/chamber/images/sabi.png"
@@ -67,7 +67,7 @@
         {
             "name": "BOLT Gas Engineering",
             "address": "105 Railway Avenue, Zvishavane",
-            "phone": "+263 051 3744",
+            "phone": "+263 (051) 3744",
             "open": "Monday to Friday 8am - 5pm",
             "website": "https://boltgas.com",
             "logo": "https://datadigitalshredder.github.io/wdd230/chamber/images/boltgas.jpg"
@@ -75,7 +75,7 @@
         {
             "name": "Setmac Mining (Pvt) Ltd",
             "address": "805B Robert Mugabe Way, Zvishavane",
-            "phone": "+263 051 1441",
+            "phone": "+263 (051) 1441",
             "open": "24-hour operation",
             "website": "https://setmacmining.co.zw",
             "logo": "https://datadigitalshredder.github.io/wdd230/chamber/images/setmac.png"
@@ -83,7 +83,7 @@
         {
             "name": "Midlands AIDS Caring Organisation",
             "address": "5600 Council Park, Gweru Road, Zvishavane",
-            "phone": "+263 051 3099",
+            "phone": "+263 (051) 3099",
             "open": "Monday to Friday, 8am - 5pm",
             "website": "www.maco.co.zw",
             "logo": "https://datadigitalshredder.github.io/wdd230/chamber/images/maco.png"
@@ -91,7 +91,7 @@
         {
             "name": "Shabani Mine Football Club",
             "address": "PO Box 601, Zvishavane",
-            "phone": "+263 (913) 748 746",
+            "phone": "+263 (051) 1746",
             "open": "Monday to Friday, 8am - 5pm",
             "website": "https://shabanieminefc.com",
             "logo": "https://datadigitalshredder.github.io/wdd230/chamber/images/shabanifc.jpg"
