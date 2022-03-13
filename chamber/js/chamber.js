@@ -145,11 +145,16 @@ function displayCompanies(company) { // Create elements to add to the document
     let tradeHours = document.createElement('p');
     let address = document.createElement('p');
     let phone = document.createElement('p');
-    let site = document.createElement('p');
+    let site = document.createElement('a');
             
     // Change the textContent property of the h2 element to contain the company's details
     img.setAttribute('src', company.logo);
     img.setAttribute('alt', `Logo of ${company.name}`);
+    img.setAttribute('loading', 'lazy');
+
+    // Change h2 attributes
+    h2.setAttribute('style', 'display: none;');
+
     h2.textContent = `${company.name}`;
     tradeHours.textContent = `${company.open}`;
     address.textContent = `${company.address}`;
@@ -161,6 +166,7 @@ function displayCompanies(company) { // Create elements to add to the document
     
     
     // Add/append the section(card) with the h2 element
+    card.setAttribute('class', "info-container");
     card.appendChild(img);
     card.appendChild(h2);
     card.appendChild(tradeHours);
@@ -174,3 +180,97 @@ function displayCompanies(company) { // Create elements to add to the document
     // Add/append the existing HTML div with the cards class with the section(card)
     document.querySelector('div.cards').appendChild(card);
   }
+
+function listView() {
+    let info = document.querySelector('div.cards');
+    info.style.display = "flex";
+    info.style.flexDirection = "column";
+
+    let infoContainer = document.getElementsByClassName('info-container');
+    // console.log(infoContainer);
+    for (let i = 0; i < infoContainer.length; i++) {
+        infoContainer[i].style.display = "flex";
+        infoContainer[i].style.flexDirection = "row";
+        infoContainer[i].style.justifyContent = "space-evenly";
+        infoContainer[i].style.alignItems = "center";
+        infoContainer[i].style.boxShadow = "0px 0px #000000";
+
+        if (i % 2 === 0) {
+            infoContainer[i].style.backgroundColor = "#d4d4d4";
+        }
+    }
+    
+    let image = document.getElementsByTagName('img');
+    console.log(image);
+    for (let i = 3; i < image.length - 1; i++) {
+      image[i].style.display = "none";
+    }
+
+    let name = document.getElementsByTagName('h2');
+    for (let i = 0; i < name.length; i++) {
+        name[i].style.display = "block";
+    }
+    
+    let smallScreen = window.matchMedia("(max-width: 560px)");
+    if (smallScreen.matches) {
+        console.log("Small screen");    
+        let infoContainer = document.getElementsByClassName('info-Container');
+        for (let i = 0; i < infoContainer.length; i++) {
+            infoContainer[i].style.display = "flex";
+            infoContainer[i].style.flexDirection = "column";
+        }
+    }
+    else {
+        console.log("Large screen");
+        let infoContainer = document.getElementsByClassName('info-Container');
+        for (let i = 0; i < infoContainer.length; i++) {
+            infoContainer[i].style.display = "flex";
+            infoContainer[i].style.flexDirection = "row";
+        }
+    }
+}
+
+function cardView() {
+    let info = document.querySelector('div.cards');
+    info.style.display = "grid";
+
+    let infoContainer = document.getElementsByClassName('info-Container');
+    console.log(infoContainer);
+    for (let i = 0; i < infoContainer.length; i++) {
+        infoContainer[i].style.backgroundColor = "#ffffff";
+        infoContainer[i].style.display = "block";
+        infoContainer[i].style.boxShadow = "5px 5px #000000";
+    }
+
+    let image = document.getElementsByTagName('img');
+    console.log(image);
+    for (let i = 4; i < image.length; i++) {
+        image[i].style.display = "block";
+        image[i].style.margin = "10px auto 0 auto";
+    }
+
+    let name = document.getElementsByTagName('h2');
+    for (let i = 0; i < name.length; i++) {
+        name[i].style.display = "none";
+    }
+}
+
+let smallScreen = window.matchMedia("(max-width: 560px)");
+
+function smallScreenList() {
+    if (smallScreen.matches) {
+        console.log("Small screen");    
+        let infoContainer = document.getElementsByClassName('info-Container');
+        for (let i = 0; i < infoContainer.length; i++) {
+            infoContainer[i].style.display = "flex";
+            infoContainer[i].style.flexDirection = "column";
+        }
+    }
+}
+smallScreen.addEventListener("change", smallScreenList);
+
+let buttonListView = document.querySelector('#list');
+buttonListView.addEventListener("click", listView);
+
+let buttonCardView = document.querySelector('#card');
+buttonCardView.addEventListener("click", cardView);
