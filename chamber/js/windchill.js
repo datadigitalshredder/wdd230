@@ -22,7 +22,7 @@ function computeWindChill(temp, speed) {
 
 // USING THE WEATHER API
 
-const apiURL = "http://api.openweathermap.org/data/2.5/weather?id=878549&q=Zvishavane&units=metric&appid=164e183ac818600411c3484dc71c4f9f";
+const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=878549&q=Zvishavane&units=metric&appid=164e183ac818600411c3484dc71c4f9f";
 
 fetch(apiURL)
     .then((response) => response.json())
