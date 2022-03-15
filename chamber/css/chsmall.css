@@ -179,7 +179,7 @@ main {
 }
 .hero {
 	padding: 0;
-	width: 100%;
+	/* width: 100%; */
 }
 
 .weather-box {
@@ -193,7 +193,7 @@ main {
 .spotlight {
 	display: grid;
 	grid-template-columns: 1fr;
-	row-gap: 0;
+	/* row-gap: 0; */
 }
 .spotlight1,.spotlight2,.spotlight3 {
 	margin: .25rem auto;

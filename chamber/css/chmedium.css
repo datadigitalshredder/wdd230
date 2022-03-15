@@ -45,12 +45,12 @@
     }
     .event {
         grid-area: 5/1/6/3;
-        width: 92.5%;
+        /* width: 92.5%; */
     }
     .weather {
         grid-column: 3 / 4;
         grid-row: 5;
-        width: 85%;
+        /* width: 85%; */
     }
 
     .join-action {
