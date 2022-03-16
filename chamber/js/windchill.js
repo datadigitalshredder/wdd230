@@ -33,7 +33,10 @@ fetch(apiURL)
         const iconsrc= `https://openweathermap.org/img/w/${jsObject.weather[0].icon}.png`;
         const desc = jsObject.weather[0].description;
         const windSpeed = jsObject.wind.speed * 3.6;
-        //const weatherTimeStamp = jsObject.dt;
+
+        const coordLat = jsObject.coord.lat;
+        // const coordLong = jsObject.coord.lon;
+
 
         // Data receiving time update:
         let unix_timestamp = jsObject.dt
@@ -56,5 +59,10 @@ fetch(apiURL)
         document.querySelector('figcaption').textContent = desc;
         document.querySelector('#windspeed').textContent = Math.round(windSpeed * 10) /10;
         document.querySelector('#weather-timestamp').textContent = weatherTimeStamp;
+
+        document.querySelector('#coordinates').textContent = coordLat;
+        // document.querySelector('#coordinates').textContent = coordLong;
+
+
 
     });

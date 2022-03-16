@@ -61,8 +61,8 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
     .join-action {
         position: absolute;
-        top: 10px;
-        left: 22.5%;
+        top: 10%;
+        left: 10%;
     }
     .join-text {
         margin-top: 15%;

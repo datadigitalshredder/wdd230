@@ -6,9 +6,9 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
 /*-----HOME PAGE-----*/
 * {
-	max-width: 1200px;
+	max-width: 1500px;
 	margin: 0 auto;
-	padding: 0;
+	/* padding: 0; */
 }
 
 header {
@@ -39,14 +39,14 @@ nav ul li.active {
 
 .social, nav ul li a {
 	align-items: end;
-	text-align: end;
-	margin-right: 0;
-	padding-right: 0; 
+	text-align: center;
+	/* margin-right: 0;
+	padding-right: 0;  */
 }
 
 nav ul li a:hover {
 	background-color: #416165;
-	color: hotpink;
+	color: yellow;
 }
 nav ul {
 	list-style-type: none;
@@ -56,7 +56,7 @@ nav ul {
 
 .footer a:hover {
 	background-color: #416165;
-	color: hotpink;
+	color: yellow;
 }
 .footer a {
 	list-style-type: none;
@@ -72,11 +72,12 @@ picture img, div img {
 picture .wdd230img {
 	display: block;
 	width: 46%;
+	/* max-width: 100%; */
 	margin: 0 2%;
 }
-picture .wdd230img img {
+/* picture.wdd230img img {
 	width: 100%;
-}
+} */
 nav button {
 	margin: .2rem 2vw;
 	background: transparent;
@@ -138,11 +139,11 @@ main {
 .join-text {
 	margin-top: 30%;
 }
-
 .join-action {
 	position: absolute;
-	top: 25px;
-	left: 19.5%;
+	top: 10%px;
+	left: 10%;
+	right: 10%;
 	background: radial-gradient(#eee, #0B3948);
 	border: 1px solid #eee;
 	padding: 1.5rem;
@@ -161,18 +162,23 @@ main {
 	font-family: 'Montserrat', sans-serif;
 	text-shadow: 1px 1px black;
 }
-
+section.action-call a:hover, div.join-action a:hover {
+	/* background: radial-gradient(grey, #0B3948); */
+	color: yellow;
+	text-decoration: none;
+}
 /* ---------------*/ 
 .hero,.news,.spotlight,.join,.event,.weather {
 	margin: .25rem auto;
 	padding: 1rem;
-	width: 95%;
+	width: 100%;
 	text-align: center;
 	border: 1px solid black;
 	background-color: #416165
 }
 .hero img {
 	width: 100%;
+	max-width: 100%;
 	/*max-height: 100%;*/
 	display: block;
 	border-radius: 0;
@@ -182,17 +188,18 @@ main {
 	/* width: 100%; */
 }
 
-.weather-box {
+/* .weather-box {
 	display: inline-flex;
 	flex-wrap: wrap;
 	gap: 5px;
 	align-items: center;
 	text-align: center;
-}
+} */
 
 .spotlight {
 	display: grid;
 	grid-template-columns: 1fr;
+	text-align: center;
 	/* row-gap: 0; */
 }
 .spotlight1,.spotlight2,.spotlight3 {
@@ -235,6 +242,7 @@ main {
 table td {
 	font-family: 'Roboto', sans-serif;
 }
+
 figure figcaption {
 	font-family: 'Roboto', sans-serif;
 }
@@ -244,7 +252,9 @@ tr.weather-timestamp td {
 	font-size: .8rem;
 	text-align: center;
 }
-
+#weathericon {
+	width: 75px;
+}
 .event-text1 a {
 	color: white;
 }
@@ -309,8 +319,9 @@ nav ul.open {
 	max-width: 300px;
 }
 
-.discover.discover-container {
+main.discover.discover-container {
 	display: grid;
+	/* flex-direction: column; */
 	grid-template-columns: 1fr;
 	grid-template-rows: auto;	
 }
