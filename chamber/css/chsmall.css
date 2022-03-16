@@ -179,7 +179,7 @@ main {
 }
 .hero {
 	padding: 0;
-	width: 100%;
+	/* width: 100%; */
 }
 
 .weather-box {
@@ -193,7 +193,7 @@ main {
 .spotlight {
 	display: grid;
 	grid-template-columns: 1fr;
-	row-gap: 0;
+	/* row-gap: 0; */
 }
 .spotlight1,.spotlight2,.spotlight3 {
 	margin: .25rem auto;
@@ -425,7 +425,7 @@ form label.top input:required:valid {
     border-top: 3px solid green;
 }
 
-/*-----THANK PAGE-----*/
+/*-----THANKS PAGE-----*/
 main.thanks {
 	display: flex;
 	flex-direction: column;
@@ -444,3 +444,58 @@ main.thanks {
 /*main.thanks h1, main.thanks h2 {
 	
 }*/
+/*-----DIRECTORY PAGE-----*/
+main.directory {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+}
+
+h1.directory {
+    font-family: 'Montserrat', sans-serif;
+    color: #0B3948;
+    
+}
+
+.cards h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #0B3948;
+}
+
+.cards p {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.cards section {
+    /*border: 2px solid #4949ff;*/
+    background-color: white;
+	box-shadow: 0 5px 5px 0 #0B3948;
+    margin: .5rem auto;
+	padding: 5px;
+    width: 100%;
+	max-width: 400px;
+
+}
+.cards img {
+    /*margin: 0 90% 0 90% auto;*/
+	width: 100px;
+    max-width: 85%;
+    max-height: 85%;
+   
+}
+/*footer {
+    font-family: 'Montserrat', sans-serif;
+    margin: 1rem auto;
+}*/
+
+div.cards {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2px;
+}
+/* .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2px;
+} */

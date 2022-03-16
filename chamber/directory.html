@@ -16,11 +16,73 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:ital,wght@1,100;1,300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script defer src="js/chamber.js"></script>
         <script defer src="js/windchill.js"></script>
         <script defer src="js/discover_lazyloading.js"></script>
 </head>
 <body>
-    
+    <header>
+        <picture>
+            <img src="images/zvishavanelogowebp.webp" alt="Logo of Zvishavane town chamber of commerce">
+        </picture>
+        <p><strong>ZVISHAVANE<br> Chamber of Commerce</strong></p>
+        <div class='social'>
+            <a class="social-1" href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png" alt="Facebook icon"></a>
+            <a class="social-2" href="https://linkedin.com/" target="_blank"><img src="images/linkedin.png" alt="Linkedin icon"></a>
+        </div>
+        <nav>
+            <button id='hamburgerBtn'><span>&#9776;</span><span>X</span></button>
+            <ul id='primaryNav'>
+                <li><a href="index.html">Discover</a></li>
+                <li class='active'><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="banner">
+            <aside></aside>
+            <div>
+                <p><span>Last visited: </span><span class="lastvisit"></span> day(s) ago. <span class="label">Total visits: </span><span class="visits"></span>.</p>
+            </div>
+            <section>
+                <button onclick="todaysMessage()" class="message"><strong>Today's message</strong></button>
+                <div id="todaysMessage">
+                    <span id="message"></span>
+                </div>
+            </section>
+        </div>
+
+    </header>
+    <main class="directory">
+        <h1  class="directory">Business Directory</h1>
+        <!-- <button onclick="listView()"><i class="fa fa-bars"></i> List</button>
+        <button onclick="gridView()"><i class="fa fa-th-large"></i> Grid</button> -->
+        <div class="buttons">
+            <button id="card" type="button"><i class="fa fa-th-large"></i> Card</button>
+            <button id="list" type="button"><i class="fa fa-bars"></i> List</button>
+        </div>
+        <div class="cards"></div>
+    </main>
+    <footer>
+        <div class='footer-items'>
+            <picture>
+                <img src="images/zvishavanelogowebp.webp" alt="Logo of Zvishavane town chamber of commerce"  class='footer-img'>
+            </picture>
+            <div class='address'>
+                <p class='footer'><strong>ZVISHAVANE<br> Chamber of Commerce</strong></p>
+                <p class="footer">13 First Street, Zvishavane, Zimbabwe</p>
+            </div>
+            <div class='info'>
+                <p class='footer'>information@zvishavanecc.com</p>
+                <p class='footer'>+263 (051) 165849</p>
+                <p class='footer'><a href=''>📍Location Map</a></p>
+            </div>
+        </div>
+        <hr>
+        <div>
+            <p class='lastmod'>© <span id="year"></span> .:|:. Zvishavane Chamber of Commerce .:|:. Innocent Hove .:|:. <span id="lastmod"></span></p>
+        </div>
+    </footer>
 </body>
 </html>

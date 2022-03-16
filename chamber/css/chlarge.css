@@ -29,16 +29,16 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
         grid-area: 1/3/2/4;
     }
     
-    picture .wdd230img {
+    picture.wdd230img {
         width: 95%;
     }
     .main {
         display: grid;
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(5, 20%);
         grid-template-rows: repeat(3, 1fr);
         /*justify-content: center;
         align-content: center;*/
-        gap: .1rem;
+        /* gap: .1rem; */
     }
     /* Placing the image and text in large screens */
     /*.hero-div {
@@ -47,8 +47,8 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
         color: #0B3948;
     }*/
     .action-call {
-        bottom: 20px;
-        right: 20px;
+        bottom: 5%;
+        right: 5%;
     }
     .top-left {
         position: absolute;
@@ -70,12 +70,12 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
         border: none;
 
     }*/
-    picture .wdd230img {
-        width: 95%;
+    picture.wdd230img {
+        width: 100%;
     }
     .event {
         grid-area: 1/1/2/2;
-        width: 80%;
+        /* width: 80%; */
         /*margin: 0 auto;
         /*align-items: start;*/
         /*width: 50%;
@@ -83,7 +83,7 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
     }
     .weather {
         grid-area: 2/1/3/2;
-        width: 80%;
+        /* width: 80%; */
         /*margin: .1rem auto;
         /*align-items: end;*/
         /*width: 50%;
@@ -103,18 +103,18 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
         grid-area: 1/5/4/6;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 1fr);
-        margin: .25rem auto;
+        grid-template-rows: repeat(3, auto);
+        /* margin: .25rem auto; */
         padding: 0;
-        /*width: 65%;*/
+        /* width: 65%; */
         
         /*margin-top: .25rem;
         margin-bottom: .25rem;*/
     }
     .spotlight1 {
         grid-area: 1/1/2/2;
-        width: 85%;
-        margin: .25rem auto;
+        /* width: 85%; */
+        /* margin: .25rem auto; */
         /*grid-column: 1;
         grid-row: 1;
         /*height: 100%;*/
@@ -124,8 +124,8 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
     }
     .spotlight2 {
         grid-area: 2/1/3/2;
-        width: 85%;
-        margin: .25rem auto;
+        /* width: 85%;
+        margin: .25rem auto; */
         /*grid-column: 1;
         grid-row: 2;
         /*height: 100%;*/
@@ -135,8 +135,8 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
     .spotlight3 {
         display: block;
         grid-area: 3/1/4/2;
-        width: 85%;
-        margin: .25rem auto;
+        /* width: 85%;
+        margin: .25rem auto; */
         /*grid-column: 1;
         grid-row: 3;
         /*height: 100%;*/
@@ -153,16 +153,16 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
     }*/
     .join {
         grid-area: 3/1/4/2;
-        width: 85%;
+        /* width: 85%; */
         /*margin: .25rem auto;
         display: flex;
         flex-direction: column;*/
-        width: 80%;
+        /* width: 80%; */
     }
     .join-action {
         position: absolute;
-        top: 30px;
-        left: 15%;
+        top: 10%;
+        left: 10%;
         align-items: center;
     }
     .join-text {
@@ -171,7 +171,7 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
     .news {
         grid-area: 3/2/4/5;
         /*margin: .25rem auto;*/
-        width: 93.5%;
+        /* width: 93.5%; */
     }
     
 
@@ -246,6 +246,11 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
     .membership-details p {
         padding: 2%;
         color: #0B3948;
+    }
+    /*-----DIRECTORY PAGE-----*/
+    div.cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
