@@ -1,8 +1,8 @@
 
 // GETTING STATS FROM THE WEATHER API
-const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=878549&q=Zvishavane&units=metric&appid=164e183ac818600411c3484dc71c4f9f";
+const apiUrl = "https://api.openweathermap.org/data/2.5/weather?id=878549&q=Zvishavane&units=metric&appid=164e183ac818600411c3484dc71c4f9f";
 
-fetch(apiURL)
+fetch(apiUrl)
     .then((response) => response.json())
 
     .then((jsObject) => {
@@ -12,7 +12,7 @@ fetch(apiURL)
         document.querySelector('#coord2').textContent = jsObject.coord.lon;
         document.querySelector('#grnd-level').textContent = jsObject.main.grnd_level;
         document.querySelector('#sea-level').textContent = jsObject.main.sea_level;
-        document.querySelector('#visibility').textContent = jsObject.sys.visibility;
+        document.querySelector('#visibility').textContent = Math.round((jsObject.visibility) / 100) / 10;
 
         // const iconsrc= `https://openweathermap.org/img/w/${jsObject.weather[0].icon}.png`;
         // const desc = jsObject.weather[0].description;
