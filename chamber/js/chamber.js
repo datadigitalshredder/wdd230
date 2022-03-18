@@ -90,7 +90,7 @@ if (numVisits !== 0) {
 }
 
 // JSON (Directory page)
-const requestUrl = "https://datadigitalshredder.github.io/wdd230/chamber/JSON/data.json";
+const requestUrl = "https://datadigitalshredder.github.io/wdd230/chamber/json/data.json";
 
 fetch(requestUrl)
   .then(function (response) {
