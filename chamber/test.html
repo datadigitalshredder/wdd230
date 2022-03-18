@@ -4,49 +4,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="test.css">
-    <script defer src="test.js"></script>
-
+    <title>Home Page</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-    <!-- <div class="container">
+    <header>
+        <section class="logo">
+            <a href="index.html"><img src="./images/logo_text.webp" alt="Peach Town Chamber of Commerce Logo"></a>
+        </section>
+        <nav class="navbar" id="nav">
+            <div><a href="discover.html">Discover</a></div>
+            <div><a href="directory.html">Directory</a></div>
+            <div><a href="join.html">Join</a></div>
+            <div><a href="#">Contact</a></div>
+        </nav>
+        <div class="icon">
+            <img id="icon" src="./images/menu.png" alt="Menu Icon">
+        </div>
+
+        <section class="social">
+            <a id="fb" href="https://www.facebook.com" target="_blank"><img src="./images/facebook.png" alt="Facebook"></a>
+            <a id="li" href="https://www.linkedin.com" target="_blank"><img src="./images/linkedin.png" alt="LinkedIn"></a>
+        </section>
+        <section class="date">
+            <p id="date">Tuesday, March 15, 2017</p>
+        </section>
+        <div class="banner">
+            <div class="banner__content">
+                <div class="banner__text">
+                    <strong>Reminder:</strong> 🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.
+                </div>
+                <button class="banner__close" type="button">
+                <span class="material-icons">
+                    close
+                </span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main class="directory">
         <div class="buttons">
-          <div class="list"><i class="fa fa-list"></i></div>
-          <div class="grid"><i class="fa fa-th-large"></i></div>
+            <button id="card" type="button">Card</button>
+            <button id="list" type="button">List</button>
         </div>
-        <div class="wrapper" id="wrapper">
-          <div class="col">Column #1</div>
-          <div class="col">Column #2</div>
-          <div class="col">Column #3</div>
-          <div class="col">Column #4</div>
-        </div>
-      </div> -->
-    <!-- Buttons to choose list or grid view -->
-    <button onclick="listView()"><i class="fa fa-bars"></i> List</button>
-    <button onclick="gridView()"><i class="fa fa-th-large"></i> Grid</button>
-
-    <div class="row">
-        <div class="column" style="background-color:#aaa;">
-            <h2>Column 1</h2>
-            <p>Some text..</p>
-        </div>
-        <div class="column" style="background-color:#bbb;">
-            <h2>Column 2</h2>
-            <p>Some text..</p>
-        </div>
-
-        <div class="row">
-            <div class="column" style="background-color:#ccc;">
-                <h2>Column 3</h2>
-                <p>Some text..</p>
-            </div>
-            <div class="column" style="background-color:#ddd;">
-                <h2>Column 4</h2>
-                <p>Some text..</p>
-            </div>
-        </div>
-    </div>
+        <section class="cards"></section>
+    </main>
+    <footer>
+        <section class="logo-info">
+            <img src="./images/logo_text_location.webp" alt="Peach Town Chamber of Commerce Logo">
+        </section>
+        <section class="contact-info">
+            <p>+502 5135-4684</p>
+            <p>info@peachtowncommerce.com</p>
+            <a href="https://www.google.com/maps/place/Peachtown+Drv,+Villa+Canales/@14.4801734,-90.5034419,17z/data=!3m1!4b1!4m5!3m4!1s0x8589a58ec1a2a3dd:0x5697b947a374750b!8m2!3d14.4800312!4d-90.5013311" target="_blank">Location Map</a>
+        </section>
+        <section class="footer">
+            <span>&copy;<span id="year"></span>
+                <span> Peach Town Chamber |</span>
+                <span style="font-weight: bold;"> Jorge Flores </span>
+                <span>| WDD 230 Project |</span>
+                <span>Last Modification: <span id="lastModified"></span>
+        </section>
+    </footer>
+    <script type="module" src="./js/directory.js"></script>
 </body>
 </html>

@@ -148,7 +148,7 @@ function listView() {
     for (let i = 0; i < infoContainer.length; i++) {
         infoContainer[i].style.display = "flex";
         infoContainer[i].style.flexDirection = "row";
-        infoContainer[i].style.justifyContent = "center";
+        infoContainer[i].style.justifyContent = "space-evenly";
         infoContainer[i].style.alignItems = "center";
         infoContainer[i].style.boxShadow = "0px 0px #000000";
 
