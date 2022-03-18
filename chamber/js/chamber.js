@@ -1,5 +1,4 @@
 // select the elements to manipulate (output to)
-// const datefield = document.querySelector("date");
 const datefieldUK = document.querySelector("aside"); // for european/family history format with day first.
 
 // derive the current date using a date object
@@ -8,7 +7,6 @@ const now = new Date();
 const fulldateUK = new Intl.DateTimeFormat("en-UK", {dateStyle: "full"}).format(now);
 // long, medium, short options ... try them
 
-// datefield.innerHTML = `<em>${fulldate}</em>`;
 datefieldUK.innerHTML = `<em>${fulldateUK}</em>`;
 
 const year = document.getElementById("year");
@@ -29,40 +27,8 @@ if (weekDay >= 1 && weekDay <= 2) {
 else {
    message = '🤝🏼 Come join us next Wednesday at 7:00 p.m. for the chamber meet and greet!';
 }
-/* SWITCH, CASE, BREAK */
 
-// Step 1: Declare a new variable to hold another message
-//let message1;
-// Step 2: Use switch, case and break to set the message variable to the day of the week as a string (e.g. Sunday, Monday, etc.) using the day of week variable declared in Step 2 above
-switch (weekDay) {
-    case 0:
-        message1 = 'Sunday';
-        break;
-    case 1:
-        message1 = 'Monday';
-        break;
-    case 2:
-        message1 = 'Tuesday';
-        break;
-    case 3:
-        message1 = 'Wednesday';
-        break;
-    case 4:
-        message1 = 'Thursday';
-        break;
-    case 5:
-        message1 = 'Friday';
-        break;
-    case 6:
-        message1 = 'Saturday';
-        break;
-    default:
-        message1 = 'Unknown - ' + weekDay;
-        break;
-}
-
-/* OUTPUT */
-
+// OUTPUT
 // Assign the value of the message variable to the HTML element with an ID of message, following the if block. 
 document.querySelector('#message').textContent = message;
 
@@ -124,14 +90,13 @@ if (numVisits !== 0) {
 }
 
 // JSON (Directory page)
-const requestUrl = "https://datadigitalshredder.github.io/wdd230/chamber/data.json";
+const requestUrl = "https://datadigitalshredder.github.io/wdd230/chamber/JSON/data.json";
 
 fetch(requestUrl)
   .then(function (response) {
     return response.json();
   })
   .then(function (jsonObject) {
-    //console.table(jsonObject);  // temporary checking for valid response and data parsing
 
     const companies = jsonObject['companies'];
     
@@ -160,11 +125,7 @@ function displayCompanies(company) { // Create elements to add to the document
     address.textContent = `${company.address}`;
     phone.textContent = `${company.phone}`;
     site.textContent = `${company.website}`;
-
-    //birthDate.textContent = `Birth Date: ${prophet.birthdate}`;
-    //birthPlace.textContent =`Birth Place: ${prophet.birthplace}`;
-    
-    
+   
     // Add/append the section(card) with the h2 element
     card.setAttribute('class', "info-container");
     card.appendChild(img);
@@ -173,9 +134,6 @@ function displayCompanies(company) { // Create elements to add to the document
     card.appendChild(address);
     card.appendChild(phone);
     card.appendChild(site);
-    //card.appendChild(birthDate);
-    //card.appendChild(birthPlace);
-    
 
     // Add/append the existing HTML div with the cards class with the section(card)
     document.querySelector('div.cards').appendChild(card);
@@ -187,16 +145,15 @@ function listView() {
     info.style.flexDirection = "column";
 
     let infoContainer = document.getElementsByClassName('info-container');
-    // console.log(infoContainer);
     for (let i = 0; i < infoContainer.length; i++) {
         infoContainer[i].style.display = "flex";
         infoContainer[i].style.flexDirection = "row";
-        infoContainer[i].style.justifyContent = "space-evenly";
+        infoContainer[i].style.justifyContent = "center";
         infoContainer[i].style.alignItems = "center";
         infoContainer[i].style.boxShadow = "0px 0px #000000";
 
         if (i % 2 === 0) {
-            infoContainer[i].style.backgroundColor = "#d4d4d4";
+            infoContainer[i].style.backgroundColor = "#C5FCF9";
         }
     }
     
@@ -217,7 +174,7 @@ function listView() {
         let infoContainer = document.getElementsByClassName('info-Container');
         for (let i = 0; i < infoContainer.length; i++) {
             infoContainer[i].style.display = "flex";
-            infoContainer[i].style.flexDirection = "column";
+            infoContainer[i].style.flexDirection = "column"; 
         }
     }
     else {
@@ -237,7 +194,7 @@ function cardView() {
     let infoContainer = document.getElementsByClassName('info-Container');
     console.log(infoContainer);
     for (let i = 0; i < infoContainer.length; i++) {
-        infoContainer[i].style.backgroundColor = "#ffffff";
+        infoContainer[i].style.backgroundColor = "white";
         infoContainer[i].style.display = "block";
         infoContainer[i].style.boxShadow = "5px 5px #000000";
     }
@@ -251,7 +208,7 @@ function cardView() {
 
     let name = document.getElementsByTagName('h2');
     for (let i = 0; i < name.length; i++) {
-        name[i].style.display = "none";
+        name[i].style.display = "block";
     }
 }
 

@@ -17,7 +17,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:ital,wght@1,100;1,300&display=swap" rel="stylesheet">
         <script defer src="js/chamber.js"></script>
-        <script defer src="js/stats.js"></script>
+        <script defer src="js/statistics.js"></script>
         <script defer src="js/discover_lazyloading.js"></script>
 
     </head>
@@ -78,20 +78,18 @@
                             </tr>
                         </thead>
                             <tbody>
-                                <tr class="table-headers">
+                                <!-- <tr class="table-headers">
                                     <th class="table-headers1">Demographics</th>
                                     <th class="table-headers1">Quantity</th>
-                                </tr>
+                                </tr> -->
                                 <tr>
                                     <td>Coordinates:</td>
                                     <td><span id="coord1"></span>, <span id="coord2"></span></td>
                                 </tr>
-                                <tr>
-                                    <td>Population</td>
-                                    <td>45,230</td>
-                                </tr>
+
                                 <tr class="subtable">
-                                    <td colspan="2"><strong>Age Group</strong></td>
+                                    <td><strong>Population</strong></td>
+                                    <td colspan="2"><strong></strong></td>
                                 </tr>
                                 <tr class="subtable">
                                     <td>0-14 years</td>
@@ -104,6 +102,10 @@
                                 <tr>
                                     <td>65+ years</td>
                                     <td>549</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Total Population</strong></td>
+                                    <td>45,230</td>
                                 </tr>
                                 <tr>
                                 <td>Area</td>
@@ -126,18 +128,18 @@
                                 </tr>
                                 <tr>
                                     <td>Ground level</td>
-                                    <td><span id="grnd-level"></span></td>
+                                    <td><span id="grnd-level"></span> meters</td>
                                 </tr>
                                 <tr>
                                     <td>Sea level</td>
-                                    <td><span id="sea-level"></span></td>
+                                    <td><span id="sea-level"></span> meters</td>
                                 </tr>
                                 <tr>
                                     <td>Timezone</td>
-                                    <td>UTC +2 hours</td>
+                                    <td>UTC +<span id="timezone"></span> hours</td>
                                 </tr>
                                 <tr>
-                                    <td>Day time</td>
+                                    <td>Daytime hours</td>
                                     <td><span id="sunrise"></span> - <span id="sunset"></span></td>
                                 </tr>
                                 <tr>
