@@ -25,7 +25,7 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
         font-size: 26px;
     }
 
-    main {
+    main.boxes {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         /*gap: .1rem;
@@ -90,20 +90,47 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
     }
     /*-------------*/
     /* DISCOVER PAGE */
-    /*.discover {
-        max-width: 600px;
-    }*/
+    .discover {
+        max-width: 550px;
+        margin: 0 auto;
+        margin: 0 auto;
+        /* text-align: center; */
+        /* margin: 0;
+        padding: 0; */
+
+    }
+    .discover-business-corner {
+        display: block;
+    }
     .discover-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-        /*grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));*/
+        grid-template-rows: repeat(3, 1fr);
     }
 
     /*.discover-gallery {
         /*width: 600px;
     }*/
-    .welcome {
+    section.discover-container h1.welcome {
+        grid-area: 1/1/2/3;
+        margin: 0;
+        padding: 0;
+        height: 40px;
+        /* width: 95%; */
+    }
+    .discover-scenery {
+        grid-area: 2/1/4/2;
+    }
+    .discover-business-corner {
+        grid-area: 2/2/3/3;
+    }
+    .discover-demographics {
+        grid-area: 3/2/4/3;
+    }
+    .discover-demographics h2 {
+        text-align: center;
+    }
+    /* .welcome {
         grid-area: 1/1/2/3;
     }
     .img1 {
@@ -135,7 +162,7 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
     }
     .img10 {
         grid-area: 6/2/7/3;
-    }
+    } */
 
     /* -----DIRECTORY PAGE-----*/
     div.cards {

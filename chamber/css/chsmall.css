@@ -108,7 +108,7 @@ p {
     font-size: 16px;
 }
 
-main {
+main.boxes {
 	display: flex;
 	flex-direction: column;
 	gap: .1rem;
@@ -315,16 +315,27 @@ nav ul.open {
 
 /*---------------*/
 /* DISCOVER PAGE */
+.discover-town-location, .discover-town-highlights, .discover-business-corner {
+	display: none;
+}
+section.discover-container h1 {
+	font-family: 'Montserrat', sans-serif;
+	color:#0B3948;
+}
+.discover-scenery {
+	width: 330px;
+	height: 400px;
+	overflow: scroll;
+}
 .discover {
 	max-width: 300px;
 }
 
-main.discover.discover-container {
+/* main.discover.discover-container {
 	display: grid;
-	/* flex-direction: column; */
 	grid-template-columns: 1fr;
 	grid-template-rows: auto;	
-}
+} */
 
 .discover h1 {
 	font-family: 'Montserrat', sans-serif;
@@ -452,9 +463,6 @@ main.thanks {
 
 }
 
-/*main.thanks h1, main.thanks h2 {
-	
-}*/
 /*-----DIRECTORY PAGE-----*/
 main.directory {
 	text-align: center;
