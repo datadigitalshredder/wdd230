@@ -30,7 +30,7 @@ fetch(apiURL)
     .then((jsObject) => {
         console.log(jsObject);
         document.querySelector('#current-temp').textContent = Math.round((jsObject.main.temp) * 10) / 10; // Carefully follow the path to the temp. Note there are different temps for different parts to the city
-        const iconsrc= `https://openweathermap.org/img/w/${jsObject.weather[0].icon}.png`;
+        const iconsrc = `https://openweathermap.org/img/w/${jsObject.weather[0].icon}.png`;
         const desc = jsObject.weather[0].description;
         const windSpeed = (jsObject.wind.speed) * 3.6;
 
