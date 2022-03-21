@@ -40,8 +40,6 @@ nav ul li.active {
 .social, nav ul li a {
 	align-items: end;
 	text-align: center;
-	/* margin-right: 0;
-	padding-right: 0;  */
 }
 
 nav ul li a:hover {
@@ -124,8 +122,8 @@ main.boxes {
 }
 .action-call {
 	position: absolute;
-	bottom: 5px;
-	right: 5px;
+	bottom: 5%;
+	right: 5%;
 	background: radial-gradient(#eee, #0B3948);
 	border: 1px solid #eee;
 	padding: 1.5rem;
@@ -141,7 +139,7 @@ main.boxes {
 }
 .join-action {
 	position: absolute;
-	top: 10%px;
+	top: 5%;
 	left: 10%;
 	right: 10%;
 	background: radial-gradient(#eee, #0B3948);
@@ -154,7 +152,7 @@ main.boxes {
 }
 .top-left {
 	position: absolute;
-	top: 5%;
+	top: 1%;
 	left: 5%;
 	
   }

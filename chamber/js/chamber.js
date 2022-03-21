@@ -21,7 +21,7 @@ weekDay = now.getDay();
 let message;
 // Using an if statement, if the day of the week is Monday or Tuesday, set a message
 if (weekDay >= 1 && weekDay <= 2) {
-    message = '🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.!';
+    message = '🤝🏼 Come join us for the chamber meet and greet this Wednesday at 7:00 p.m.!';
 }
 // Using an else statement, set the message variable to set another message
 else {
@@ -89,8 +89,8 @@ if (numVisits !== 0) {
     lastVisitsDisplay.textContent = `N/A`;
 }
 
-// JSON (Directory page)
-const requestUrl = "https://datadigitalshredder.github.io/wdd230/chamber/JSON/data.json";
+// JSON 
+const requestUrl = "https://datadigitalshredder.github.io/wdd230/chamber/data.json";
 
 fetch(requestUrl)
   .then(function (response) {
@@ -104,6 +104,7 @@ fetch(requestUrl)
   });
 
 function displayCompanies(company) { // Create elements to add to the document
+    // Directory Page
     let card = document.createElement('section'); 
     let img = document.createElement('img');
     let h2 = document.createElement('h2');
@@ -111,11 +112,24 @@ function displayCompanies(company) { // Create elements to add to the document
     let address = document.createElement('p');
     let phone = document.createElement('p');
     let site = document.createElement('a');
+
+    // Home Page
+    let homeCompanyName = '';
+    let homeImage = '';
+    let homeEmail = '';
+    let homeNumber = '';
+    let homeWebsite = '';
             
     // Change the textContent property of the h2 element to contain the company's details
     img.setAttribute('src', company.logo);
     img.setAttribute('alt', `Logo of ${company.name}`);
     img.setAttribute('loading', 'lazy');
+
+    // Home Page
+    homeImage.setAttribute('src', company.logo);
+    homeImage.setAttribute('alt', `Logo of ${company.name}`);
+
+
 
     // Change h2 attributes
     h2.setAttribute('style', 'display: none;');
@@ -125,6 +139,10 @@ function displayCompanies(company) { // Create elements to add to the document
     address.textContent = `${company.address}`;
     phone.textContent = `${company.phone}`;
     site.textContent = `${company.website}`;
+
+    // Home page
+    homeCompanyName.textContent =`${compon}` 
+
    
     // Add/append the section(card) with the h2 element
     card.setAttribute('class', "info-container");
