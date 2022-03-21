@@ -90,7 +90,7 @@ if (numVisits !== 0) {
 }
 
 // JSON 
-const requestUrl = "https://datadigitalshredder.github.io/wdd230/chamber/data.json";
+const requestUrl = "https://datadigitalshredder.github.io/wdd230/chamber/jsonfolder/data.json";
 
 fetch(requestUrl)
   .then(function (response) {
@@ -99,8 +99,10 @@ fetch(requestUrl)
   .then(function (jsonObject) {
 
     const companies = jsonObject['companies'];
+    // const spotlights = jsonObject['companies']
     
     companies.forEach(displayCompanies); 
+    // spotlights.forEach(displayCompanies1); 
   });
 
 function displayCompanies(company) { // Create elements to add to the document
@@ -113,12 +115,12 @@ function displayCompanies(company) { // Create elements to add to the document
     let phone = document.createElement('p');
     let site = document.createElement('a');
 
-    // Home Page
-    let homeCompanyName = '';
-    let homeImage = '';
-    let homeEmail = '';
-    let homeNumber = '';
-    let homeWebsite = '';
+    // // Home Page
+    // let homeCompanyName = '';
+    // let homeImage = '';
+    // let homeEmail = '';
+    // let homeNumber = '';
+    // let homeWebsite = '';
             
     // Change the textContent property of the h2 element to contain the company's details
     img.setAttribute('src', company.logo);
@@ -126,8 +128,8 @@ function displayCompanies(company) { // Create elements to add to the document
     img.setAttribute('loading', 'lazy');
 
     // Home Page
-    homeImage.setAttribute('src', company.logo);
-    homeImage.setAttribute('alt', `Logo of ${company.name}`);
+    // homeImage.setAttribute('src', company[1].logo);
+    // homeImage.setAttribute('alt', `Logo of ${company[1].name}`);
 
 
 
@@ -141,7 +143,7 @@ function displayCompanies(company) { // Create elements to add to the document
     site.textContent = `${company.website}`;
 
     // Home page
-    homeCompanyName.textContent =`${compon}` 
+    // homeCompanyName.textContent =`${company[1].name}` 
 
    
     // Add/append the section(card) with the h2 element
@@ -153,9 +155,75 @@ function displayCompanies(company) { // Create elements to add to the document
     card.appendChild(phone);
     card.appendChild(site);
 
+    // Home Page 
+
+
+
     // Add/append the existing HTML div with the cards class with the section(card)
     document.querySelector('div.cards').appendChild(card);
+    // document.querySelector('#gold').appendChild(homeCompanyName);
+}
+    function displayCompanies(company) { // Create elements to add to the document
+    // Directory Page
+    let card = document.createElement('section'); 
+    let img = document.createElement('img');
+    let h2 = document.createElement('h2');
+    let tradeHours = document.createElement('p');
+    let address = document.createElement('p');
+    let phone = document.createElement('p');
+    let site = document.createElement('a');
+
+    // // Home Page
+    // let homeCompanyName = '';
+    // let homeImage = '';
+    // let homeEmail = '';
+    // let homeNumber = '';
+    // let homeWebsite = '';
+            
+    // Change the textContent property of the h2 element to contain the company's details
+    img.setAttribute('src', company.logo);
+    img.setAttribute('alt', `Logo of ${company.name}`);
+    img.setAttribute('loading', 'lazy');
+
+    // Home Page
+    // homeImage.setAttribute('src', company[1].logo);
+    // homeImage.setAttribute('alt', `Logo of ${company[1].name}`);
+
+
+
+    // Change h2 attributes
+    h2.setAttribute('style', 'display: none;');
+
+    h2.textContent = `${company.name}`;
+    tradeHours.textContent = `${company.open}`;
+    address.textContent = `${company.address}`;
+    phone.textContent = `${company.phone}`;
+    site.textContent = `${company.website}`;
+
+    // Home page
+    // homeCompanyName.textContent =`${company[1].name}` 
+
+   
+    // Add/append the section(card) with the h2 element
+    card.setAttribute('class', "info-container");
+    card.appendChild(img);
+    card.appendChild(h2);
+    card.appendChild(tradeHours);
+    card.appendChild(address);
+    card.appendChild(phone);
+    card.appendChild(site);
+
+    // Home Page 
+
+
+
+    // Add/append the existing HTML div with the cards class with the section(card)
+    document.querySelector('div.cards').appendChild(card);
+    // document.querySelector('#gold').appendChild(homeCompanyName);
+
+
   }
+
 
 function listView() {
     let info = document.querySelector('div.cards');
