@@ -104,18 +104,13 @@ fetch(requestUrl)
   });
 
 function displayCompanies(company) { // Create elements to add to the document
-    // Directory Page
     let card = document.createElement('section'); 
-    // let card2 = document.createElement('section');
-    // let spotlightGoldName = document.createElement('div');
     let img = document.createElement('img');
     let h2 = document.createElement('h2');
     let tradeHours = document.createElement('p');
     let address = document.createElement('p');
     let phone = document.createElement('p');
     let site = document.createElement('a');
-
-    // companyName = '';
             
     // Change the textContent property of the h2 element to contain the company's details
     img.setAttribute('src', company.logo);
@@ -131,8 +126,6 @@ function displayCompanies(company) { // Create elements to add to the document
     phone.textContent = `${company.phone}`;
     site.textContent = `${company.website}`;
 
-    // spotlightGoldName.textContent = `${company[1].name}`;
-
     // Add/append the section(card) with the h2 element
     card.setAttribute('class', "info-container");
     card.appendChild(img);
@@ -142,13 +135,8 @@ function displayCompanies(company) { // Create elements to add to the document
     card.appendChild(phone);
     card.appendChild(site);
 
-    // card2.appendChild(spotlightGoldName);
-
     // Add/append the existing HTML div with the cards class with the section(card)
     document.querySelector('div.cards').appendChild(card);
-    // document.querySelector('div.spotlight1').appendChild(card2);
-
-    // document.querySelector('#gold').textContent = companyName;
 }
 
 function listView() {
@@ -164,7 +152,7 @@ function listView() {
         infoContainer[i].style.alignItems = "center";
         infoContainer[i].style.boxShadow = "0px 0px #000000";
 
-        if (i % 2 === 0) {
+        if (i % 2 === 1) { // This selects all odd enteries in the directory
             infoContainer[i].style.backgroundColor = "#C5FCF9";
         }
     }
