@@ -152,7 +152,7 @@ function listView() {
         infoContainer[i].style.alignItems = "center";
         infoContainer[i].style.boxShadow = "0px 0px #000000";
 
-        if (i % 2 === 1) { // This selects all odd enteries in the directory
+        if (i % 2 === 0) { // This selects all odd enteries in the directory
             infoContainer[i].style.backgroundColor = "#C5FCF9";
         }
     }

@@ -5,8 +5,31 @@ fetch(spotlightUrl)
 
     .then((jsObject1) => {
         console.log(jsObject1);
-        let randomEntries = Object.keys(companies)[Math.floor(Math.random() * companies.length)];
-        document.querySelector('#gold-name').textContent = jsObject1.companies[1].name; // Carefully follow the path to the temp. Note there are different temps for different parts to the city
+            
+            // randomly select companies with gold membership
+            let outputGold =  jsObject1.companies.filter(membership => membership.membership === "gold");
+
+            for (let i = 0; i < outputGold.length; i++){
+
+            randomCompanyGold = outputGold[Math.floor(Math.random() * outputGold.length)];
+            document.querySelector('#gold-name').innerHTML = randomCompanyGold.name;
+            // document.querySelector('#gold-image').innerHTML = randomCompanyGold.`https://datadigitalshredder.github.io/wdd230/chamber/jsonfolder/data${}`;
+            document.querySelector('#gold-number').innerHTML = randomCompanyGold.phone;
+            document.querySelector('#gold-site').innerHTML = randomCompanyGold.website;
+
+
+
+            
+
+
+            
+            // document.write("<h2>", outputGold[i].name, "</h2>", "<br/>")
+            };
+            
+            
+        // let randomEntries = Object.keys(companies)[Math.floor(Math.random() * companies.length)];
+        // document.querySelector('#gold-name').textContent = jsObject1.companies[1].name; // Carefully follow the path to the temp. Note there are different temps for different parts to the city
+        // document.querySelector('#gold-name').textContent = outputGold; 
         // document.querySelector('#gold-image').textContent = jsObject1.companies[1].logo; 
 
         const goldSpotlight = `https://datadigitalshredder.github.io/wdd230/chamber/jsonfolder/data/${jsObject1.companies[1].logo}.json`; 
@@ -34,3 +57,9 @@ fetch(spotlightUrl)
         // document.querySelector('#weather-timestamp').textContent = weatherTimeStamp;
 
     });
+    // function getRandomProperty(outputGold) {
+    //     const keys = Object.values(outputGold);
+        
+    //     return keys[Math.floor(Math.random() * keys.length)];
+        
+    // }
