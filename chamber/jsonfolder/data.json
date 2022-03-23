@@ -40,7 +40,7 @@
             "name": "Pote Holdings",
             "address": "502 Ireland Road, Zvishavane",
             "phone": "+263 392352821",
-            "membership": "silver",
+            "membership": "gold",
             "open": "24-hour operation",
             "website": "https://makankainvestments.com",
             "logo": "https://datadigitalshredder.github.io/wdd230/chamber/images/pote.jpg"
@@ -58,7 +58,7 @@
             "name": "TK Engineering",
             "address": "1690 Highlands Zvishavane",
             "phone": "+263 77 926 5903",
-            "membership": "gold",
+            "membership": "silver",
             "open": "24-hour operation",
             "website": "https://tk-engineering-mechanical-engineer.business.site/",
             "logo": "https://datadigitalshredder.github.io/wdd230/chamber/images/tk.png"
@@ -76,7 +76,7 @@
             "name": "BOLT Gas Engineering",
             "address": "105 Railway Avenue, Zvishavane",
             "phone": "+263 (051) 3744",
-            "membership": "bronze",
+            "membership": "gold",
             "open": "Monday to Friday 8am - 5pm",
             "website": "https://boltgas.com",
             "logo": "https://datadigitalshredder.github.io/wdd230/chamber/images/boltgas.jpg"

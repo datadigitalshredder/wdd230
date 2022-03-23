@@ -14,6 +14,11 @@ fetch(spotlightUrl)
             randomCompanyGold = outputGold[Math.floor(Math.random() * outputGold.length)];
             document.querySelector('#gold-name').innerHTML = randomCompanyGold.name;
             // document.querySelector('#gold-image').innerHTML = randomCompanyGold.`https://datadigitalshredder.github.io/wdd230/chamber/jsonfolder/data${}`;
+            // document.querySelector('#gold-image').innerHTML = randomCompanyGold.logo[`https://datadigitalshredder.github.io/wdd230/chamber/jsonfolder/data${}`];
+            const iconsrc = `https://datadigitalshredder.github.io/wdd230/chamber/images/${randomCompanyGold.name[0]}.jpg`;
+            const desc = `Logo of ${randomCompanyGold.name}`;
+            document.querySelector('#gold-image').setAttribute('src', iconsrc);
+            document.querySelector('#gold-image').setAttribute('alt', desc);
             document.querySelector('#gold-number').innerHTML = randomCompanyGold.phone;
             document.querySelector('#gold-site').innerHTML = randomCompanyGold.website;
 
