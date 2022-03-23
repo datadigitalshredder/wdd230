@@ -200,13 +200,29 @@ section.action-call a:hover, div.join-action a:hover {
 	display: none;
 }
 
-.spotlight1 h2, .spotlight2 h2, .spotlight3 h2 {
+/* .spotlight1 h2, .spotlight2 h2, .spotlight3 h2 {
 	font-family: 'Montserrat', sans-serif;
 	color: black;
 }
 .spotlight1 h3, .spotlight2 h3, .spotlight3 h3 {
 	font-family: 'Roboto', sans-serif;
 	color: white;
+} */
+p span#gold-name, p span#gold-name2, p span#silver-name {
+	font-family: 'Montserrat', sans-serif;
+	color: black;
+	font-size: 22px;
+	font-weight: 700;
+}
+img#gold-image, img#gold-image2, img#silver-image {
+	width: 120px;
+	margin: .5rem auto;
+}
+p span#gold-number, p span#gold-number2, p span#silver-number {
+	font-family: 'Montserrat', sans-serif;
+	color: black;
+	margin: 1rem auto;
+	font-weight: 700;
 }
 
 .spotlight1 p, .spotlight2 p, .spotlight3 p {
