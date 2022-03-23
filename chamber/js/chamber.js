@@ -168,7 +168,7 @@ function listView() {
         name[i].style.display = "block";
     }
     
-    let smallScreen = window.matchMedia("(max-width: 560px)");
+    let smallScreen = window.matchMedia("(max-width: 550px)");
     if (smallScreen.matches) {
         console.log("Small screen");    
         let infoContainer = document.getElementsByClassName('info-Container');
