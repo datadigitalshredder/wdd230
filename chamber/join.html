@@ -56,8 +56,8 @@
             <form method="get" action="thanks.html" class="form">
                 <fieldset>
                     <legend>Applicant Information</legend>
-                    <label class="top"> First name*<input type="text" name="fname" required="required" autocomplete></label>
-                    <label class="top"> Last name*<input type="text" name="lname" required="required" autocomplete></label>
+                    <label class="top"> First name*<input type="text" name="fname" required="required" autocomplete="on"></label>
+                    <label class="top"> Last name*<input type="text" name="lname" required="required" autocomplete="on"></label>
                     <label class="top"> Phone<input type="tel" name="phone" placeholder="+263755555555"></label>
                     <label class="top"> E-mail*<input type="email" name="email" placeholder="someone@email.com" required="required"></label>
                     <label class="top"> Province/ State
@@ -85,7 +85,6 @@
                             <label class="side"><input type="radio" name="membership" value="Bronze"> Bronze</label>
                             <label class="side"><input type="radio" name="membership" value="Silver"> Silver</label>
                             <label class="side"><input type="radio" name="membership" value="Gold"> Gold</label>
-                        </div>
                         <div class="membership-details">Membership Details 
                             <p class="np"><strong>NP (Non-Profit) membership</strong> is for non-profit organizations. There is no joining fee</p>
                             <p class="bronze"><strong>Bronze membership</strong> is for small business operators. Benefits include networking, advocacy, credibility, and marketing through the chamber. The joining fee is US$500.00</p>
@@ -99,7 +98,7 @@
                     <label class="top">Business Position Title <input type="text" name="bposition" pattern="^[A-Za-z -]+$" minlength="7"></label>
                     <label class="top">Business name* <input type="text" name="bname" required></label>
                     <label class="top" for="bdescription">Business Description</label>
-                    <textarea id="description" type="text" name="businessdescription" placeholder="Maximum of 500 Characters" maxlength="1000"></textarea>
+                    <textarea id="description" name="businessdescription" placeholder="Maximum of 500 Characters" maxlength="1000"></textarea>
                 </fieldset>
                 <input type="hidden" name="completionDate" id="hidden">
                 <input type="submit" value="Send My Application" class="submitBtn">

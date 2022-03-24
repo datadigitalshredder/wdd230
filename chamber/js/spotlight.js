@@ -4,8 +4,6 @@ fetch(spotlightUrl)
     .then((response) => response.json())
 
     .then((jsObject1) => {
-        console.log(jsObject1);
-            
             // Randomly select 1st company with gold membership
             let outputGold =  jsObject1.companies.filter(membership => membership.membership === "gold");
 
@@ -54,11 +52,4 @@ fetch(spotlightUrl)
         const goldSpotlight = `https://datadigitalshredder.github.io/wdd230/chamber/jsonfolder/data/${jsObject1.companies[1].logo}.json`; 
         const goldNumber = jsObject1.companies[1].phone; 
         const goldSite = jsObject1.companies[1].website; 
-
-        document.querySelector('#icon-src').textContent = iconsrc;
-        document.querySelector('#gold-number').textContent = goldNumber;
-        document.querySelector('#gold-site').textContent = goldSite;
-
-        document.querySelector('#gold-image').setAttribute('src') = goldSpotlight;
-
     });

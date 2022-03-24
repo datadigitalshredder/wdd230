@@ -6,7 +6,6 @@ fetch(apiUrl)
     .then((response) => response.json())
 
     .then((jsObject) => {
-        console.log(jsObject);
         document.querySelector('#current-temp').textContent = Math.round((jsObject.main.temp) * 10) / 10; // Carefully follow the path to the temp. Note there are different temps for different parts to the city
         document.querySelector('#coord1').textContent = jsObject.coord.lat;
         document.querySelector('#coord2').textContent = jsObject.coord.lon;

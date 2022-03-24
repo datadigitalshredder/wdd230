@@ -9,7 +9,7 @@ const fulldateUK = new Intl.DateTimeFormat("en-UK", {dateStyle: "full"}).format(
 
 datefieldUK.innerHTML = `<em>${fulldateUK}</em>`;
 
-const year = document.getElementById("year");
+const year = document.querySelector("#year");
 year.innerHTML = new Date().getFullYear();
 const lastmod = document.querySelector('#lastmod');
 lastmod.innerHTML = `<strong>Last updated</strong>: ${document.lastModified}`;
@@ -77,7 +77,6 @@ const conversionFactor = 24 * 60 * 60 * 1000;
 let daysSinceVisit = Date.now() - lastVisit;
 
 let numberOfDays = Math.round(daysSinceVisit / conversionFactor);
-//console.log(numberOfDays);
 
 localStorage.setItem('lastvisit', Date.now());
 
@@ -103,7 +102,8 @@ fetch(requestUrl)
     companies.forEach(displayCompanies); 
   });
 
-function displayCompanies(company) { // Create elements to add to the document
+function displayCompanies(company) { 
+    // Create elements to add to the document
     let card = document.createElement('section'); 
     let img = document.createElement('img');
     let h2 = document.createElement('h2');
@@ -130,7 +130,7 @@ function displayCompanies(company) { // Create elements to add to the document
     card.setAttribute('class', "info-container");
     card.appendChild(img);
     card.appendChild(h2);
-    card.appendChild(tradeHours);
+    card.appendChild(tradeHours, 'class', 'tradehours');
     card.appendChild(address);
     card.appendChild(phone);
     card.appendChild(site);
@@ -148,17 +148,16 @@ function listView() {
     for (let i = 0; i < infoContainer.length; i++) {
         infoContainer[i].style.display = "flex";
         infoContainer[i].style.flexDirection = "row";
-        infoContainer[i].style.justifyContent = "space-evenly";
         infoContainer[i].style.alignItems = "center";
-        infoContainer[i].style.boxShadow = "0px 0px #000000";
+        infoContainer[i].style.boxShadow = "0px 0px #000";
 
-        if (i % 2 === 0) { // This selects all odd enteries in the directory
+        if (i % 2 === 0) { 
+            // This selects all odd enteries in the directory
             infoContainer[i].style.backgroundColor = "#C5FCF9";
         }
     }
     
     let image = document.getElementsByTagName('img');
-    console.log(image);
     for (let i = 3; i < image.length - 1; i++) {
       image[i].style.display = "none";
     }
@@ -168,18 +167,24 @@ function listView() {
         name[i].style.display = "block";
     }
     
-    let smallScreen = window.matchMedia("(max-width: 550px)");
-    if (smallScreen.matches) {
-        console.log("Small screen");    
-        let infoContainer = document.getElementsByClassName('info-Container');
+    let smallScreen = window.matchMedia("(max-width: 600px)");
+    if (smallScreen.matches) {   
+        let infoContainer = document.getElementsByClassName('info-container');
+        for (let i = 0; i < infoContainer.length; i++) {
+            infoContainer[i].style.display = "flex";
+            infoContainer[i].style.flexDirection = "column"; 
+        }
+    }
+    let mediumScreen = window.matchMedia("(max-width: 1024px)");
+    if (mediumScreen.matches) {
+        let infoContainer = document.getElementsByClassName('info-container');
         for (let i = 0; i < infoContainer.length; i++) {
             infoContainer[i].style.display = "flex";
             infoContainer[i].style.flexDirection = "column"; 
         }
     }
     else {
-        console.log("Large screen");
-        let infoContainer = document.getElementsByClassName('info-Container');
+        let infoContainer = document.getElementsByClassName('info-container');
         for (let i = 0; i < infoContainer.length; i++) {
             infoContainer[i].style.display = "flex";
             infoContainer[i].style.flexDirection = "row";
@@ -191,16 +196,14 @@ function cardView() {
     let info = document.querySelector('div.cards');
     info.style.display = "grid";
 
-    let infoContainer = document.getElementsByClassName('info-Container');
-    console.log(infoContainer);
+    let infoContainer = document.getElementsByClassName('info-container');
     for (let i = 0; i < infoContainer.length; i++) {
         infoContainer[i].style.backgroundColor = "white";
         infoContainer[i].style.display = "block";
-        infoContainer[i].style.boxShadow = "5px 5px #000000";
+        infoContainer[i].style.boxShadow = "5px 5px #416165";
     }
 
     let image = document.getElementsByTagName('img');
-    console.log(image);
     for (let i = 4; i < image.length; i++) {
         image[i].style.display = "block";
         image[i].style.margin = "10px auto 0 auto";
@@ -212,15 +215,16 @@ function cardView() {
     }
 }
 
-let smallScreen = window.matchMedia("(max-width: 560px)");
+let smallScreen = window.matchMedia("(max-width: 600px)");
 
 function smallScreenList() {
-    if (smallScreen.matches) {
-        console.log("Small screen");    
-        let infoContainer = document.getElementsByClassName('info-Container');
-        for (let i = 0; i < infoContainer.length; i++) {
+    if (smallScreen.matches) {   
+        let infoContainer = document.getElementsByClassName('info-container');
+        let hours = document.getElementsByClassName('tradehours');
+        for (let i = 0; i < infoContainer.length && hours.length; i++) {
             infoContainer[i].style.display = "flex";
             infoContainer[i].style.flexDirection = "column";
+            hours[i].style.display = "none";
         }
     }
 }
