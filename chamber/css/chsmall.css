@@ -549,6 +549,9 @@ div.cards a {
 }
 
 /* CONTACTS PAGE  */
+#contact-date, #contact-message {
+	display: none;
+}
 p.contacts {
 	grid-area: 2/1/3/5;
 	font-family: 'Montserrat', sans-serif;
