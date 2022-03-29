@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 230 Final Project - Innocent Hove">
+    <title>Home | Temple Inn and Suites</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <picture>
+            <img src="images/finallogo.webp" alt="Logo of Temple inn and suites hotel chain">
+        </picture>
+        <p><strong>Temple Inn<br>& Suites</strong></p>
+        <div class='social'>
+            <a class="social-1" href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png" alt="Facebook icon"></a>
+            <a class="social-2" href="https://instagram.com/" target="_blank"><img src="images/instagram.webp" alt="Linkedin icon"></a>
+            <a class="social-3" href="https://pinterest.com/" target="_blank"><img src="images/pinterest.jpg" alt="Linkedin icon"></a>
+        </div>
+        <nav>
+            <button id='hamburgerBtn'><span>&#9776;</span><span>❌</span></button>
+            <ul id='primaryNav'>
+                <li><a href="temple.html">Temple</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="services.html">Services</a></li>
+            </ul>
+        </nav>
+        <div class="banner">
+            <aside></aside>
+            <section>
+                <button onclick="todaysMessage()" class="message"><strong>Today's message</strong></button>
+                <div id="todaysMessage">
+                    <span id="message"></span>
+                </div>
+            </section>
+        </div>
+    </header>
+    <main>Test</main>
+    <footer>
+        <div class='footer-items'>
+            <picture>
+                <img src="images/finallogo.webp" alt="Logo of Temple inn and suites hotel chain">
+            </picture>
+            <div class='address'>
+                <p class="footer"><strong>Temple Inn<br>& Suites</strong></p>
+                <p class="footer"><img src="images/locationicon.png">4800 Montgomery Ln #300, Bethesda, MD 20814</p>
+                <p class="footer"><img src="images/telephoneicon.jpg">999-999-9999</p>
+                
+            </div>
+            <div class='info'>
+                <p class="footer">information@tis.com</p>
+                <p class='footer'><a href='https://goo.gl/maps/MuwKEDuDAzVQMww78'>Location Map</a></p>
+            </div>
+            <div>
+                <a class="social-1" href="https://www.facebook.com/" target="_blank"><img src="images/facebookbw.png" alt="Facebook icon"></a>
+                <a class="social-2" href="https://instagram.com/" target="_blank"><img src="images/instagrambw.png" alt="Linkedin icon"></a>
+                <a class="social-3" href="https://pinterest.com/" target="_blank"><img src="images/pinterestbw.png" alt="Linkedin icon"></a>
+            </div>
+        </div>
+        <hr>
+        <div>
+            <p class='lastmod'>© <span id="year"></span> .:|:. Temple Inn & Suites .:|:. Innocent Hove .:|:. <span id="lastmod"></span></p>
+        </div>
+    </footer>
+</body>
+</html>
