@@ -2,7 +2,47 @@
     "suites": [
         {
             "name": "Gymn",
-            "photo": 
+            "photo": "https://datadigitalshredder.github.io/wdd230/finalproject/images/gymn.jpg"
+        },
+        {
+            "name": "2 King Suite",
+            "photo": "https://datadigitalshredder.github.io/wdd230/finalproject/images/suite2.jpg"
+        },
+        {
+            "name": "Gymn",
+            "photo": "https://datadigitalshredder.github.io/wdd230/finalproject/images/gymn2.jpg"
+        },
+        {
+            "name": "Kitchenette",
+            "photo": "https://datadigitalshredder.github.io/wdd230/finalproject/images/kitchenette.jpg"
+        },
+        {
+            "name": "Contemporary Lounge",
+            "photo": "https://datadigitalshredder.github.io/wdd230/finalproject/images/suite1.jpg"
+        }, 
+        {
+            "name": "Living room",
+            "photo": "https://datadigitalshredder.github.io/wdd230/finalproject/images/suite3.jpg"
+        },
+        {
+            "name": "2 Queen Suite",
+            "photo": "https://datadigitalshredder.github.io/wdd230/finalproject/images/suite4.jpg"
+        },
+        {
+            "name": "2 Standard Suite",
+            "photo": "https://datadigitalshredder.github.io/wdd230/finalproject/images/suite6.jpg"
+        },
+        {
+            "name": "Hotel",
+            "photo": "https://datadigitalshredder.github.io/wdd230/finalproject/images/suite7.jpg"
+        },
+        {
+            "name": "Stylish lobby",
+            "photo": "https://datadigitalshredder.github.io/wdd230/finalproject/images/suite8.jpg"
+        },
+        {
+            "name": "Reading Corner",
+            "photo": "https://datadigitalshredder.github.io/wdd230/finalproject/images/suite12.jpg"
         }
     ]
 }
