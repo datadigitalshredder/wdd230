@@ -122,15 +122,26 @@
             "photo": "https://datadigitalshredder.github.io/wdd230/finalproject/images/lisbonportugaltemple.jpg"         
         },
         {
-            "name": "Lorgan Utah Temple",
+            "name": "Logan Utah Temple",
             "address": "175 N 300 E Logan UT 84321-4720 United States",
             "telephone": "(1) 435-752-3611",
             "services": ["Clothing rental available", "No cafeteria available", "No patron housing available", "No distribution center nearby"],
-            "history": ["Announced: 6 October 1876", "Groundbreaking: 18 May 1877", "Rededicated: 13 March 1979"],
+            "history": ["Announced: 6 October 1876", "Groundbreaking: 18 May 1877", "Dedicated: 17 May 1884", "Rededicated: 13 March 1979"],
             "ordschedule": ["For ordinance schedule please contact the temple"],
             "sessionschedule": ["For session schedule please contact the temple"],
             "closuredates": ["Monday, 14 March 2022 - Monday, 28 March 2022", "Saturday, 2 April 2022", "Saturday, 1 October 2022", "Monday, 3 October 2022 - Monday, 17 October 2022", "Wednesday, 23 November 2022 (Limited Operations)", "Thursday, 24 November 2022", "Saturday, 24 December 2022", "Saturday, 31 December 2022 (Limited Operations)"],
             "photo": "https://datadigitalshredder.github.io/wdd230/finalproject/images/loganutahtemple.jpg"         
+        },
+        {
+            "name": "Anchorage Alaska Temple",
+            "address": "13161 Brayton Dr Anchorage AK 99516 United States",
+            "telephone": "(1) 907-348-7890",
+            "services": ["No clothing rental available", "No cafeteria available", "No patron housing available", "No distribution center nearby"],
+            "history": ["Announced: 4 October 1997", "Groundbreaking: 17 April 1998", "Dedicated: 9 January 1999", "Rededicated: 8 February 2004"],
+            "ordschedule": ["For ordinance schedule please contact the temple"],
+            "sessionschedule": ["For session schedule please contact the temple"],
+            "closuredates": ["Monday, 21 March 2022 - Friday, 1 April 2022", "Saturday, 2 April 2022 - Sunday, 3 April 2022", "Monday, 30 May 2022", "Monday, 4 July 2022", "Monday, 5 September 2022", "Monday, 19 September 2022 - Friday, 30 September 2022", "Saturday, 1 October 2022 - Sunday, 2 October 2022", "Thursday, 24 November 2022", "Saturday, 24 December 2022 - Sunday, 25 December 2022", "Saturday, 31 December 2022 - Sunday, 1 January 2023"],
+            "photo": "https://datadigitalshredder.github.io/wdd230/finalproject/images/anchoragealaskatemple.jpg"         
         }
     ]
 }
