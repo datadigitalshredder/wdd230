@@ -2,6 +2,7 @@
     "temples": [
         {
             "name": "Johannesburg South Africa Temple",
+            "cityID": 993800,
             "address": "7 Jubilee Rd,Parktown, Johannesburg, 2193, South Africa",
             "telephone": "(27) 11-645-1540",
             "services": ["Clothing rental available", "No cafeteria available", "No patron housing available", "Distribution center nearby"],
@@ -13,6 +14,7 @@
         },
         {
             "name": "Durban South Africa Temple",
+            "cityID": 1007311,
             "address": "2 Izinga Drive Izinga Ridge Umhlanga, KwaZulu-Natal, 4021, South Africa",
             "telephone": "(27) 31-140-0240",
             "services": ["No clothing rental available", "No cafeteria available", "No patron housing available", "Distribution center nearby"],
@@ -24,6 +26,7 @@
         },
         {
             "name": "Mexico City Mexico Temple",
+            "cityID": 3530597,
             "address": "Avenida 510 #90 Col. San Juan de Aragon 07950 México, Distrito Federal, Mexico",
             "telephone": "(52) 55-5003-3700",
             "services": ["Clothing rental available", "No cafeteria available", "No patron housing available", "Distribution center nearby"],
@@ -35,6 +38,7 @@
         },
         {
             "name": "Kona Hawaii Temple",
+            "cityID": 5847504,
             "address": "75-230 Kalani St Kailua-Kona HI 96740-1833 United States",
             "telephone": "(1) 808-331-8504",
             "services": ["No clothing rental available", "No cafeteria available", "No patron housing available", "No distribution center nearby"],
@@ -46,6 +50,7 @@
         },
         {
             "name": "Draper Utah Temple",
+            "cityID": 5774001,
             "address": "14065 Canyon Vista Ln Draper UT 84020-5626 United States",
             "telephone": "(1) 801-576-4240",
             "services": ["Clothing rental available", "No cafeteria available", "No patron housing available", "Distribution center nearby"],
@@ -57,6 +62,7 @@
         },
         {
             "name": "Buenos Aires Argentina Temple",
+            "cityID": 3435910,
             "address": "Aut. Tte. Gral. Riccheri N° 4955 B1778DUA Ciudad Evita Buenos Aires, Argentina",
             "telephone": "(54) 11-4693-9700",
             "services": ["Clothing rental available", "No cafeteria available", "No patron housing available", "Distribution center nearby"],
@@ -68,6 +74,7 @@
         },
         {
             "name": "Accra Ghana Temple",
+            "cityID": 2306104,
             "address": "Accra Ghana Temple Complex 57 Independence Ave, North Ridge P.M.B. CT 209, Cantonments, Accra, Ghana",
             "telephone": "(233) 302-650-123",
             "services": ["No clothing rental available", "No cafeteria available", "Patron housing available", "Distribution center nearby"],
@@ -79,6 +86,7 @@
         },
         {
             "name": "Chicago Illinois Temple",
+            "cityID": 4887398,
             "address": "4151 W Lake Ave Glenview IL 60025-1240 United States",
             "telephone": "(1) 847-299-6500",
             "services": ["Clothing rental available", "No cafeteria available", "No patron housing available", "Distribution center nearby"],
@@ -90,6 +98,7 @@
         },
         {
             "name": "Freiberg Germany Temple",
+            "cityID": 2925192,
             "address": "Hainichener Strasse 64 09599 Freiberg Germany",
             "telephone": "(49) 3731-35960",
             "services": ["Clothing rental available", "No cafeteria available", "No patron housing available", "Distribution center nearby"],
@@ -101,6 +110,7 @@
         },
         {
             "name": "Jordan River Utah Temple",
+            "cityID": 5549030,
             "address": "10200 S Temple Drive South Jordan UT 84095-8814 United States",
             "telephone": "(1) 801-254-3003",
             "services": ["Clothing rental available", "No cafeteria available", "No patron housing available", "Distribution center nearby"],
@@ -112,6 +122,7 @@
         },
         {
             "name": "Lisbon Portugal Temple",
+            "cityID": 2267057,
             "address": "Avenida Dom João II, Lote 4.73.01 Parque Das Nacoes 1998 - 014 Lisboa, Portugal",
             "telephone": "(351) 308-811-650",
             "services": ["No clothing rental available", "No cafeteria available", "No patron housing available", "No distribution center nearby"],
@@ -123,6 +134,7 @@
         },
         {
             "name": "Logan Utah Temple",
+            "cityID": 5777544,
             "address": "175 N 300 E Logan UT 84321-4720 United States",
             "telephone": "(1) 435-752-3611",
             "services": ["Clothing rental available", "No cafeteria available", "No patron housing available", "No distribution center nearby"],
@@ -134,6 +146,7 @@
         },
         {
             "name": "Anchorage Alaska Temple",
+            "cityID": 5879400,
             "address": "13161 Brayton Dr Anchorage AK 99516 United States",
             "telephone": "(1) 907-348-7890",
             "services": ["No clothing rental available", "No cafeteria available", "No patron housing available", "No distribution center nearby"],
