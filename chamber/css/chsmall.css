@@ -246,14 +246,16 @@ td.windspeed, td.windchill {
 	margin-left: auto;
 	margin-right: auto;
 }
-tr.weather-timestamp td {
+tr.weather-timestamp td, tr.attribution td {
 	font-family: 'Roboto', sans-serif;
 	font-size: .8rem;
 	text-align: start;
 	margin-left: auto;
 	margin-right: auto;
 }
-
+tr.attribution td {
+	color: yellow;
+}
 #weathericon {
 	width: 75px;
 }
