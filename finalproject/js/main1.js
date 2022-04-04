@@ -401,12 +401,13 @@ function likeDislikeToggle(x) {
 // }
 // }
 
+// THIS PART IS WORKING
 function clickCounterLikes() {
     if (typeof(Storage) !== "undefined") {
         if (localStorage.clickcount) {
-        localStorage.clickcount = Number(localStorage.clickcount);
+        localStorage.clickcount = "Liked";
         } else {
-        localStorage.clickcount = 1;
+        localStorage.clickcount = "Disliked";
         }
         document.getElementById("result1").innerHTML = localStorage.clickcount;
     } else {
@@ -415,15 +416,45 @@ function clickCounterLikes() {
     }
 
 
-function clickCounterDislikes() {
-    if (typeof(Storage) !== "undefined") {
-        if (localStorage.clickcount) {
-        localStorage.clickcount = Number(localStorage.clickcount);
-        } else {
-        localStorage.clickcount = 1;
-        }
-        document.getElementById("result2").innerHTML = localStorage.clickcount;
-    } else {
-        document.getElementById("result2").innerHTML = "Sorry, your browser does not support web storage...";
-    }
-    }
+// function clickCounterDislikes() {
+//     if (typeof(Storage) !== "undefined") {
+//         if (localStorage.clickcount) {
+//         localStorage.clickcount = "";
+//         } else {
+//         localStorage.clickcount = "";
+//         }
+//         document.getElementById("result1").innerHTML = localStorage.clickcount;
+//     } else {
+//         document.getElementById("result1").innerHTML = "Sorry, your browser does not support web storage...";
+//     }
+//     }
+
+// document.getElementById('like-temple').onclick = changeColor;   
+
+// function changeColor() {
+//     document.body.style.color = "purple";
+//     return false;
+// }  
+
+// TOGGLE LIKE
+// let likeMode = localStorage.getItem('likeMode');
+// const likeModeToggle = document.querySelector("#result1");
+
+// const enableLike = () => {
+//     document.body.classList.add("likemode");
+//     localStorage.setItem("likeMode", "enabled");
+// };
+
+// const disableLike = () => {
+//     document.body.classList.remove("likemode");
+//     localStorage.setItem("likeMode", null);
+// };
+
+// likeModeToggle.addEventListener("click", () => {
+//     if (likeMode !== "enabled") {
+//         enableLike();
+//     } else {
+//         disableLike();
+//     }
+// });
+
