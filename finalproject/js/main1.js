@@ -388,23 +388,37 @@ function likeDislikeToggle(x) {
   }
 
   // COUNT LIKES
+// function clickCounterLikes() {
+// if (typeof(Storage) !== "undefined") {
+//     if (localStorage.clickcount) {
+//     localStorage.clickcount = Number(localStorage.clickcount);
+//     } else {
+//     localStorage.clickcount = 1;
+//     }
+//     document.getElementById("result1").innerHTML = localStorage.clickcount;
+// } else {
+//     document.getElementById("result1").innerHTML = "Sorry, your browser does not support web storage...";
+// }
+// }
+
 function clickCounterLikes() {
-if (typeof(Storage) !== "undefined") {
-    if (localStorage.clickcount) {
-    localStorage.clickcount = Number(localStorage.clickcount)+1;
+    if (typeof(Storage) !== "undefined") {
+        if (localStorage.clickcount) {
+        localStorage.clickcount = Number(localStorage.clickcount);
+        } else {
+        localStorage.clickcount = 1;
+        }
+        document.getElementById("result1").innerHTML = localStorage.clickcount;
     } else {
-    localStorage.clickcount = 1;
+        document.getElementById("result1").innerHTML = "Sorry, your browser does not support web storage...";
     }
-    document.getElementById("result1").innerHTML = localStorage.clickcount;
-} else {
-    document.getElementById("result1").innerHTML = "Sorry, your browser does not support web storage...";
-}
-}
+    }
+
 
 function clickCounterDislikes() {
     if (typeof(Storage) !== "undefined") {
         if (localStorage.clickcount) {
-        localStorage.clickcount = Number(localStorage.clickcount)+1;
+        localStorage.clickcount = Number(localStorage.clickcount);
         } else {
         localStorage.clickcount = 1;
         }
