@@ -48,8 +48,4 @@ fetch(spotlightUrl)
             document.querySelector('#silver-site').innerHTML = randomCompanySilver.website;
             };
             };
-
-        const goldSpotlight = `https://datadigitalshredder.github.io/wdd230/chamber/jsonfolder/data/${jsObject1.companies[1].logo}.json`; 
-        const goldNumber = jsObject1.companies[1].phone; 
-        const goldSite = jsObject1.companies[1].website; 
     });
