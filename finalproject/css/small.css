@@ -2,9 +2,125 @@ main {
     /* font-family: 'Montserrat', sans-serif; */
     font-family: 'Noto Sans', sans-serif;
 }
-#like-dislike span:nth-child(1) {
+/*-----HOME PAGE-----*/
+* {
+	max-width: 1500px;
+	margin: 0 auto;
+}
+
+header {
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr auto;
+	align-items: center;
+	background-color: #000080;
+	padding: 1rem;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+  font-family: 'Montserrat', sans-serif;
+	color: white;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: white;
+	display: block;
+	padding: .5rem .5vw;
+	border-top: 1px solid rgba(0, 0, 0, 0.9);
+}
+
+nav ul li.active {
+	background-color: #191970;
+}
+
+.social, nav ul li a {
+	align-items: end;
+	text-align: center;
+}
+
+nav ul li a:hover {
+	background-color: #191970;
+	color: #FFCE45;
+}
+nav ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+#hamburgerButton {
+  border: 3px solid #FFCE45;
+  padding: 0;
+  margin: 0 auto;
+}
+#hamburgerButton span {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  /* padding: .5rem .5vw; */
+}
+#hamburgerButton span:nth-child(1) {
+	display: block;
+  font-size: 2rem;
+  margin: 0 auto;
+}
+
+#hamburgerButton span:nth-child(2) {
+	display: none;
+  font-size: 2rem;
+  margin: 0 auto;
+}
+
+#hamburgerButton.open span:nth-child(1) {
+	display: none;
+}
+
+#hamburgerButton.open span:nth-child(2) {
 	display: block;
 }
+nav ul.open {
+	display: block;
+}
+.header-logo {
+  grid-area: 1/1/2/2;
+}
+.header-name {
+  grid-area: 1/2/2/3;
+}
+.header-social img {
+  grid-area: 1/3/2/4;
+  padding: 0 1rem;
+}
+header nav {
+  grid-area: 1/4/2/5;
+}
+aside {
+  grid-area: 2/1/3/5;
+  color: white;
+  background-color: #191970;
+  border: 2px solid #FFCE45;
+  text-align: center;
+  padding: .5rem;
+  width: 95%;
+  margin: 0 auto;
+}
+.alerts {
+  grid-area: 3/1/4/5;
+}
+.header-logo img {
+  width: 60%;
+  border-radius: 50%;
+  display: block;
+  margin: .5rem auto;
+}
+.social-1 img, .social-2 img, .social-3 img {
+  width: 15%;
+  border-radius: 50%;
+}
+/* #like-dislike span:nth-child(1) {
+	display: block; */
+/* } */
 .fa {
     font-size: 50px;
     cursor: pointer;
@@ -12,5 +128,5 @@ main {
   }
   
   .fa:hover {
-    color: yellow;
+    color: grey;
   }

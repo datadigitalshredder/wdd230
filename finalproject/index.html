@@ -7,7 +7,7 @@
     <meta name="description" content="WDD 230 Final Project - Innocent Hove">
     <title>Home | Temple Inn and Suites</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="favicon (1).ico">
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
@@ -15,35 +15,30 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script defer src="js/main1.js"></script>
+    <script defer src="js/main.js"></script>
 </head>
 <body>
     <header>
-        <picture>
-            <img src="images/finallogo.webp" alt="Logo of Temple inn and suites hotel chain">
+        <picture class="header-logo">
+            <img src="images/logotempleinn.png" alt="Logo of Temple inn and suites hotel chain">
         </picture>
-        <p><strong>Temple Inn<br>& Suites</strong></p>
-        <div class='social'>
+        <p class="header-name"><strong>Temple Inn<br>& Suites</strong></p>
+        <div class='header-social'>
             <a class="social-1" href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png" alt="Facebook icon"></a>
             <a class="social-2" href="https://instagram.com/" target="_blank"><img src="images/instagram.webp" alt="Linkedin icon"></a>
             <a class="social-3" href="https://pinterest.com/" target="_blank"><img src="images/pinterest.jpg" alt="Linkedin icon"></a>
         </div>
         <nav>
-            <button id='hamburgerBtn'><span>&#9776;</span><span>❌</span></button>
-            <ul id='primaryNav'>
+            <button id='hamburgerButton'><span>&#9776;</span><span>❌</span></button>
+            <ul id='primaryNavigation'>
                 <li><a href="temple.html">Temple</a></li>
                 <li><a href="reservation.html">Reservation</a></li>
                 <li><a href="services.html">Services</a></li>
             </ul>
         </nav>
-        <div class="banner">
-            <aside></aside>
-            <section>
-                <button onclick="todaysMessage()" class="message"><strong>Today's message</strong></button>
-                <div id="todaysMessage">
-                    <span id="message"></span>
-                </div>
-            </section>
+        <aside></aside>
+        <div class="alerts">
+            <span id="alerts"></span>
         </div>
     </header>
     <main>
@@ -71,10 +66,12 @@
                     <p><span id="random-history"></span></p>
                 </div>
                 <div>
-                    <p>Like/ Dislike</p>
-                    <i  id="like-dislike" onclick="likeDislikeToggle(this)" class="fa fa-thumbs-up"></i>
-                    <p id="like-temple" onclick="changeColor"></p>
-                    <p><span><button onclick="clickCounterLikes()" type="button"><i class="fa fa-thumbs-up"> Like</i><span id="result1"></span></button></span><span><button onclick="clickCounterDislikes()" type="button"><i class="fa fa-thumbs-down"> Dislike</i><span id="result2"></span></button></span></p>
+                    <!-- <p>Like/ Dislike</p>
+                    <i  id="like-dislike" onclick="likeDislikeToggle(this)" class="fa fa-thumbs-up"></i> -->
+                    <!-- <p id="like-temple" onclick="changeColor"></p> -->
+                    <!-- <p><span><button onclick="clickCounterLikes()" type="button"><i class="fa fa-thumbs-up"> Like</i><span id="result1"></span></button><span><button onclick="clickCounterDislikes()" type="button"><i class="fa fa-thumbs-down"> Dislike</i><span id="result2"></span></button></span></p> -->
+                    <p><span><button onclick="clickLikes()" type="button"><i class="fa fa-thumbs-up"> Like</i><span id="result1"></span></button></p>
+                    
                     <!-- <div id="result1"></div>
                     <div id="result2"></div> -->
                     
@@ -112,7 +109,7 @@
                     <td><span id="random-weather-timestamp"></span></td>
                 </tr>
             </table>
-            <p class="forecast-header">24-hour Weather Forecast</p>
+            <p class="forecast-header">Weather Forecast</p>
             <table class="forecast-tb">
                 <tr>
                     <td><span id="forecast-date1"></span></td>
