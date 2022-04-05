@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 230 Final Project - Innocent Hove">
+    <title>Temples | Temple Inn and Suites</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="shortcut icon" href="favicon (1).ico">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="js/main.js"></script>
+    <script defer src="js/temples.js"></script>
+</head>
+<body>
+    <header>
+        <picture class="header-logo">
+            <img src="images/logotempleinn.png" alt="Logo of Temple inn and suites hotel chain">
+        </picture>
+        <p class="header-name"><strong>Temple Inn<br>& Suites</strong></p>
+        <div class='header-social'>
+            <a class="social-1" href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png" alt="Facebook icon"></a>
+            <a class="social-2" href="https://instagram.com/" target="_blank"><img src="images/instagram.webp" alt="Linkedin icon"></a>
+            <a class="social-3" href="https://pinterest.com/" target="_blank"><img src="images/pinterest.jpg" alt="Linkedin icon"></a>
+        </div>
+        <nav>
+            <button id='hamburgerButton'><span>&#9776;</span><span>❌</span></button>
+            <ul id='primaryNavigation'>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="temple.html">Temple</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="services.html">Services</a></li>
+            </ul>
+        </nav>
+        <aside></aside>
+        <div class="alerts">
+            <span id="alerts"></span>
+        </div>
+    </header>
+    <main class="reservations-form">
+        <section class="main-form">
+            <h1>Join the Chamber Application</h1>
+            <form method="get" action="thanks.html" class="form">
+                <fieldset>
+                    <legend>Applicant Information</legend>
+                    <label class="top"> First name*<input type="text" name="fname" required="required" autocomplete="on"></label>
+                    <label class="top"> Last name*<input type="text" name="lname" required="required" autocomplete="on"></label>
+                    <label class="top"> Phone<input type="tel" name="phone" placeholder="+263755555555"></label>
+                    <label class="top"> E-mail*<input type="email" name="email" placeholder="someone@email.com" required="required"></label>
+                    <label class="top"> Province/ State
+                        <select name="province">
+                            <option value="">Please select &#9662;</option>
+                            <option value="bulawayo"> Bulawayo Province</option>
+                            <option value="harare"> Harare Province</option>
+                            <option value="manicaland"> Manicaland Province</option>
+                            <option value="mashcentral"> Mashonaland Central Province</option>
+                            <option value="mashest"> Mashonaland East Province</option>
+                            <option value="mashwest"> Mashonaland West Province</option>
+                            <option value="masvingo"> Masvingo Province</option>
+                            <option value="matebnorth"> Matebeleland North Province</option>
+                            <option value="matebsouth"> Matebeleland South Province</option>
+                            <option value="midlands"> Midlands Province</option>
+                        </select>
+                    </label>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Membership Level</legend>
+                    <section class="membership">
+                        <div class="membership-buttons">Membership</div>
+                            <label class="side"><input type="radio" name="membership" value="Non-Profit"> Non-Profit</label>
+                            <label class="side"><input type="radio" name="membership" value="Bronze"> Bronze</label>
+                            <label class="side"><input type="radio" name="membership" value="Silver"> Silver</label>
+                            <label class="side"><input type="radio" name="membership" value="Gold"> Gold</label>
+                        <div class="membership-details">Membership Details 
+                            <p class="np"><strong>NP (Non-Profit) membership</strong> is for non-profit organizations. There is no joining fee</p>
+                            <p class="bronze"><strong>Bronze membership</strong> is for small business operators. Benefits include networking, advocacy, credibility, and marketing through the chamber. The joining fee is US$500.00</p>
+                            <p class="silver"><strong>Silver membership</strong> is for medium business enterprises. Benefits include those of the bronze membership plus discounts on major business services such as payroll, insurance, and marketing. The joining fee is US$1,000.00</p>
+                            <p class="gold"><strong>Gold membership</strong> is for large scale and corporate businesses. In addition to all listed above, benefits include full access to the stock markets and up to 15% diacounts on shipping (imports and exports). The joining fee is US$2,000.00</p>
+                        </div>
+                    </section>
+                </fieldset>
+                <fieldset>
+                    <legend>Business Description</legend>
+                    <label class="top">Business Position Title <input type="text" name="bposition" pattern="^[A-Za-z -]+$" minlength="7"></label>
+                    <label class="top">Business name* <input type="text" name="bname" required></label>
+                    <label class="top" for="bdescription">Business Description</label>
+                    <textarea id="description" name="businessdescription" placeholder="Maximum of 500 Characters" maxlength="1000"></textarea>
+                </fieldset>
+                <input type="hidden" name="completionDate" id="hidden">
+                <input type="submit" value="Send My Application" class="submitBtn">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class='footer-items'>
+            <picture>
+                <img src="images/logotempleinn.png" alt="Logo of Temple inn and suites hotel chain">
+            </picture>
+            <div class='address'>
+                <p class="footer"><strong>Temple Inn<br>& Suites</strong></p>
+                <p class="footer"><img src="images/locationicon.png" alt="The location icon">4800 Montgomery Ln #300, Bethesda, MD 20814</p>
+                <p class="footer"><img src="images/telephoneicon.jpg" alt="The telephone icon">999-999-9999</p>
+                
+            </div>
+            <div class='info'>
+                <p class="footer">information@tis.com</p>
+                <p class='footer'><a href='https://goo.gl/maps/MuwKEDuDAzVQMww78'>Location Map</a></p>
+            </div>
+            <div>
+                <a class="social-1" href="https://www.facebook.com/" target="_blank"><img src="images/facebookbw.png" alt="Facebook icon"></a>
+                <a class="social-2" href="https://instagram.com/" target="_blank"><img src="images/instagrambw.png" alt="Linkedin icon"></a>
+                <a class="social-3" href="https://pinterest.com/" target="_blank"><img src="images/pinterestbw.png" alt="Linkedin icon"></a>
+            </div>
+        </div>
+        <hr>
+        <div>
+            <p class='lastmod'>© <span id="year"></span> .:|:. Temple Inn & Suites .:|:. Innocent Hove .:|:. <span id="lastmod"></span></p>
+        </div>
+    </footer>
+</body>
+</html>
