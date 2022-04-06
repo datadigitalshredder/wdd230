@@ -45,7 +45,7 @@
     </header>
     <main class="reservations-form">
         <section class="main-form">
-            <h1>Join the Chamber Application</h1>
+            <h1>Book Your Stay</h1>
             <form method="get" action="thanks.html" class="form">
                 <fieldset>
                     <legend>Applicant Information</legend>
@@ -53,7 +53,8 @@
                     <label class="top"> Last name*<input type="text" name="lname" required="required" autocomplete="on"></label>
                     <label class="top"> Phone<input type="tel" name="phone" placeholder="+263755555555"></label>
                     <label class="top"> E-mail*<input type="email" name="email" placeholder="someone@email.com" required="required"></label>
-                    <label class="top"> Province/ State
+                    <label class="top"> Country*<input type="text" name="country" autocomplete="on" required="required"></label>
+                    <!-- <label class="top"> Province/ State
                         <select name="province">
                             <option value="">Please select &#9662;</option>
                             <option value="bulawayo"> Bulawayo Province</option>
@@ -67,17 +68,19 @@
                             <option value="matebsouth"> Matebeleland South Province</option>
                             <option value="midlands"> Midlands Province</option>
                         </select>
-                    </label>
+                    </label> -->
                 </fieldset>
                 
                 <fieldset>
-                    <legend>Membership Level</legend>
-                    <section class="membership">
-                        <div class="membership-buttons">Membership</div>
-                            <label class="side"><input type="radio" name="membership" value="Non-Profit"> Non-Profit</label>
-                            <label class="side"><input type="radio" name="membership" value="Bronze"> Bronze</label>
-                            <label class="side"><input type="radio" name="membership" value="Silver"> Silver</label>
-                            <label class="side"><input type="radio" name="membership" value="Gold"> Gold</label>
+                    <legend>Reservation Details</legend>
+                    <label class="top"> Purpose of visit*<input type="text" name="purpose" required="required" autocomplete="on"></label>
+
+                    <section class="purpose">
+                        <div class="purpose-buttons">Purpose of Visit</div>
+                            <label class="side"><input type="radio" name="purpose" value="Temple Missionary"> Temple Missionary</label>
+                            <label class="side"><input type="radio" name="purpose" value="Own Ordinance"> Own Ordinance</label>
+                            <label class="side"><input type="radio" name="purpose" value="Proxy Work"> Proxy Work</label>
+                            <!-- <label class="side"><input type="radio" name="membership" value="Gold"> Gold</label> -->
                         <div class="membership-details">Membership Details 
                             <p class="np"><strong>NP (Non-Profit) membership</strong> is for non-profit organizations. There is no joining fee</p>
                             <p class="bronze"><strong>Bronze membership</strong> is for small business operators. Benefits include networking, advocacy, credibility, and marketing through the chamber. The joining fee is US$500.00</p>

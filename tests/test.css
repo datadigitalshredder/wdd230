@@ -1,0 +1,25 @@
+/* body, a {font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; text-decoration:none;
+} */
+
+
+a.panel-group_btn {color: #888;display:block;}
+
+a.like-btn {
+    color: #888;
+    font-size: 14px;
+}
+
+
+span.clicked {
+  color: #00dfae; 
+  font-weight:bold;
+  background-color: red;
+}
+/* .highlighted {
+    background-color: red;
+    
+    color: white;
+  }
+button {
+    border-radius: .1rem;
+} */

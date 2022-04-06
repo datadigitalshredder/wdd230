@@ -1,3 +1,5 @@
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
 main {
     /* font-family: 'Montserrat', sans-serif; */
     font-family: 'Noto Sans', sans-serif;
@@ -121,6 +123,7 @@ aside {
 /* #like-dislike span:nth-child(1) {
 	display: block; */
 /* } */
+/* TEMPLE PAGE */
 .fa {
     font-size: 50px;
     cursor: pointer;
@@ -130,3 +133,296 @@ aside {
   .fa:hover {
     color: grey;
   }
+
+a.panel-group_btn {
+  color: #888;display:block;
+}
+
+a.like-btn {
+    color: #888;
+    font-size: 14px;
+}
+
+
+span.clicked {
+  color: #00dfae; 
+  font-weight:bold;
+  background-color: red;
+}
+/* The Modal (background) */
+/* Johannesburg Temple */
+#myBtn {
+  font-size: 20px;
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  border-radius: 10px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* Mexico city temple */
+#myBtn2 {
+  font-size: 20px;
+}
+.modal2 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  border-radius: 10px;
+}
+
+/* Modal Content/Box */
+.modal-content2 {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+/* The Close Button */
+.close2 {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close2:hover,
+.close2:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Chicago temple */
+#myBtn3 {
+  font-size: 20px;
+  grid-area: 7/2/8/3;
+  height: 100%;
+  
+}
+.modal3 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  border-radius: 10px;
+}
+
+/* Modal Content/Box */
+.modal-content3 {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+/* The Close Button */
+.close3 {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close3:hover,
+.close3:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Freiberg temple */
+#myBtn4 {
+  font-size: 20px;
+  grid-area: 7/4/8/5;
+  height: 100%;
+  
+  
+}
+.modal4 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  border-radius: 10px;
+}
+
+/* Modal Content/Box */
+.modal-content4 {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+/* The Close Button */
+.close4 {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close4:hover,
+.close4:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* Lisbon temple */
+#myBtn5 {
+  font-size: 20px;
+  grid-area: 11/2/12/3;
+  height: 100%;
+  
+  
+}
+.modal5 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  border-radius: 10px;
+}
+
+/* Modal Content/Box */
+.modal-content5 {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+/* The Close Button */
+.close5 {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close5:hover,
+.close5:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Anchorage temple */
+#myBtn6 {
+  font-size: 20px;
+  grid-area: 11/4/12/5;
+  height: 100%;
+  
+  
+}
+.modal6 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  border-radius: 10px;
+}
+
+/* Modal Content/Box */
+.modal-content6 {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+/* The Close Button */
+.close6 {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close6:hover,
+.close6:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}

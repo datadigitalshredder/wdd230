@@ -33,11 +33,11 @@ fetch(templeUrl)
     .then((jsObject) => {
             // Randomly select a temple for the home banner
             let temple =  jsObject.temples;
-
+            randomTemple = temple[Math.floor(Math.random() * temple.length)];
             for (let i = 0; i < temple.length; i++){
 
-                randomTemple = temple[Math.floor(Math.random() * temple.length)];
-                const iconsrc = `${randomTemple.photo}`;
+                
+                const iconsrc = randomTemple.photo;
                 const desc = `Photo of ${randomTemple.name}`;
                 document.querySelector('#home-image').setAttribute('src', iconsrc);
                 document.querySelector('#home-image').setAttribute('alt', desc);
@@ -188,6 +188,7 @@ fetch(templeUrl)
                     const iconsrcForecast2 = `https://openweathermap.org/img/w/${jsObject2.daily[2].weather[0].icon}.png`;
                     const descForecast2 = jsObject2.daily[2].weather[0].description;
                     let unix_timestamp2 = jsObject2.daily[2].dt;
+
                     const date2 = new Date(unix_timestamp2 * 1000);
                     // Day part of the timestamp
                     const day2 = date2.getDay();
@@ -319,23 +320,12 @@ fetch(templeUrl)
             };
     });
 
-    // WORKING WITH SUITES DATA
+// WORKING WITH SUITES DATA
 const suitesURL = "https://datadigitalshredder.github.io/wdd230/finalproject/jsonfolder/services.json";
 fetch(suitesURL)
     .then((response3) => response3.json())
 
     .then((jsObject3) => {
-            // Randomly select a temple for the home banner
-            // let temple =  jsObject3.temples;
-
-            // for (let i = 0; i < temple.length; i++){
-
-            //     randomTemple = temple[Math.floor(Math.random() * temple.length)];
-            //     const iconsrc = `${randomTemple.photo}`;
-            //     const desc = `Photo of ${randomTemple.name}`;
-            //     document.querySelector('#home-image').setAttribute('src', iconsrc);
-            //     document.querySelector('#home-image').setAttribute('alt', desc);
-            // };
 
             //Randomly select suites and services to share details
             // Suite/ service 1
@@ -361,14 +351,7 @@ fetch(suitesURL)
                 
                 const iconsrcSuites3 = `${randomSuitesDetails3.photo}`;
                 const descSuites3 = `Photo of ${randomSuitesDetails3.name}`;
-            // Suite/ service 4
-            // for (let i = 0; i < suitesDetails.length; i++){
-            //     let randomSuitesDetails4 = suitesDetails[Math.floor(Math.random() * suitesDetails.length)]; // Place this random selection variable outisde the for loop, unlike in the loop above, otherwise the randomly selected city weather might not match the city you want.
 
-                
-            //     const iconsrcSuites4 = `${randomSuitesDetails4.photo}`;
-            //     const descSuites4 = `Photo of ${randomSuitesDetails4.name}`;
-            // Appending suites and other rooms
             document.querySelector('#random-suite1').setAttribute('src', iconsrcSuites1);
             document.querySelector('#random-suite1').setAttribute('alt', descSuites1);
             document.querySelector('#random-suite1-name').innerHTML = randomSuitesDetails1.name;
@@ -381,12 +364,6 @@ fetch(suitesURL)
             document.querySelector('#random-suite3').setAttribute('alt', descSuites3);
             document.querySelector('#random-suite3-name').innerHTML = randomSuitesDetails3.name;
 
-            // document.querySelector('#random-suite4').setAttribute('src', iconsrcSuites4);
-            // document.querySelector('#random-suite4').setAttribute('alt', descSuites4);
-            // document.querySelector('#random-suite4-name').innerHTML = randomSuitesDetails4.name;
-            // document.querySelector('#random-address').innerHTML = randomSuitesDetails.address;
-            // document.querySelector('#random-telephone').innerHTML = randomSuitesDetails.telephone;
-            // document.querySelector('#random-history').innerHTML = randomSuitesDetails.history;
             };
             };
             };
@@ -394,103 +371,32 @@ fetch(suitesURL)
         });
 
 // LIKE/ DISLIKE TOGGLE
+$(".like-btn").click(function() {
 
-function likeDislikeToggle(x) {
-    x.classList.toggle("fa-thumbs-down");
-  }
+	$(this).toggleClass('clicked');
+  event.preventDefault();
 
-  // COUNT LIKES
-// function clickCounterLikes() {
-// if (typeof(Storage) !== "undefined") {
-//     if (localStorage.clickcount) {
-//     localStorage.clickcount = Number(localStorage.clickcount);
-//     } else {
-//     localStorage.clickcount = 1;
-//     }
-//     document.getElementById("result1").innerHTML = localStorage.clickcount;
-// } else {
-//     document.getElementById("result1").innerHTML = "Sorry, your browser does not support web storage...";
-// }
-// }
+});
 
-// THIS PART IS WORKING
-// function clickCounterLikes() {
-//     if (typeof(Storage) !== "undefined") {
-//         if (localStorage.clickcount) {
-//         localStorage.clickcount = "Liked";
-//         } else {
-//         localStorage.clickcount = "";
-//         }
-//         document.getElementById("result1").innerHTML = localStorage.clickcount;
-//     } else {
-//         document.getElementById("result1").innerHTML = "Sorry, your browser does not support web storage...";
-//     }
-//     }
+$(".panel-group_btn span").click(function(){
+    let btnStorage = $(this).attr("id");
 
-
-// function clickCounterDislikes() {
-//     if (typeof(Storage) !== "undefined") {
-//         if (localStorage.clickcount) {
-//         localStorage.clickcount = "";
-//         } else {
-//         localStorage.clickcount = "Disliked";
-//         }
-//         document.getElementById("result2").innerHTML = localStorage.clickcount;
-//     } else {
-//         document.getElementById("result2").innerHTML = "Sorry, your browser does not support web storage...";
-//     }
-//     }
-
-// Number of visits functionality
-const likeMode = document.querySelector("#result1");
-
-// get the stored value in localStorage
-let mode = window.localStorage.getItem("likeMode");
-
-// determine if this is the first visit or display the number of visits.
-function clickLikes() {
-    if (mode  !== 'undefined') {
-        likeMode.textContent = "Liked" ;
-    } else if (mode == likeMode.textContent) {
-        likeMode.textContent = "Disliked";
+    if($(this).hasClass("clicked")) {
+        localStorage.setItem(btnStorage, 'true');
+    } else {
+        localStorage.removeItem(btnStorage, 'true');
     }
 
-    // increment the number of visits.
-    mode = likeMode;
-    // store the new number of visits value
-    localStorage.setItem("likeMode", mode);
+});
+
+
+$( ".panel-group_btn span" ).each(function() {
+    let mainlocalStorage = $( this ).attr( "id" );
+
+    if(localStorage.getItem(mainlocalStorage) == 'true') {
+    $(this).addClass("clicked");
+} else {
+    $(this).removeClass("clicked");
 }
 
-// document.getElementById('like-temple').onclick = changeColor;   
-
-// function changeColor() {
-//     document.body.style.color = "purple";
-//     return false;
-// }  
-
-// TOGGLE LIKE
-// let likeMode = localStorage.getItem('likeMode');
-// const likeModeToggle = document.querySelector("#result1");
-
-// likeModeToggle.addEventListener("click", () => {
-//     console.log('test');
-// });
-
-// const enableLike = () => {
-//     document.body.classList.add("likemode");
-//     localStorage.setItem("likeMode", "enabled");
-// };
-
-// const disableLike = () => {
-//     document.body.classList.remove("likemode");
-//     localStorage.setItem("likeMode", null);
-// };
-
-// likeModeToggle.addEventListener("click", () => {
-//     if (likeMode !== "enabled") {
-//         enableLike();
-//     } else {
-//         disableLike();
-//     }
-// });
-
+});

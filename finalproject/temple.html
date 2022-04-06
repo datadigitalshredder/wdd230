@@ -15,6 +15,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script data-require="jquery@*" data-semver="2.1.4" src="https://code.jquery.com/jquery-2.1.4.js"></script>
     <script defer src="js/main.js"></script>
     <script defer src="js/temples.js"></script>
 </head>
@@ -53,13 +54,21 @@
                     <p><span id="random-site"></span></p>
                     <picture class="random-temple">
                         <img src="" alt="" id="random-temple">
-                    </picture>
-                    <p><span id="random-address"></span></p>
-                    <p><span id="random-telephone"></span></p>
-                    <p><span id="random-history"></span></p>
+                    </picture>  
                 </div>
+                <button id="myBtn">More on Johannesburg Temple</button>
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p class="johannesburg-temple"><span id="random-address"></span></p>
+                        <p class="johannesburg-temple"><span id="random-telephone"></span></p>
+                        <p class="johannesburg-temple"><span id="random-history"></span></p>
+                    </div>
+                  </div>
                 <div>
-                    <p><span><button onclick="clickLikes()" type="button"><i class="fa fa-thumbs-up"></i><span id="result1"></span></button></p>
+                    <!-- <p class="panel-group_btn span"><button onclick="clickLikes()" onclick="clickDislikes()" type="button"><i class="fa fa-thumbs-up"></i><span id="like1"></span></button></p> -->
+                    <p class="panel-group_btn span"><span id="like1" class="like-btn"><i class="fa fa-thumbs-up"></i>Like</span></p>
+                    
                 </div>
             </div>
         </section>
@@ -71,12 +80,19 @@
                     <picture class="random-temple2">
                         <img src="" alt="" id="random-temple2">
                     </picture>
-                    <p><span id="random-address2"></span></p>
-                    <p><span id="random-telephone2"></span></p>
-                    <p><span id="random-history2"></span></p>
                 </div>
+                <button id="myBtn2">More on Mexico City Temple</button>
+                <div id="myModal2" class="modal2">
+                    <div class="modal-content2">
+                        <span class="close2">&times;</span>
+                        <p class="mexico-city-temple"><span id="random-address2"></span></p>
+                        <p class="mexico-city-temple"><span id="random-telephone2"></span></p>
+                        <p class="mexico-city-temple"><span id="random-history2"></span></p>
+                    </div>
+                  </div>
                 <div>
-                    <p><span><button onclick="clickLikes()" type="button"><i class="fa fa-thumbs-up"></i><span id="result1"></span></button></p>
+                    <!-- <p class="panel-group_btn span"><span><button onclick="clickLikes()" type="button"><i class="fa fa-thumbs-up"></i><span id="like2"></span></button></p> -->
+                    <p class="panel-group_btn span"><span id="like2" class="like-btn"><i class="fa fa-thumbs-up"></i>Like</span></p>   
                 </div>
             </div>
         </section>
@@ -88,12 +104,20 @@
                     <picture class="random-temple3">
                         <img src="" alt="" id="random-temple3">
                     </picture>
-                    <p><span id="random-address3"></span></p>
-                    <p><span id="random-telephone3"></span></p>
-                    <p><span id="random-history3"></span></p>
                 </div>
+                <button id="myBtn3">More on Chicago Temple</button>
+                <div id="myModal3" class="modal3">
+                    <div class="modal-content3">
+                        <span class="close3">&times;</span>
+                        <p class="chicago-temple"><span id="random-address3"></span></p>
+                        <p class="chicago-city-temple"><span id="random-telephone3"></span></p>
+                        <p class="chicago-city-temple"><span id="random-history3"></span></p>
+                    </div>
+                  </div>
                 <div>
-                    <p><span><button onclick="clickLikes()" type="button"><i class="fa fa-thumbs-up"></i><span id="result1"></span></button></p>
+                    <!-- <p class="panel-group_btn span"><span><button onclick="clickLikes()" type="button"><i class="fa fa-thumbs-up"></i><span id="like3"></span></button></p> -->
+                    <p class="panel-group_btn span"><span id="like3" class="like-btn"><i class="fa fa-thumbs-up"></i>Like</span></p>
+
                 </div>
             </div>
         </section>
@@ -105,12 +129,70 @@
                     <picture class="random-temple4">
                         <img src="" alt="" id="random-temple4">
                     </picture>
-                    <p><span id="random-address4"></span></p>
-                    <p><span id="random-telephone4"></span></p>
-                    <p><span id="random-history4"></span></p>
                 </div>
+                <button id="myBtn4">More on Freiberg Temple</button>
+                <div id="myModal4" class="modal4">
+                    <div class="modal-content4">
+                        <span class="close4">&times;</span>
+                        <p class="freiberg-temple"><span id="random-address4"></span></p>
+                        <p class="freiberg-city-temple"><span id="random-telephone4"></span></p>
+                        <p class="freiberg-city-temple"><span id="random-history4"></span></p>
+                    </div>
+                  </div>
                 <div>
-                    <p><span><button onclick="clickLikes()" type="button"><i class="fa fa-thumbs-up"></i><span id="result1"></span></button></p>
+                    <!-- <p class="panel-group_btn span"><span><button onclick="clickLikes()" type="button"><i class="fa fa-thumbs-up"></i><span id="like4"></span></button></p> -->
+                    <p class="panel-group_btn span"><span id="like4" class="like-btn"><i class="fa fa-thumbs-up"></i>Like</span></p>
+
+                </div>
+            </div>
+        </section>
+        <section class="temple-description5">
+            <div>
+                <div class="random-detail5">
+                    <p><span id="random-name5"></span></p>
+                    <p><span id="random-site5"></span></p>
+                    <picture class="random-temple5">
+                        <img src="" alt="" id="random-temple5">
+                    </picture>
+                </div>
+                <button id="myBtn5">More on Lisbon Temple</button>
+                <div id="myModal5" class="modal5">
+                    <div class="modal-content5">
+                        <span class="close5">&times;</span>
+                        <p class="freiberg-temple"><span id="random-address5"></span></p>
+                        <p class="freiberg-city-temple"><span id="random-telephone5"></span></p>
+                        <p class="freiberg-city-temple"><span id="random-history5"></span></p>
+                    </div>
+                  </div>
+                <div>
+                    <!-- <p class="panel-group_btn span"><span><button onclick="clickLikes()" type="button"><i class="fa fa-thumbs-up"></i><span id="like4"></span></button></p> -->
+                    <p class="panel-group_btn span"><span id="like4" class="like-btn"><i class="fa fa-thumbs-up"></i>Like</span></p>
+
+                </div>
+            </div>
+        </section>
+        <section class="temple-description6">
+            <div>
+                <div class="random-detail6">
+                    <p><span id="random-name6"></span></p>
+                    <p><span id="random-site6"></span></p>
+                    <picture class="random-temple6">
+                        <img src="" alt="" id="random-temple6">
+                    </picture>
+                </div>
+                <button id="myBtn6">More on Anchorage Temple</button>
+                <div id="myModal6" class="modal6">
+                    <div class="modal-content6">
+                        <span class="close6">&times;</span>
+                        <p class="freiberg-temple"><span id="random-address6"></span></p>
+                        <p class="freiberg-city-temple"><span id="random-telephone6"></span></p>
+                        <p class="freiberg-city-temple"><span id="random-history6"></span></p>
+                    </div>
+                  </div>
+                <div>
+                    <!-- <p class="panel-group_btn span"><span><button onclick="clickLikes()" type="button"><i class="fa fa-thumbs-up"></i><span id="like4"></span></button></p> -->
+                    <p class="panel-group_btn span"><span id="like6" class="like-btn"><i class="fa fa-thumbs-up"></i>Like</span></p>
+
                 </div>
             </div>
         </section>
