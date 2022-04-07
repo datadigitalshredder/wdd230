@@ -35,6 +35,8 @@
                 <li><a href="temple.html">Temple</a></li>
                 <li><a href="reservation.html">Reservation</a></li>
                 <li><a href="services.html">Services</a></li>
+                <li><a href="contacts.html">Contact Us</a></li>
+
             </ul>
         </nav>
         <aside></aside>
@@ -43,6 +45,8 @@
         </div>
     </header>
     <main>
+        <h1  class="temples">Temples around the world</h1>
+        <p>This webpage contains information of 13 selected temples around the world. Refresh the page to learn more.</p>
         <section class="home-image">
             <figure><img src="" alt="" id="home-image"></figure>
             <div>
@@ -56,18 +60,18 @@
             </picture>
         </section>
         <section class="temple-description">
-            <div>
+            <div class="temple-description-box">
                 <picture class="random-temple">
                     <img src="" alt="" id="random-temple">
                 </picture>
                 <div class="random-detail">
-                    <p><span id="random-name"></span></p>
-                    <p><span id="random-address"></span></p>
-                    <p><span id="random-telephone"></span></p>
-                    <p><span id="random-history"></span></p>
+                    <p><strong><span id="random-name"></span></strong></p>
+                    <p><strong>Address: </strong><span id="random-address"></span></p>
+                    <p><strong>Telephone: </strong><span id="random-telephone"></span></p>
+                    <p><strong>History: </strong><span id="random-history"></span></p>
                 </div>
-                <div>
-                    <p><span><button onclick="clickLikes()" type="button"><i class="fa fa-thumbs-up"></i><span id="result1"></span></button></p>
+                <div class="like-button">
+                    <p class="panel-group_btn span"><span id="like1" class="like-btn"><i class="fa fa-thumbs-up"></i>Like</span></p>
                     
                 </div>
             </div>
@@ -83,7 +87,7 @@
             <div class="weather-box">
                 <figure style="text-transform:capitalize;"><img src="" alt="" id="random-weathericon"><figcaption></figcaption></figure><p><span id="random-current-temp" class="weather-temp"></span> &deg;F</p>
             </div>
-            <hr>
+            <hr class="weather">
             <table class="weather-tb">
                 <tr>
                     <td class="windspeed">Wind Speed:</td>
@@ -103,7 +107,7 @@
                     <td><span id="random-weather-timestamp"></span></td>
                 </tr>
             </table>
-            <p class="forecast-header">Weather Forecast</p>
+            <p class="forecast-header"><strong>Weather Forecast</strong></p>
             <table class="forecast-tb">
                 <tr>
                     <td><span id="forecast-date1"></span></td>
@@ -131,7 +135,7 @@
                     <td><span id="forecast-humidity3"></span> % humid</td>
                 </tr>
                 <tr>
-                    <td colspan="3">Weather Data Retrieved from OpenWeatherMap</td>
+                    <td colspan="3"><em>Weather Data Retrieved from OpenWeatherMap</em></td>
                 </tr>
             </table>
         </section>
@@ -144,30 +148,29 @@
     </main>
     <footer>
         <div class='footer-items'>
-            <picture>
-                <img src="images/finallogo.webp" alt="Logo of Temple inn and suites hotel chain">
+            <picture class="footer-img">
+                <img src="images/logotempleinn.png" alt="Logo of Temple inn and suites hotel chain">
             </picture>
-            <div class='address'>
+            <div class='footer-address'>
                 <p class="footer"><strong>Temple Inn<br>& Suites</strong></p>
                 <p class="footer"><img src="images/locationicon.png" alt="The location icon">4800 Montgomery Ln #300, Bethesda, MD 20814</p>
                 <p class="footer"><img src="images/telephoneicon.jpg" alt="The telephone icon">999-999-9999</p>
-                
             </div>
-            <div class='info'>
+            <div class='footer-info'>
                 <p class="footer">information@tis.com</p>
-                <p class='footer'><a href='https://goo.gl/maps/MuwKEDuDAzVQMww78'>Location Map</a></p>
+                <p class='footer'><a href='https://goo.gl/maps/MuwKEDuDAzVQMww78'>📌Location Map</a></p>
+                <p><a href="attribution.html">References</a></p>
             </div>
-            <div>
-                <a class="social-1" href="https://www.facebook.com/" target="_blank"><img src="images/facebookbw.png" alt="Facebook icon"></a>
-                <a class="social-2" href="https://instagram.com/" target="_blank"><img src="images/instagrambw.png" alt="Linkedin icon"></a>
-                <a class="social-3" href="https://pinterest.com/" target="_blank"><img src="images/pinterestbw.png" alt="Linkedin icon"></a>
+            <div class="footer-social">
+                <a class="social-1f" href="https://www.facebook.com/" target="_blank"><img src="images/facebookbw.png" alt="Facebook icon"></a>
+                <a class="social-2f" href="https://instagram.com/" target="_blank"><img src="images/instagrambw.png" alt="Linkedin icon"></a>
+                <a class="social-3f" href="https://pinterest.com/" target="_blank"><img src="images/pinterestbw.png" alt="Linkedin icon"></a>
             </div>
         </div>
-        <hr>
-        <div>
+        <hr class="footer-hr">
+        <div class="footer-update">
             <p class='lastmod'>© <span id="year"></span> .:|:. Temple Inn & Suites .:|:. Innocent Hove .:|:. <span id="lastmod"></span></p>
         </div>
     </footer>
-    <script src="js/main.js"></script>
 </body>
 </html>

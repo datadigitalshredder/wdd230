@@ -36,6 +36,7 @@
                 <li><a href="temple.html">Temple</a></li>
                 <li><a href="reservation.html">Reservation</a></li>
                 <li><a href="services.html">Services</a></li>
+                <li><a href="contacts.html">Contact Us</a></li>
             </ul>
         </nav>
         <aside></aside>
@@ -54,76 +55,63 @@
                     <label class="top"> Phone<input type="tel" name="phone" placeholder="+263755555555"></label>
                     <label class="top"> E-mail*<input type="email" name="email" placeholder="someone@email.com" required="required"></label>
                     <label class="top"> Country*<input type="text" name="country" autocomplete="on" required="required"></label>
-                    <!-- <label class="top"> Province/ State
-                        <select name="province">
-                            <option value="">Please select &#9662;</option>
-                            <option value="bulawayo"> Bulawayo Province</option>
-                            <option value="harare"> Harare Province</option>
-                            <option value="manicaland"> Manicaland Province</option>
-                            <option value="mashcentral"> Mashonaland Central Province</option>
-                            <option value="mashest"> Mashonaland East Province</option>
-                            <option value="mashwest"> Mashonaland West Province</option>
-                            <option value="masvingo"> Masvingo Province</option>
-                            <option value="matebnorth"> Matebeleland North Province</option>
-                            <option value="matebsouth"> Matebeleland South Province</option>
-                            <option value="midlands"> Midlands Province</option>
-                        </select>
-                    </label> -->
                 </fieldset>
                 
                 <fieldset>
                     <legend>Reservation Details</legend>
-                    <label class="top"> Purpose of visit*<input type="text" name="purpose" required="required" autocomplete="on"></label>
-
                     <section class="purpose">
                         <div class="purpose-buttons">Purpose of Visit</div>
                             <label class="side"><input type="radio" name="purpose" value="Temple Missionary"> Temple Missionary</label>
                             <label class="side"><input type="radio" name="purpose" value="Own Ordinance"> Own Ordinance</label>
                             <label class="side"><input type="radio" name="purpose" value="Proxy Work"> Proxy Work</label>
-                            <!-- <label class="side"><input type="radio" name="membership" value="Gold"> Gold</label> -->
-                        <!-- <div class="membership-details">Membership Details 
-                            <p class="np"><strong>NP (Non-Profit) membership</strong> is for non-profit organizations. There is no joining fee</p>
-                            <p class="bronze"><strong>Bronze membership</strong> is for small business operators. Benefits include networking, advocacy, credibility, and marketing through the chamber. The joining fee is US$500.00</p>
-                            <p class="silver"><strong>Silver membership</strong> is for medium business enterprises. Benefits include those of the bronze membership plus discounts on major business services such as payroll, insurance, and marketing. The joining fee is US$1,000.00</p>
-                            <p class="gold"><strong>Gold membership</strong> is for large scale and corporate businesses. In addition to all listed above, benefits include full access to the stock markets and up to 15% diacounts on shipping (imports and exports). The joining fee is US$2,000.00</p> -->
                         </div>
                     </section>
+                    <label class="top">Number of rooms*<input type="number" name="rooms" required="required" min="1" max="5"></label>
+                    <section class="rooms">
+                        <div class="rooms-buttons">Type of rooms</div>
+                            <label class="side"><input type="radio" name="rooms" value="Single bed"> Single bed</label>
+                            <label class="side"><input type="radio" name="rooms" value="Queen size"> Queen size</label>
+                            <label class="side"><input type="radio" name="rooms" value="Double queen"> Double queen</label>
+                        </div>
+                    </section>
+                    <label class="top">Number of children*<input type="number" name="children" required="required" min="1"></label>
+
                 </fieldset>
                 <fieldset>
-                    <legend>Business Description</legend>
-                    <label class="top">Business Position Title <input type="text" name="bposition" pattern="^[A-Za-z -]+$" minlength="7"></label>
-                    <label class="top">Business name* <input type="text" name="bname" required></label>
-                    <label class="top" for="bdescription">Business Description</label>
-                    <textarea id="description" name="businessdescription" placeholder="Maximum of 500 Characters" maxlength="1000"></textarea>
+                    <legend>Special comments</legend>
+                    <label class="top" for="description">Special accommodation or nutrition</label>
+                    <textarea id="description" name="description" placeholder="Maximum of 500 Characters" maxlength="1000"></textarea>
+                    <label class="top" for="medication">Allegies/ medical conditions</label>
+                    <textarea id="medication" name="medical-condition" placeholder="Maximum of 500 Characters" maxlength="1000"></textarea>
                 </fieldset>
                 <input type="hidden" name="completionDate" id="hidden">
-                <input type="submit" value="Send My Application" class="submitBtn">
+                <input type="submit" value="Place my Booking" class="submitBtn">
             </form>
         </section>
     </main>
     <footer>
         <div class='footer-items'>
-            <picture>
+            <picture class="footer-img">
                 <img src="images/logotempleinn.png" alt="Logo of Temple inn and suites hotel chain">
             </picture>
-            <div class='address'>
+            <div class='footer-address'>
                 <p class="footer"><strong>Temple Inn<br>& Suites</strong></p>
                 <p class="footer"><img src="images/locationicon.png" alt="The location icon">4800 Montgomery Ln #300, Bethesda, MD 20814</p>
                 <p class="footer"><img src="images/telephoneicon.jpg" alt="The telephone icon">999-999-9999</p>
-                
             </div>
-            <div class='info'>
+            <div class='footer-info'>
                 <p class="footer">information@tis.com</p>
-                <p class='footer'><a href='https://goo.gl/maps/MuwKEDuDAzVQMww78'>Location Map</a></p>
+                <p class='footer'><a href='https://goo.gl/maps/MuwKEDuDAzVQMww78'>📌Location Map</a></p>
+                <p><a href="attribution.html">References</a></p>
             </div>
-            <div>
-                <a class="social-1" href="https://www.facebook.com/" target="_blank"><img src="images/facebookbw.png" alt="Facebook icon"></a>
-                <a class="social-2" href="https://instagram.com/" target="_blank"><img src="images/instagrambw.png" alt="Linkedin icon"></a>
-                <a class="social-3" href="https://pinterest.com/" target="_blank"><img src="images/pinterestbw.png" alt="Linkedin icon"></a>
+            <div class="footer-social">
+                <a class="social-1f" href="https://www.facebook.com/" target="_blank"><img src="images/facebookbw.png" alt="Facebook icon"></a>
+                <a class="social-2f" href="https://instagram.com/" target="_blank"><img src="images/instagrambw.png" alt="Linkedin icon"></a>
+                <a class="social-3f" href="https://pinterest.com/" target="_blank"><img src="images/pinterestbw.png" alt="Linkedin icon"></a>
             </div>
         </div>
-        <hr>
-        <div>
+        <hr class="footer-hr">
+        <div class="footer-update">
             <p class='lastmod'>© <span id="year"></span> .:|:. Temple Inn & Suites .:|:. Innocent Hove .:|:. <span id="lastmod"></span></p>
         </div>
     </footer>

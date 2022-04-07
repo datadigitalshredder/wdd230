@@ -3,10 +3,12 @@
 main {
     /* font-family: 'Montserrat', sans-serif; */
     font-family: 'Noto Sans', sans-serif;
+    padding: .25rem;
+    max-width: 37.5rem;
+    width: 100%;
 }
 /*-----HOME PAGE-----*/
 * {
-	max-width: 1500px;
 	margin: 0 auto;
 }
 
@@ -117,38 +119,121 @@ aside {
   margin: .5rem auto;
 }
 .social-1 img, .social-2 img, .social-3 img {
-  width: 15%;
+  width: 25%;
   border-radius: 50%;
 }
-/* #like-dislike span:nth-child(1) {
-	display: block; */
-/* } */
-/* TEMPLE PAGE */
+
+.home-image {
+  position: relative;
+}
+button.action-call {
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  padding: 1rem;
+  background-color: #ffce45;
+  border-radius: .5rem;
+}
+button.action-call a {
+  text-decoration: none;
+  font-weight: 800;
+}
+.random-suite1, .random-suite2, .random-suite3 {
+  display: none;
+} 
+main img#home-image, main img#random-suite1, main img#random-temple, main img#random-suite2, main img#random-suite3 {
+  border: 1px solid #ffce45;
+  margin: 0 auto;
+  display: block;
+  width: 95%;
+  max-width: 37.5rem;
+  width: 100%;
+}
+div.random-detail {
+  margin: 0 auto;
+  display: block;
+  background-color: #bed;
+  padding: .5rem;
+}
+.panel-group_btn {
+  color: #aaa;
+  margin-left: 2.5%;
+}
+
 .fa {
-    font-size: 50px;
-    cursor: pointer;
-    user-select: none;
-  }
-  
-  .fa:hover {
-    color: grey;
-  }
+  font-size: 50px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.fa:hover {
+  color: #ffce45;
+}
 
 a.panel-group_btn {
-  color: #888;display:block;
+color: #888;display:block;
 }
 
 a.like-btn {
-    color: #888;
-    font-size: 14px;
+  color: #888;
+  font-size: 14px;
 }
-
 
 span.clicked {
-  color: #00dfae; 
-  font-weight:bold;
-  background-color: red;
+border: 2px solid #ffce45;
+font-weight: bold;
+background-color: #6893ee;
+color: white;
+border-radius: .5rem;
+padding: .5rem;
 }
+div.like-button {
+margin: 2rem 0 3rem 0;
+}
+section.weather {
+  margin-left: 2.5%;
+}
+.weather-header, div.weather-box, .forecast-header {
+  padding: 1rem;
+  text-align: center;
+}
+hr.weather {
+  width: 95%;
+}
+section.weather {
+  border: 1px solid #ffce45;
+  padding: 1rem;
+  background-color: #6893ee;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 35rem;
+}
+
+hr.footer-hr {
+  width: 95%;
+  margin-top: 1rem;
+}
+footer {
+  width: 95%;
+  background-color: #98c2fb;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  display: block;
+  margin: 1rem auto;
+  padding: 1rem;
+  width: 100%;
+  max-width: 35rem;
+}
+picture.footer-img img {
+  width: 15%;
+  border-radius: .5rem;
+}
+div.footer-social img, div.footer-address img {
+  width: 3%;
+  border-radius: .5rem;
+}
+/* TEMPLE PAGE */
 /* The Modal (background) */
 /* Johannesburg Temple */
 #myBtn {
@@ -425,4 +510,92 @@ span.clicked {
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+/* RESERVATION PAGE */
+.join-form {
+	display: flex;
+	flex-direction: column;
+	background-color: #416165;
+	max-width: 600px;
+	border: 1px solid #0B3948;
+	margin: 2% auto;
+	padding: 0 2%;
+	border-radius: 10px;
+}
+.form {
+	background-color: #eee;
+	padding: 2%;
+	margin: 2%;
+	border-radius: 10px;
+}
+.join-form h1 {
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+}
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid #0B3948;
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+form legend {
+    color: #0B3948;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+form label.top, form div {
+    display: block;
+    padding-top: 1rem;
+    color: #9c2c13;
+    font-size: .9rem;
+}
+
+form label.top input, form label.top select, textarea {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem; /*Ensures that the input field is at least 44px tall for easy touching on the a mobile device*/
+	color: #555;
+    width: 100%;
+    max-width: 25rem;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+textarea {
+	height: 20rem;
+	border: solid 2px #999;
+}
+
+form label.side {
+    display: block;
+    padding: .75rem 0; /*Ensures that the input field is at least 44px tall for easy touching on the a mobile device*/
+    color: #555;
+}
+
+div.membership-buttons {
+	display: flex;
+	flex-direction: column;
+}
+
+div.membership-details {
+	display: none;
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: #9c2c13;
+    color: white;
+    border-radius: 4px;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+}
+form label.top input:required {
+    border-left: 3px solid red;
+}
+form label.top input:required:valid {
+    border-left: 3px solid green;
 }

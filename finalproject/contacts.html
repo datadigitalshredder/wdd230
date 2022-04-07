@@ -43,9 +43,57 @@
             <span id="alerts"></span>
         </div>
     </header>
-    <main class="thanks">
-        <h1>Thank you for your interest to stay at the Temple Inn and Suites, we are committed to help you with the most fullfilling temple experience</h1>
-        <h2>We will have feeback for you with 48 hours</h2>
+    <main class="contacts-page">
+        <section class="main-form">
+            <h1>Book Your Stay</h1>
+            <form method="get" action="thanks.html" class="form">
+                <fieldset>
+                    <legend>Applicant Information</legend>
+                    <label class="top"> Name*<input type="text" name="fname" required="required" autocomplete="on"></label>
+                    <section class="marriage-status">
+                        <div class="marriage-buttons">Marriage status</div>
+                            <label class="side"><input type="radio" name="marriage" value="Married"> Married</label>
+                            <label class="side"><input type="radio" name="marriage" value="Single"> Single</label>
+                            <label class="side"><input type="radio" name="marriage" value="Widow/ Widower"> Widow/ Widower</label>
+                        </div>
+                    </section>
+                    <label class="top"> Spouse name*<input type="text" name="lname" required="required" autocomplete="on"></label>
+                    <label class="top"> Phone<input type="tel" name="phone" placeholder="+263755555555"></label>
+                    <label class="top"> E-mail*<input type="email" name="email" placeholder="someone@email.com" required="required"></label>
+                    <label class="top"> Country*<input type="text" name="country" autocomplete="on" required="required"></label>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Reservation Details</legend>
+                    <!-- <section class="purpose">
+                        <div class="purpose-buttons">Purpose of Visit</div>
+                            <label class="side"><input type="radio" name="purpose" value="Temple Missionary"> Temple Missionary</label>
+                            <label class="side"><input type="radio" name="purpose" value="Own Ordinance"> Own Ordinance</label>
+                            <label class="side"><input type="radio" name="purpose" value="Proxy Work"> Proxy Work</label>
+                        </div>
+                    </section>
+                    <label class="top">Number of rooms*<input type="number" name="rooms" required="required" min="1" max="5"></label> -->
+                    <section class="rooms">
+                        <div class="rooms-buttons">Type of rooms</div>
+                            <label class="side"><input type="radio" name="rooms" value="Single bed"> Single bed</label>
+                            <label class="side"><input type="radio" name="rooms" value="Queen size"> Queen size</label>
+                            <label class="side"><input type="radio" name="rooms" value="Double queen"> Double queen</label>
+                        </div>
+                    </section>
+                    <!-- <label class="top">Number of children*<input type="number" name="children" required="required" min="1"></label> -->
+
+                </fieldset>
+                <fieldset>
+                    <legend>Special comments</legend>
+                    <label class="top" for="description">Special accommodation or nutrition</label>
+                    <textarea id="description" name="description" placeholder="Maximum of 500 Characters" maxlength="1000"></textarea>
+                    <label class="top" for="medication">Allegies/ medical conditions</label>
+                    <textarea id="medication" name="medical-condition" placeholder="Maximum of 500 Characters" maxlength="1000"></textarea>
+                </fieldset>
+                <input type="hidden" name="completionDate" id="hidden">
+                <input type="submit" value="Place my Booking" class="submitBtn">
+            </form>
+        </section>
     </main>
     <footer>
         <div class='footer-items'>

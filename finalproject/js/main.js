@@ -62,13 +62,11 @@ fetch(templeUrl)
             // USING THE WEATHER API
             // Using the Open Weather API for the randomly selected temple
             const apiURL = `https://api.openweathermap.org/data/2.5/weather?id=${cityId}&units=imperial&appid=164e183ac818600411c3484dc71c4f9f`;
-            // const apiURLtest = `https://api.openweathermap.org/data/2.5/weather?id=${cityId}&exclude=minutely,hourly&units=imperial&appid=164e183ac818600411c3484dc71c4f9f`;
             
             fetch(apiURL)
                 .then((response1) => response1.json())
 
                 .then((jsObject1) => {
-                    console.log(jsObject1)
                     document.querySelector('#random-current-temp').textContent = Math.round((jsObject1.main.temp) * 10) / 10; // Carefully follow the path to the temp. Note there are different temps for different parts to the city
                     const iconsrcWeather = `https://openweathermap.org/img/w/${jsObject1.weather[0].icon}.png`;
                     const descWeather = jsObject1.weather[0].description;
@@ -121,15 +119,13 @@ fetch(templeUrl)
                         return windChillFactorRounded;
                     }
                 // });
-            const apiURL2 = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&exclude=minutely,hourly&units=imperial&appid=164e183ac818600411c3484dc71c4f9f`;
-            console.log(apiURL2);
+            const apiURL2 = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&exclude=minutely,hourly&units=imperial&appid=4522422b8c1f75f28bfe993038300cd1`;
 
             fetch(apiURL2)
                 .then((response2) => response2.json())
 
                 .then((jsObject2) => {
-                    console.log(jsObject2)
-
+                    console.log(jsObject2);
                     // Data forecast tomorrow:
                     const iconsrcForecast1 = `https://openweathermap.org/img/w/${jsObject2.daily[1].weather[0].icon}.png`;
                     const descForecast1 = jsObject2.daily[1].weather[0].description;
@@ -311,8 +307,8 @@ fetch(templeUrl)
 
                     // Appending the forecast humidity
                     document.querySelector('#forecast-humidity1').textContent = jsObject2.daily[1].humidity;
-                    document.querySelector('#forecast-humidity2').textContent = jsObject2.daily[1].humidity;
-                    document.querySelector('#forecast-humidity3').textContent = jsObject2.daily[1].humidity;
+                    document.querySelector('#forecast-humidity2').textContent = jsObject2.daily[2].humidity;
+                    document.querySelector('#forecast-humidity3').textContent = jsObject2.daily[3].humidity;
                     
 
                 });
