@@ -124,44 +124,10 @@ fetch(templeUrl)
                 .then((response2) => response2.json())
 
                 .then((jsObject2) => {
-                    // console.log(jsObject2);
+                    console.log(jsObject2);
                     // Data forecast tomorrow:
                     const iconsrcForecast1 = `https://openweathermap.org/img/w/${jsObject2.daily[1].weather[0].icon}.png`;
                     const descForecast1 = jsObject2.daily[1].weather[0].description;
-                    const alertStart = jsObject2.alerts[0].start;
-                    const alertEnd = jsObject2.alerts[0].end;
-                    const alert = jsObject2.alerts[0].description;
-                    const alertSender = jsObject2.alerts[0].sender_name;
-                    
-
-                    // Data alerts time update:
-                    let unix_timestampAlert = alertStart
-                    let unix_timestampAlert2 = alertEnd
-
-                    // Create a new JavaScript Date object based on the timestamp
-                    // multiplied by 1000 so that the argument is in milliseconds, not seconds.
-                    const dateAlert = new Date(unix_timestampAlert * 1000);
-                    const dateAlert2 = new Date(unix_timestampAlert2 * 1000);
-
-                    // Hours part from the timestamp
-                    const hoursAlert = dateAlert.getHours();
-                    const hoursAlert2 = dateAlert2.getHours();
-
-                    // Minutes part from the timestamp
-                    const minutesAlert = "0" + dateAlert.getMinutes();
-                    const minutesAlert2 = "0" + dateAlert2.getMinutes();
-
-                    // Will display time in 10:30:23 format
-                    const formattedTimeAlert = `${hoursAlert} : ${minutesAlert.substr(-2)}`;
-                    const formattedTimeAlert2 = `${hoursAlert2} : ${minutesAlert2.substr(-2)}`;
-
-                    const weatherTimeStampAlert = formattedTimeAlert;
-                    const weatherTimeStampAlert2 = formattedTimeAlert2;
-
-                    document.querySelector('#alerts').textContent = alert;
-                    document.querySelector('#alert-start').textContent = weatherTimeStampAlert;
-                    document.querySelector('#alert-end').textContent = weatherTimeStampAlert2;
-                    document.querySelector('#alert-sender').textContent = alertSender;
 
                     let unix_timestamp1 = jsObject2.daily[1].dt;
                     const date1 = new Date(unix_timestamp1 * 1000);
@@ -343,6 +309,41 @@ fetch(templeUrl)
                     document.querySelector('#forecast-humidity2').textContent = jsObject2.daily[2].humidity;
                     document.querySelector('#forecast-humidity3').textContent = jsObject2.daily[3].humidity;
                     
+                    // APPENDING WEATHER ALERTS
+                    const alertStart = jsObject2.alerts[0].start;
+                    const alertEnd = jsObject2.alerts[0].end;
+                    const alert = jsObject2.alerts[0].description;
+                    const alertSender = jsObject2.alerts[0].sender_name;
+                    
+
+                    // Data alerts time update:
+                    let unix_timestampAlert = alertStart
+                    let unix_timestampAlert2 = alertEnd
+
+                    // Create a new JavaScript Date object based on the timestamp
+                    // multiplied by 1000 so that the argument is in milliseconds, not seconds.
+                    const dateAlert = new Date(unix_timestampAlert * 1000);
+                    const dateAlert2 = new Date(unix_timestampAlert2 * 1000);
+
+                    // Hours part from the timestamp
+                    const hoursAlert = dateAlert.getHours();
+                    const hoursAlert2 = dateAlert2.getHours();
+
+                    // Minutes part from the timestamp
+                    const minutesAlert = "0" + dateAlert.getMinutes();
+                    const minutesAlert2 = "0" + dateAlert2.getMinutes();
+
+                    // Will display time in 10:30:23 format
+                    const formattedTimeAlert = `${hoursAlert} : ${minutesAlert.substr(-2)}`;
+                    const formattedTimeAlert2 = `${hoursAlert2} : ${minutesAlert2.substr(-2)}`;
+
+                    const weatherTimeStampAlert = formattedTimeAlert;
+                    const weatherTimeStampAlert2 = formattedTimeAlert2;
+
+                    document.querySelector('#alerts').textContent = alert;
+                    document.querySelector('#alert-start').textContent = weatherTimeStampAlert;
+                    document.querySelector('#alert-end').textContent = weatherTimeStampAlert2;
+                    document.querySelector('#alert-sender').textContent = alertSender;
                 });
                 });
             };
