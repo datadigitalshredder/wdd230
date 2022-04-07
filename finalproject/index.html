@@ -40,13 +40,16 @@
             </ul>
         </nav>
         <aside></aside>
-        <div class="alerts">
-            <span id="alerts"></span>
+        <div id="alerts" class="alerts" onclick="alert()" class="message">
+            <div><p><span class="close-alert"><strong>Close</strong></span></p></div>
+            <div><p><strong>Government Weather Alert (availability varies):</strong><span id="alerts"> </span></p>
+            <p><strong>Time Period:</strong><span id="alert-start"> </span> to <span id="alert-end"></span></p>
+            <p><strong>Alert by:</strong><span id="alert-sender"> </span></p></div> 
         </div>
     </header>
-    <main>
-        <h1  class="temples">Temples around the world</h1>
-        <p>This webpage contains information of 13 selected temples around the world. Refresh the page to learn more.</p>
+    <main class="home-elements">
+        <!-- <h1 class="temples">Temples around the world</h1> -->
+        <p class="temples">This webpage contains information of 13 selected temples around the world. Refresh the page to learn more.</p>
         <section class="home-image">
             <figure><img src="" alt="" id="home-image"></figure>
             <div>
@@ -69,11 +72,11 @@
                     <p><strong>Address: </strong><span id="random-address"></span></p>
                     <p><strong>Telephone: </strong><span id="random-telephone"></span></p>
                     <p><strong>History: </strong><span id="random-history"></span></p>
+                    <!-- <p class="panel-group_btn span">Like/dislike <span id="like1" class="like-btn"><i class="fa fa-thumbs-up"></i></span></p>   -->
                 </div>
-                <div class="like-button">
-                    <p class="panel-group_btn span"><span id="like1" class="like-btn"><i class="fa fa-thumbs-up"></i>Like</span></p>
-                    
-                </div>
+                <!-- <div class="like-button">
+                    <p class="panel-group_btn span"><span id="like1" class="like-btn"><i class="fa fa-thumbs-up"></i></span></p>  
+                </div> -->
             </div>
         </section>
         <section class="random-suite2">

@@ -14,12 +14,12 @@ fetch(templeUrl1)
             const iconsrcdetailed1 = `${templeDetails1.photo}`;
             const descdetailed1 = `Photo of ${templeDetails1.name}`;
             
-            document.querySelector('#random-name').innerHTML = templeDetails1.name;
-            document.querySelector('#random-temple').setAttribute('src', iconsrcdetailed1);
-            document.querySelector('#random-temple').setAttribute('alt', descdetailed1);
-            document.querySelector('#random-address').innerHTML = templeDetails1.address;
-            document.querySelector('#random-telephone').innerHTML = templeDetails1.telephone;
-            document.querySelector('#random-history').innerHTML = templeDetails1.history;
+            document.querySelector('#random-name1').innerHTML = templeDetails1.name;
+            document.querySelector('#random-temple1').setAttribute('src', iconsrcdetailed1);
+            document.querySelector('#random-temple1').setAttribute('alt', descdetailed1);
+            document.querySelector('#random-address1').innerHTML = templeDetails1.address;
+            document.querySelector('#random-telephone1').innerHTML = templeDetails1.telephone;
+            document.querySelector('#random-history1').innerHTML = templeDetails1.history;
             // };
             //Randomly select 2nd temple
             let templeDetails2 = jsObject.temples[2];

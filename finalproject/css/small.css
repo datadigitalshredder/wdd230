@@ -10,6 +10,7 @@ main {
 /*-----HOME PAGE-----*/
 * {
 	margin: 0 auto;
+  max-width: 37.5rem;
 }
 
 header {
@@ -44,7 +45,7 @@ nav ul li.active {
 
 nav ul li a:hover {
 	background-color: #191970;
-	color: #FFCE45;
+	color: #fcbc0b;
 }
 nav ul {
 	list-style-type: none;
@@ -53,7 +54,7 @@ nav ul {
 }
 
 #hamburgerButton {
-  border: 3px solid #FFCE45;
+  border: 3px solid #fcbc0b;
   padding: 0;
   margin: 0 auto;
 }
@@ -99,18 +100,34 @@ nav ul.open {
 header nav {
   grid-area: 1/4/2/5;
 }
+h1.temples, p.temples {
+text-align: center;
+}
 aside {
   grid-area: 2/1/3/5;
   color: white;
   background-color: #191970;
-  border: 2px solid #FFCE45;
+  border: 2px solid #fcbc0b;
   text-align: center;
   padding: .5rem;
   width: 95%;
-  margin: 0 auto;
+  margin: .25rem auto;
 }
-.alerts {
+div.alerts {
   grid-area: 3/1/4/5;
+  color: white;
+  background-color: #191970;
+  border: 2px solid #fcbc0b;
+  text-align: center;
+  padding: 1rem;
+  width: 95%;
+  margin: .25rem auto;
+}
+
+.close-alert {
+  padding: .1rem;
+  border: 1px solid white;
+  border-radius: .25rem;
 }
 .header-logo img {
   width: 60%;
@@ -119,19 +136,23 @@ aside {
   margin: .5rem auto;
 }
 .social-1 img, .social-2 img, .social-3 img {
-  width: 25%;
+  width: 50%;
   border-radius: 50%;
 }
 
 .home-image {
   position: relative;
+  margin: 1rem auto;
+}
+.temple-description {
+  margin: 1rem auto;
 }
 button.action-call {
   position: absolute;
   top: 40%;
   left: 5%;
   padding: 1rem;
-  background-color: #ffce45;
+  background-color: #fcbc0b;
   border-radius: .5rem;
 }
 button.action-call a {
@@ -142,10 +163,9 @@ button.action-call a {
   display: none;
 } 
 main img#home-image, main img#random-suite1, main img#random-temple, main img#random-suite2, main img#random-suite3 {
-  border: 1px solid #ffce45;
+  border: 1px solid #fcbc0b;
   margin: 0 auto;
   display: block;
-  width: 95%;
   max-width: 37.5rem;
   width: 100%;
 }
@@ -167,25 +187,34 @@ div.random-detail {
 }
 
 .fa:hover {
-  color: #ffce45;
+  color: #fcbc0b;
 }
 
 a.panel-group_btn {
-color: #888;display:block;
+  color: #888;
+  display: block;
+  border: 2px solid #888;
 }
 
 a.like-btn {
   color: #888;
   font-size: 14px;
 }
+div.like-button {
+  padding: 1rem;
+  border: 2px solid #888;
+  width: 15%;
+  border-radius: .5rem;
+}
 
 span.clicked {
-border: 2px solid #ffce45;
+border: 2px solid #fcbc0b;
 font-weight: bold;
 background-color: #6893ee;
-color: white;
+color: red;
 border-radius: .5rem;
 padding: .5rem;
+font-size: 2rem;
 }
 div.like-button {
 margin: 2rem 0 3rem 0;
@@ -201,10 +230,10 @@ hr.weather {
   width: 95%;
 }
 section.weather {
-  border: 1px solid #ffce45;
+  border: 1px solid #fcbc0b;
   padding: 1rem;
   background-color: #6893ee;
-  margin: 0 auto;
+  margin: 1rem auto;
   width: 100%;
   max-width: 35rem;
 }
@@ -243,8 +272,8 @@ div.footer-social img, div.footer-address img {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
+  left: 28%;
+  top: 20%;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
@@ -259,7 +288,7 @@ div.footer-social img, div.footer-address img {
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
-  width: 50%; /* Could be more or less, depending on screen size */
+  width: 80%; /* Could be more or less, depending on screen size */
   border-radius: 10px;
   font-size: 20px;
 }
@@ -286,8 +315,8 @@ div.footer-social img, div.footer-address img {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
+  left: 28%;
+  top: 20%;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
@@ -302,7 +331,7 @@ div.footer-social img, div.footer-address img {
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
-  width: 50%; /* Could be more or less, depending on screen size */
+  width: 80%; /* Could be more or less, depending on screen size */
   border-radius: 10px;
   font-size: 20px;
 }
@@ -325,16 +354,13 @@ div.footer-social img, div.footer-address img {
 /* Chicago temple */
 #myBtn3 {
   font-size: 20px;
-  grid-area: 7/2/8/3;
-  height: 100%;
-  
 }
 .modal3 {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
+  left: 28%;
+  top: 20%;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
@@ -349,7 +375,7 @@ div.footer-social img, div.footer-address img {
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
-  width: 50%; /* Could be more or less, depending on screen size */
+  width: 80%; /* Could be more or less, depending on screen size */
   border-radius: 10px;
   font-size: 20px;
 }
@@ -372,17 +398,13 @@ div.footer-social img, div.footer-address img {
 /* Freiberg temple */
 #myBtn4 {
   font-size: 20px;
-  grid-area: 7/4/8/5;
-  height: 100%;
-  
-  
 }
 .modal4 {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
+  left: 28%;
+  top: 20%;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
@@ -397,7 +419,7 @@ div.footer-social img, div.footer-address img {
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
-  width: 50%; /* Could be more or less, depending on screen size */
+  width: 80%; /* Could be more or less, depending on screen size */
   border-radius: 10px;
   font-size: 20px;
 }
@@ -419,17 +441,13 @@ div.footer-social img, div.footer-address img {
 /* Lisbon temple */
 #myBtn5 {
   font-size: 20px;
-  grid-area: 11/2/12/3;
-  height: 100%;
-  
-  
 }
 .modal5 {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
+  left: 28%;
+  top: 20%;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
@@ -444,7 +462,7 @@ div.footer-social img, div.footer-address img {
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
-  width: 50%; /* Could be more or less, depending on screen size */
+  width: 80%; /* Could be more or less, depending on screen size */
   border-radius: 10px;
   font-size: 20px;
 }
@@ -467,17 +485,13 @@ div.footer-social img, div.footer-address img {
 /* Anchorage temple */
 #myBtn6 {
   font-size: 20px;
-  grid-area: 11/4/12/5;
-  height: 100%;
-  
-  
 }
 .modal6 {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
+  left: 28%;
+  top: 20%;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
@@ -492,7 +506,7 @@ div.footer-social img, div.footer-address img {
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
-  width: 50%; /* Could be more or less, depending on screen size */
+  width: 80%; /* Could be more or less, depending on screen size */
   border-radius: 10px;
   font-size: 20px;
 }
@@ -512,6 +526,40 @@ div.footer-social img, div.footer-address img {
   cursor: pointer;
 }
 
+/* Modal overlay */
+.random-detail1, .random-detail2, .random-detail3, .random-detail4, .random-detail5, .random-detail6 {
+  position: relative;
+}
+button#myBtn, button#myBtn2, button#myBtn3, button#myBtn4, button#myBtn5, button#myBtn6  {
+  position: absolute;
+  bottom: 5%;
+  left: 2%;
+  padding: .2rem;
+  background: radial-gradient(white, #98c2fb);
+  border-radius: .5rem;
+}
+
+main.temples section {
+  margin: .5rem auto;
+  border-radius: .5rem;
+}
+section.temple-description1, section.temple-description2, section.temple-description3, section.temple-description4, section.temple-description5, section.temple-description6 {
+  padding: 1rem 0;
+  border: 1px solid #fcbc0b;
+}
+picture img#random-temple1, picture img#random-temple2, picture img#random-temple3, picture img#random-temple4, picture img#random-temple5, picture img#random-temple6 {
+  margin: 0 auto;
+  display: block;
+  max-width: 37.5rem;
+  width: 100%;
+}
+span#like1 i, span#like2 i, span#like3 i, span#like4 i, span#like5 i, span#like6 i {
+  padding: 1rem;
+}
+span#random-name1, span#random-name2, span#random-name3, span#random-name4, span#random-name5, span#random-name6 {
+  padding-left: 2%;
+  font-weight: 900;
+}
 /* RESERVATION PAGE */
 .join-form {
 	display: flex;
