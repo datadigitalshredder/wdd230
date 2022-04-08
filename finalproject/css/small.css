@@ -4,13 +4,13 @@ main {
     /* font-family: 'Montserrat', sans-serif; */
     font-family: 'Noto Sans', sans-serif;
     padding: .25rem;
-    max-width: 37.5rem;
+    max-width: 1500px;
     width: 100%;
 }
 /*-----HOME PAGE-----*/
 * {
 	margin: 0 auto;
-  max-width: 37.5rem;
+  max-width: 1500px;
 }
 
 header {
@@ -163,10 +163,10 @@ button.action-call a {
   text-decoration: none;
   font-weight: 800;
 }
-.random-suite1, .random-suite2, .random-suite3 {
+.suite1, .suite2, .suite3 {
   display: none;
 } 
-main img#home-image, main img#random-suite1, main img#random-temple, main img#random-suite2, main img#random-suite3 {
+main img#home-image, picture img#random-suite1, main img#random-temple, picture img#random-suite2, picture img#random-suite3 {
   border: 1px solid #fcbc0b;
   margin: 0 auto;
   display: block;
@@ -188,6 +188,10 @@ div.random-detail {
   font-size: 50px;
   cursor: pointer;
   user-select: none;
+  margin-top: .5rem;
+  padding: 1rem;
+  border: 2px solid #aaa;
+  border-radius: .5rem;
 }
 
 .fa:hover {
@@ -213,11 +217,10 @@ div.like-button {
 
 span.clicked {
 border: 2px solid #fcbc0b;
-font-weight: bold;
 background-color: #6893ee;
 color: red;
 border-radius: .5rem;
-padding: .5rem;
+padding: 1rem;
 font-size: 2rem;
 }
 div.like-button {
@@ -256,7 +259,8 @@ footer {
   margin: 1rem auto;
   padding: 1rem;
   width: 100%;
-  max-width: 35rem;
+  /* max-width: 35rem; */
+  font-family: 'Montserrat', sans-serif;
 }
 picture.footer-img img {
   width: 15%;
@@ -277,7 +281,7 @@ div.footer-social img, div.footer-address img {
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
   left: 28%;
-  top: 20%;
+  top: 10%;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
@@ -320,7 +324,7 @@ div.footer-social img, div.footer-address img {
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
   left: 28%;
-  top: 20%;
+  top: 10%;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
@@ -364,7 +368,7 @@ div.footer-social img, div.footer-address img {
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
   left: 28%;
-  top: 20%;
+  top: 10%;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
@@ -408,7 +412,7 @@ div.footer-social img, div.footer-address img {
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
   left: 28%;
-  top: 20%;
+  top: 10%;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
@@ -451,7 +455,7 @@ div.footer-social img, div.footer-address img {
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
   left: 28%;
-  top: 20%;
+  top: 10%;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
@@ -495,7 +499,7 @@ div.footer-social img, div.footer-address img {
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
   left: 28%;
-  top: 20%;
+  top: 10%;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
@@ -564,6 +568,11 @@ span#random-name1, span#random-name2, span#random-name3, span#random-name4, span
   padding-left: 2%;
   font-weight: 900;
 }
+main.temples {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2px;
+}
 /* RESERVATION PAGE */
 .join-form {
 	display: flex;
@@ -587,12 +596,12 @@ span#random-name1, span#random-name2, span#random-name3, span#random-name4, span
 }
 form fieldset {
     margin: 2rem 0;
-    border: 1px solid #0B3948;
+    border: 1px solid #fcbc0b;
     border-radius: 10px;
     padding: .5rem 2%;
 }
 form legend {
-    color: #0B3948;
+    color: #000080;
     margin: 0 1rem;
     padding: 0 .5rem;
 }
@@ -610,7 +619,7 @@ form label.top input, form label.top select, textarea {
     border: solid 1px #999;
     border-radius: 4px;
     padding: .75rem; /*Ensures that the input field is at least 44px tall for easy touching on the a mobile device*/
-	color: #555;
+    color: #555;
     width: 100%;
     max-width: 25rem;
     background-color: rgba(0, 0, 0, 0.1);
@@ -637,7 +646,7 @@ div.membership-details {
 
 form input.submitBtn {
     border: none;
-    background-color: #9c2c13;
+    background-color: #0B3948;
     color: white;
     border-radius: 4px;
     padding: .75rem 1.5rem;
@@ -650,4 +659,41 @@ form label.top input:required {
 }
 form label.top input:required:valid {
     border-left: 3px solid green;
+}
+
+/* SERVICES PAGE */
+.services {
+  padding: 1rem;
+  margin: 1rem auto;
+}
+section.services-content, div .services.familyhistory, .services-amenities, div section.indoor-pool {
+  margin: 1rem auto;
+}
+.services section h2 {
+  padding: 1rem 0;
+  text-align: center;
+
+}
+section.services-content, section.services-amenities {
+  border: 1px solid #fcbc0b;
+  border-radius: .5rem;
+  padding: 1rem;
+  width: 50%;
+}
+.familyhistory, .indoor-pool {
+  border: 1px solid #fcbc0b;
+  border-radius: .5rem;
+  padding: 1rem;
+  /* max-width: 100%; */
+  width: 50%;
+  /* border: 1px red dashed; */
+  /* margin: 0 0 0 2%; */
+  /* float: right; */
+}
+.familyhistory figure img, .indoor-pool figure img {
+  width: 100%;
+}
+.familyhistory figure figcaption, .indoor-pool figure figcaption {
+  margin: 1%;
+  font-weight: 900;
 }

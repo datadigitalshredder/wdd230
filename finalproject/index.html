@@ -15,8 +15,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script data-require="jquery@*" data-semver="2.1.4" src="https://code.jquery.com/jquery-2.1.4.js"></script>
+    <!-- <script data-require="jquery@*" data-semver="2.1.4" src="https://code.jquery.com/jquery-2.1.4.js"></script> -->
     <script defer src="js/main.js"></script>
+    <script defer src="js/services.js"></script>
+    <script defer src="js/lazyloading.js"></script>
+
 </head>
 <body>
     <header>
@@ -42,7 +45,7 @@
         <aside></aside>
         <div id="alerts-close" class="alerts" onclick="alert()">
             <div><p><span class="close-alert"><strong>Close</strong></span></p></div>
-            <div><p><strong>Government Weather Alert (availability varies): </strong><span id="alerts"> </span></p>
+            <div><p><strong>Government Weather Alert: </strong><span id="alerts"> </span></p>
             <p><strong>Time Period: </strong><span id="alert-start"> </span> to <span id="alert-end"></span></p>
             <p><strong>Alert by: </strong><span id="alert-sender"> </span></p>
             <p class="disclaimer">Data from OpenWeatherMap. Government weather alerts data availability depends on location.</p>
@@ -50,7 +53,6 @@
         </div>
     </header>
     <main class="home-elements">
-        <!-- <h1 class="temples">Temples around the world</h1> -->
         <p class="temples">This webpage contains information of 13 selected temples around the world. Refresh the page to learn more.</p>
         <section class="home-image">
             <figure><img src="" alt="" id="home-image"></figure>
@@ -58,10 +60,11 @@
                 <button class="action-call"><a href="reservation.html">Book Your Stay</a></button>
             </div>
         </section>
-        <section class="random-suite1">
+        <section class="suite1">
             <picture>
-                <img src="" alt="" id="random-suite1">
-                <p><span id="random-suite1-name"></span></p>
+                <img src="images/placeholder.jpg" data-src="images/interior2.jpg" alt="Image of temple recommend desk" id="random-suite1">
+                <!-- <p><span id="random-suite1-name"></span></p> -->
+                <div>Recommend desk, San Salvador El Salvador Temple</div>
             </picture>
         </section>
         <section class="temple-description">
@@ -74,19 +77,17 @@
                     <p><strong>Floor area: </strong><span id="random-floorarea"></span></p>
                     <p><strong>Address: </strong><span id="random-address"></span></p>
                     <p><strong>Telephone: </strong><span id="random-telephone"></span></p>
+                    <p><strong>Services: </strong><span id="random-services"></span></p>
                     <p><strong>Closure dates: </strong><span id="random-dates"></span></p>
                     <p><strong>History: </strong><span id="random-history"></span></p>
-                    <!-- <p class="panel-group_btn span">Like/dislike <span id="like1" class="like-btn"><i class="fa fa-thumbs-up"></i></span></p>   -->
                 </div>
-                <!-- <div class="like-button">
-                    <p class="panel-group_btn span"><span id="like1" class="like-btn"><i class="fa fa-thumbs-up"></i></span></p>  
-                </div> -->
             </div>
         </section>
-        <section class="random-suite2">
+        <section class="suite2">
             <picture>
-                <img src="" alt="" id="random-suite2">
-                <p><span id="random-suite2-name"></span></p>
+                <img src="images/placeholder.jpg" data-src="images/interior1.jpg" alt="Image of temple foyer" id="random-suite2">
+                <div>Foyer, Sapporo Japan Temple</div>
+                <!-- <p><span id="random-suite2-name"></span></p> -->
             </picture>
         </section>
         <section class="weather">
@@ -146,9 +147,9 @@
                 </tr>
             </table>
         </section>
-        <section class="random-suite3">
+        <section class="suite3">
             <picture>
-                <img src="" alt="" id="random-suite3">
+                <img src="images/placeholder.jpg" data-src="images/interior3.jpg" alt="Image of temple celestial room" id="random-suite3">
                 <p><span id="random-suite3-name"></span></p>
             </picture>
         </section>

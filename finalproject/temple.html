@@ -18,6 +18,9 @@
     <script data-require="jquery@*" data-semver="2.1.4" src="https://code.jquery.com/jquery-2.1.4.js"></script>
     <script defer src="js/main.js"></script>
     <script defer src="js/temples.js"></script>
+    <script defer src="js/services.js"></script>
+    <script defer src="js/lazyloading.js"></script>
+
 </head>
 <body>
     <header>
@@ -41,9 +44,6 @@
             </ul>
         </nav>
         <aside></aside>
-        <!-- <div class="alerts">
-            <span id="alerts"></span>
-        </div> -->
     </header>
     <main class="temples">
         <section class="temple-description1">
@@ -60,11 +60,12 @@
                 <div id="myModal" class="modal">
                     <div class="modal-content">
                         <span class="close">&times;</span>
-                        <p class="johannesburg-temple">Address: <span id="random-address1"></span></p>
-                        <p class="johannesburg-temple">Telephone: <span id="random-telephone1"></span></p>
-                        <p class="johannesburg-temple">Ordinance schedule: <span id="random-ordinaces1"></span></p>
-                        <p class="johannesburg-temple">Session schedule: <span id="random-session1"></span></p>
-                        <p class="johannesburg-temple">Closure dates: <span id="random-dates1"></span></p>
+                        <p class="johannesburg-temple"><strong>Address: </strong><span id="random-address1"></span></p>
+                        <p class="johannesburg-temple"><strong>Telephone: </strong><span id="random-telephone1"></span></p>
+                        <p class="johannesburg-temple"><strong>Services: </strong><span id="random-services1"></span></p>
+                        <p class="johannesburg-temple"><strong>Ordinance schedule: </strong><span id="random-ordinances1"></span></p>
+                        <p class="johannesburg-temple"><strong>Session schedule: </strong><span id="random-session1"></span></p>
+                        <p class="johannesburg-temple"><strong>Closure dates: </strong><span id="random-dates1"></span></p>
                         <p class="johannesburg-temple"><span id="random-history1"></span></p>
                     </div>
                   </div>
@@ -86,16 +87,16 @@
                 <div id="myModal2" class="modal2">
                     <div class="modal-content2">
                         <span class="close2">&times;</span>
-                        <p class="mexico-city-temple">Address: <span id="random-address2"></span></p>
-                        <p class="mexico-city-temple">Telephone: <span id="random-telephone2"></span></p>
-                        <p class="johannesburg-temple">Ordinance schedule: <span id="random-ordinaces2"></span></p>
-                        <p class="johannesburg-temple">Session schedule: <span id="random-session2"></span></p>
-                        <p class="johannesburg-temple">Closure dates: <span id="random-dates2"></span></p>
+                        <p class="mexico-city-temple"><strong>Address: </strong><span id="random-address2"></span></p>
+                        <p class="mexico-city-temple"><strong>Telephone: </strong><span id="random-telephone2"></span></p>
+                        <p class="mexico-city-temple"><strong>Services: </strong><span id="random-services2"></span></p>
+                        <p class="mexico-city-temple"><strong>Ordinance schedule: </strong><span id="random-ordinances2"></span></p>
+                        <p class="mexico-city-temple"><strong>Session schedule: </strong><span id="random-session2"></span></p>
+                        <p class="mexico-city-temple"><strong>Closure dates: </strong><span id="random-dates2"></span></p>
                         <p class="mexico-city-temple"><span id="random-history2"></span></p>
                     </div>
                   </div>
                 <div>
-                    <!-- <p class="panel-group_btn span"><span><button onclick="clickLikes()" type="button"><i class="fa fa-thumbs-up"></i><span id="like2"></span></button></p> -->
                     <p class="panel-group_btn span"><span id="like2" class="like-btn"><i class="fa fa-thumbs-up"></i></span></p>   
                 </div>
             </div>
@@ -113,12 +114,13 @@
                 <div id="myModal3" class="modal3">
                     <div class="modal-content3">
                         <span class="close3">&times;</span>
-                        <p class="chicago-temple">Address: <span id="random-address3"></span></p>
-                        <p class="chicago-city-temple">Telephone: <span id="random-telephone3"></span></p>
-                        <p class="johannesburg-temple">Ordinance schedule: <span id="random-ordinaces3"></span></p>
-                        <p class="johannesburg-temple">Session schedule: <span id="random-session3"></span></p>
-                        <p class="johannesburg-temple">Closure dates: <span id="random-dates3"></span></p>
-                        <p class="chicago-city-temple"><span id="random-history3"></span></p>
+                        <p class="chicago-temple"><strong>Address: </strong><span id="random-address3"></span></p>
+                        <p class="chicago-temple"><strong>Telephone: </strong><span id="random-telephone3"></span></p>
+                        <p class="chicago-temple"><strong>Services: </strong><span id="random-services3"></span></p>
+                        <p class="chicago-temple"><strong>Ordinance schedule: </strong><span id="random-ordinances3"></span></p>
+                        <p class="chicago-temple"><strong>Session schedule: </strong><span id="random-session3"></span></p>
+                        <p class="chicago-temple"><strong>Closure dates: </strong><span id="random-dates3"></span></p>
+                        <p class="chicago-temple"><span id="random-history3"></span></p>
                     </div>
                   </div>
                 <div>
@@ -141,12 +143,13 @@
                 <div id="myModal4" class="modal4">
                     <div class="modal-content4">
                         <span class="close4">&times;</span>
-                        <p class="freiberg-temple">Address: <span id="random-address4"></span></p>
-                        <p class="freiberg-city-temple">Telephone: <span id="random-telephone4"></span></p>
-                        <p class="johannesburg-temple">Ordinance schedule: <span id="random-ordinaces4"></span></p>
-                        <p class="johannesburg-temple">Session schedule: <span id="random-session4"></span></p>
-                        <p class="johannesburg-temple">Closure dates: <span id="random-dates4"></span></p>
-                        <p class="freiberg-city-temple"><span id="random-history4"></span></p>
+                        <p class="freiberg-temple"><strong>Address: </strong><span id="random-address4"></span></p>
+                        <p class="freiberg-temple"><strong>Telephone: </strong><span id="random-telephone4"></span></p>
+                        <p class="freiberg-temple"><strong>Services: </strong><span id="random-services4"></span></p>
+                        <p class="freiberg-temple"><strong>Ordinance schedule: </strong><span id="random-ordinances4"></span></p>
+                        <p class="freiberg-temple"><strong>Session schedule: </strong><span id="random-session4"></span></p>
+                        <p class="freiberg-temple"><strong>Closure dates: </strong><span id="random-dates4"></span></p>
+                        <p class="freiberg-temple"><span id="random-history4"></span></p>
                     </div>
                   </div>
                 <div>
@@ -169,12 +172,13 @@
                 <div id="myModal5" class="modal5">
                     <div class="modal-content5">
                         <span class="close5">&times;</span>
-                        <p class="freiberg-temple">Address: <span id="random-address5"></span></p>
-                        <p class="freiberg-city-temple">Telephone: <span id="random-telephone5"></span></p>
-                        <p class="johannesburg-temple">Ordinance schedule: <span id="random-ordinaces5"></span></p>
-                        <p class="johannesburg-temple">Session schedule: <span id="random-session5"></span></p>
-                        <p class="johannesburg-temple">Closure dates: <span id="random-dates5"></span></p>
-                        <p class="freiberg-city-temple"><span id="random-history5"></span></p>
+                        <p class="lisbon-temple"><strong>Address: </strong><span id="random-address5"></span></p>
+                        <p class="lisbon-temple"><strong>Telephone: </strong><span id="random-telephone5"></span></p>
+                        <p class="lisbon-temple"><strong>Services: </strong><span id="random-services5"></span></p>
+                        <p class="lisbon-temple"><strong>Ordinance schedule: </strong><span id="random-ordinances5"></span></p>
+                        <p class="lisbon-temple"><strong>Session schedule: </strong><span id="random-session5"></span></p>
+                        <p class="lisbon-temple"><strong>Closure dates: </strong><span id="random-dates5"></span></p>
+                        <p class="lisbon-temple"><span id="random-history5"></span></p>
                     </div>
                   </div>
                 <div>
@@ -197,12 +201,13 @@
                 <div id="myModal6" class="modal6">
                     <div class="modal-content6">
                         <span class="close6">&times;</span>
-                        <p class="freiberg-temple">Address: <span id="random-address6"></span></p>
-                        <p class="freiberg-city-temple">Telephone: <span id="random-telephone6"></span></p>
-                        <p class="johannesburg-temple">Ordinance schedule: <span id="random-ordinaces6"></span></p>
-                        <p class="johannesburg-temple">Session schedule: <span id="random-session6"></span></p>
-                        <p class="johannesburg-temple">Closure dates: <span id="random-dates6"></span></p>
-                        <p class="freiberg-city-temple"><span id="random-history6"></span></p>
+                        <p class="anchorage-temple"><strong>Address: </strong><span id="random-address6"></span></p>
+                        <p class="anchorage-temple"><strong>Telephone: </strong><span id="random-telephone6"></span></p>
+                        <p class="anchorage-temple"><strong>Services: </strong><span id="random-services6"></span></p>
+                        <p class="anchorage-temple"><strong>Ordinance schedule: </strong><span id="random-ordinances6"></span></p>
+                        <p class="anchorage-temple"><strong>Session schedule: </strong><span id="random-session6"></span></p>
+                        <p class="anchorage-temple"><strong>Closure dates: </strong><span id="random-dates6"></span></p>
+                        <p class="anchorage-temple"><span id="random-history6"></span></p>
                     </div>
                   </div>
                 <div>

@@ -1,0 +1,5 @@
+@media only screen and (min-width: 64rem) {
+    .suite1, .suite2, .suite3 {
+        display: block;
+    }
+}

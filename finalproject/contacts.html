@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="WDD 230 Final Project - Innocent Hove">
-    <title>Temples | Temple Inn and Suites</title>
+    <meta name="description" content="WDD 230 Final Project, contacts - Innocent Hove">
+    <title>Contact | Temple Inn and Suites</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="shortcut icon" href="favicon (1).ico">
     <link rel="stylesheet" href="css/small.css">
@@ -39,61 +39,29 @@
             </ul>
         </nav>
         <aside></aside>
-        <div class="alerts">
+        <!-- <div class="alerts">
             <span id="alerts"></span>
-        </div>
+        </div> -->
     </header>
     <main class="contacts-page">
-        <section class="main-form">
-            <h1>Book Your Stay</h1>
-            <form method="get" action="thanks.html" class="form">
-                <fieldset>
-                    <legend>Applicant Information</legend>
-                    <label class="top"> Name*<input type="text" name="fname" required="required" autocomplete="on"></label>
-                    <section class="marriage-status">
-                        <div class="marriage-buttons">Marriage status</div>
-                            <label class="side"><input type="radio" name="marriage" value="Married"> Married</label>
-                            <label class="side"><input type="radio" name="marriage" value="Single"> Single</label>
-                            <label class="side"><input type="radio" name="marriage" value="Widow/ Widower"> Widow/ Widower</label>
-                        </div>
-                    </section>
-                    <label class="top"> Spouse name*<input type="text" name="lname" required="required" autocomplete="on"></label>
-                    <label class="top"> Phone<input type="tel" name="phone" placeholder="+263755555555"></label>
-                    <label class="top"> E-mail*<input type="email" name="email" placeholder="someone@email.com" required="required"></label>
-                    <label class="top"> Country*<input type="text" name="country" autocomplete="on" required="required"></label>
-                </fieldset>
-                
-                <fieldset>
-                    <legend>Reservation Details</legend>
-                    <!-- <section class="purpose">
-                        <div class="purpose-buttons">Purpose of Visit</div>
-                            <label class="side"><input type="radio" name="purpose" value="Temple Missionary"> Temple Missionary</label>
-                            <label class="side"><input type="radio" name="purpose" value="Own Ordinance"> Own Ordinance</label>
-                            <label class="side"><input type="radio" name="purpose" value="Proxy Work"> Proxy Work</label>
-                        </div>
-                    </section>
-                    <label class="top">Number of rooms*<input type="number" name="rooms" required="required" min="1" max="5"></label> -->
-                    <section class="rooms">
-                        <div class="rooms-buttons">Type of rooms</div>
-                            <label class="side"><input type="radio" name="rooms" value="Single bed"> Single bed</label>
-                            <label class="side"><input type="radio" name="rooms" value="Queen size"> Queen size</label>
-                            <label class="side"><input type="radio" name="rooms" value="Double queen"> Double queen</label>
-                        </div>
-                    </section>
-                    <!-- <label class="top">Number of children*<input type="number" name="children" required="required" min="1"></label> -->
-
-                </fieldset>
-                <fieldset>
-                    <legend>Special comments</legend>
-                    <label class="top" for="description">Special accommodation or nutrition</label>
-                    <textarea id="description" name="description" placeholder="Maximum of 500 Characters" maxlength="1000"></textarea>
-                    <label class="top" for="medication">Allegies/ medical conditions</label>
-                    <textarea id="medication" name="medical-condition" placeholder="Maximum of 500 Characters" maxlength="1000"></textarea>
-                </fieldset>
-                <input type="hidden" name="completionDate" id="hidden">
-                <input type="submit" value="Place my Booking" class="submitBtn">
-            </form>
-        </section>
+        <form method="get" action="thanks.html" class="form">
+            <fieldset>
+                <legend>My Information</legend>
+                <label class="top"> First name*<input type="text" name="fname" required="required" autocomplete="on"></label>
+                <label class="top"> Last name*<input type="text" name="lname" required="required" autocomplete="on"></label>
+                <label class="top"> Phone*<input type="tel" name="phone" placeholder="+263755555555" required="required"></label>
+                <label class="top"> E-mail*<input type="email" name="email" placeholder="someone@email.com" required="required"></label>
+                <label class="top" for="bdescription">Message</label>
+                <textarea id="message-description" name="businessdescription" placeholder="Enter Message" maxlength="500"></textarea>
+            </fieldset>
+            <input type="hidden" name="completionDate" id="hidden">
+            <input type="submit" value="Send My Message" class="submitBtn">
+        </form>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3101.4050197013253!2d-77.0977204854835!3d38.98325177955749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2szw!4v1649421211051!5m2!1sen!2szw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <figure>
+            <img src="images/washingtondc.jpg" alt="Image of the Washington DC temple">
+            <figcaption>Image of the Washington DC temple</figcaption>
+        </figure>
     </main>
     <footer>
         <div class='footer-items'>
