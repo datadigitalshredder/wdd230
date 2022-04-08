@@ -61,6 +61,7 @@ fetch(templeUrl)
 
             // USING THE WEATHER API
             // Using the Open Weather API for the randomly selected temple
+            // const apiURL = `https://api.openweathermap.org/data/2.5/weather?id=${cityId}&units=imperial&appid=4522422b8c1f75f28bfe993038300cd1`;
             const apiURL = `https://api.openweathermap.org/data/2.5/weather?id=${cityId}&units=imperial&appid=164e183ac818600411c3484dc71c4f9f`;
             
             fetch(apiURL)
@@ -315,7 +316,6 @@ fetch(templeUrl)
                     const alert = jsObject2.alerts[0].description;
                     const alertSender = jsObject2.alerts[0].sender_name;
                     
-
                     // Data alerts time update:
                     let unix_timestampAlert = alertStart
                     let unix_timestampAlert2 = alertEnd
@@ -344,8 +344,8 @@ fetch(templeUrl)
                     document.querySelector('#alert-start').textContent = weatherTimeStampAlert;
                     document.querySelector('#alert-end').textContent = weatherTimeStampAlert2;
                     document.querySelector('#alert-sender').textContent = alertSender;
-                });
-                });
+                }); //fetch jObject2
+                }); //fetch jsjObject1
             };
     });
 
@@ -400,7 +400,7 @@ fetch(suitesURL)
 
 // CLOSE WEATHER ALERTS FUNCTION
 function alert() {
-    let x = document.getElementById("alerts");
+    let x = document.getElementById("alerts-close");
     if (x.style.display === "none") {
       x.style.display = "block";
     } else {

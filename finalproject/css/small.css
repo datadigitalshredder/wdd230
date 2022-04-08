@@ -123,6 +123,10 @@ div.alerts {
   width: 95%;
   margin: .25rem auto;
 }
+.disclaimer {
+  font-size: .7rem;
+  color: #fcbc0b;
+}
 
 .close-alert {
   padding: .1rem;
