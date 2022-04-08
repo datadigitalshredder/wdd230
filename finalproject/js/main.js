@@ -55,8 +55,10 @@ fetch(templeUrl)
             document.querySelector('#random-temple').setAttribute('src', iconsrcdetailed);
             document.querySelector('#random-temple').setAttribute('alt', descdetailed);
             document.querySelector('#random-name').innerHTML = randomTempleDetails.name;
+            document.querySelector('#random-floorarea').innerHTML = randomTempleDetails.floorarea;
             document.querySelector('#random-address').innerHTML = randomTempleDetails.address;
             document.querySelector('#random-telephone').innerHTML = randomTempleDetails.telephone;
+            document.querySelector('#random-dates').innerHTML = randomTempleDetails.closuredates;
             document.querySelector('#random-history').innerHTML = randomTempleDetails.history;
 
             // USING THE WEATHER API
@@ -334,8 +336,8 @@ fetch(templeUrl)
                     const minutesAlert2 = "0" + dateAlert2.getMinutes();
 
                     // Will display time in 10:30:23 format
-                    const formattedTimeAlert = `${hoursAlert} : ${minutesAlert.substr(-2)}`;
-                    const formattedTimeAlert2 = `${hoursAlert2} : ${minutesAlert2.substr(-2)}`;
+                    const formattedTimeAlert = `${hoursAlert}:${minutesAlert.substr(-2)}`;
+                    const formattedTimeAlert2 = `${hoursAlert2}:${minutesAlert2.substr(-2)}`;
 
                     const weatherTimeStampAlert = formattedTimeAlert;
                     const weatherTimeStampAlert2 = formattedTimeAlert2;

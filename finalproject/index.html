@@ -45,7 +45,7 @@
             <div><p><strong>Government Weather Alert (availability varies): </strong><span id="alerts"> </span></p>
             <p><strong>Time Period: </strong><span id="alert-start"> </span> to <span id="alert-end"></span></p>
             <p><strong>Alert by: </strong><span id="alert-sender"> </span></p>
-            <p class="disclaimer">Data from OpenWeatherMap. Government weather alerts data may not always load.</p>
+            <p class="disclaimer">Data from OpenWeatherMap. Government weather alerts data availability depends on location.</p>
         </div> 
         </div>
     </header>
@@ -71,8 +71,10 @@
                 </picture>
                 <div class="random-detail">
                     <p><strong><span id="random-name"></span></strong></p>
+                    <p><strong>Floor area: </strong><span id="random-floorarea"></span></p>
                     <p><strong>Address: </strong><span id="random-address"></span></p>
                     <p><strong>Telephone: </strong><span id="random-telephone"></span></p>
+                    <p><strong>Closure dates: </strong><span id="random-dates"></span></p>
                     <p><strong>History: </strong><span id="random-history"></span></p>
                     <!-- <p class="panel-group_btn span">Like/dislike <span id="like1" class="like-btn"><i class="fa fa-thumbs-up"></i></span></p>   -->
                 </div>
@@ -88,7 +90,7 @@
             </picture>
         </section>
         <section class="weather">
-            <p class="weather-header"><strong>Weather:</strong></p>
+            <p class="weather-header"><strong>Currently</strong></p>
             <div class="weather-box">
                 <figure style="text-transform:capitalize;"><img src="" alt="" id="random-weathericon"><figcaption></figcaption></figure><p><span id="random-current-temp" class="weather-temp"></span> &deg;F</p>
             </div>
