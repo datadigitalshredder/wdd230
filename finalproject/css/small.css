@@ -46,11 +46,19 @@ nav ul li.active {
 nav ul li a:hover {
 	background-color: #191970;
 	color: #fcbc0b;
+  border: 1px solid #fcbc0b; 
 }
 nav ul {
 	list-style-type: none;
 	padding: 0;
 	margin: 0;
+}
+nav ul {
+  display: none;
+}
+
+nav ul.open {
+  display: block;
 }
 
 #hamburgerButton {
@@ -63,7 +71,6 @@ nav ul {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  /* padding: .5rem .5vw; */
 }
 #hamburgerButton span:nth-child(1) {
 	display: block;
@@ -123,7 +130,7 @@ div.alerts {
   width: 95%;
   margin: .25rem auto;
 }
-.disclaimer {
+.disclaimer, .weather-attribution {
   font-size: .7rem;
   color: #fcbc0b;
 }
@@ -163,24 +170,38 @@ button.action-call a {
   text-decoration: none;
   font-weight: 800;
 }
-.suite1, .suite2, .suite3 {
+.suite1, .suite2, .suite3, p.forecast-header, table.forecast-tb {
   display: none;
-}
-section.home-image figure, section.suite1, div.temple-description-box, section.suite2, section.suite3 {
-  border: 1px solid #fcbc0b;
-  overflow: hidden;
-  position: relative;
 }
 
 section.suite1 picture div, section.suite2 picture div, section.suite3 picture div {
   margin: 1rem auto 1rem 1rem;
   font-weight: 900;
 } 
+/* ZOOM ON HOVER */
+section.home-image figure, section.suite1, div.temple-description-box, section.suite2, section.suite3 {
+  border: 1px solid #fcbc0b;
+  overflow: hidden;
+  position: relative;
+}
 section.home-image figure img#home-image,  div.temple-description-box picture img,section.suite1 picture img, section.suite2 picture img, section.suite3 picture img {
   width: 100%;
-  transition: transform 0.5s ease;
+  transition: transform 0.1s ease;
 }
 section.home-image figure img#home-image:hover, section.suite1 picture img:hover,  div.temple-description-box picture img:hover,section.suite2 picture img:hover, section.suite3 picture img:hover {
+  -ms-transform: scale(1.02); /* IE 9 */
+  -webkit-transform: scale(1.02); /* Safari 3-8 */
+  transform: scale(1.02); 
+}
+.sealing-room picture, .catering picture, .missionary-couple1 picture, .missionary-couple2 picture, .familyhistory picture, .indoor-pool picture, div.random-detail1, div.random-detail2, div.random-detail3, div.random-detail4, div.random-detail5, div.random-detail6 {
+  overflow: hidden;
+  position: relative;
+} 
+.sealing-room picture img, .catering picture img, .missionary-couple1 picture img, .missionary-couple2 picture img, .familyhistory picture img, .indoor-pool picture img, div.random-detail1 picture img, div.random-detail2 picture img, div.random-detail3 picture img, div.random-detail4 picture img, div.random-detail5 picture img, div.random-detail6 picture img{
+  width: 100%;
+  transition: transform 0.1s ease;
+}
+.sealing-room picture img:hover, .catering picture img:hover, .missionary-couple1 picture img:hover, .missionary-couple2 picture img:hover, .familyhistory picture img:hover, .indoor-pool picture img:hover, div.random-detail1 picture img:hover, div.random-detail2 picture img:hover, div.random-detail3 picture img:hover, div.random-detail4 picture img:hover, div.random-detail5 picture img:hover, div.random-detail6 picture img:hover {
   -ms-transform: scale(1.02); /* IE 9 */
   -webkit-transform: scale(1.02); /* Safari 3-8 */
   transform: scale(1.02); 
@@ -264,7 +285,7 @@ section.weather {
 
 hr.footer-hr {
   width: 95%;
-  margin-top: 1rem;
+  margin: 1rem auto;
 }
 footer {
   width: 95%;
@@ -296,7 +317,7 @@ div.footer-social img, div.footer-address img {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  left: 28%;
+  left: 1%;
   top: 10%;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
@@ -339,7 +360,7 @@ div.footer-social img, div.footer-address img {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  left: 28%;
+  left: 1%;
   top: 10%;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
@@ -383,7 +404,7 @@ div.footer-social img, div.footer-address img {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  left: 28%;
+  left: 1%;
   top: 10%;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
@@ -427,7 +448,7 @@ div.footer-social img, div.footer-address img {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  left: 28%;
+  left: 1%;
   top: 10%;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
@@ -470,7 +491,7 @@ div.footer-social img, div.footer-address img {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  left: 28%;
+  left: 1%;
   top: 10%;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
@@ -514,7 +535,7 @@ div.footer-social img, div.footer-address img {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  left: 28%;
+  left: 1%;
   top: 10%;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
@@ -572,7 +593,7 @@ section.temple-description1, section.temple-description2, section.temple-descrip
   border: 1px solid #fcbc0b;
 }
 picture img#random-temple1, picture img#random-temple2, picture img#random-temple3, picture img#random-temple4, picture img#random-temple5, picture img#random-temple6 {
-  margin: 0 auto;
+  margin: .5rem auto;
   display: block;
   max-width: 37.5rem;
   width: 100%;
@@ -586,8 +607,8 @@ span#random-name1, span#random-name2, span#random-name3, span#random-name4, span
 }
 main.temples {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: .5rem;
 }
 /* RESERVATION PAGE */
 section.banner {
@@ -605,20 +626,12 @@ section.banner div {
   font-weight: 900;
 }
 .main-form h1 {
-  margin-left: 4rem;
+  margin: 1rem auto;
+  text-align: center;
 }
-/* .join-form {
-	display: flex;
-	flex-direction: column;
-	background-color: #416165;
-	max-width: 600px;
-  width: 100%;
-	border: 1px solid #0B3948;
-	margin: 2% auto;
-	padding: 0 2%;
-	border-radius: 10px;
-} */
+
 .form {
+  max-width: 37.5rem;
 	background-color: #eee;
 	padding: 2%;
 	margin: 2%;
@@ -626,10 +639,7 @@ section.banner div {
   width: 95%;
   margin: 1rem auto;
 }
-/* .join-form h1 {
-	text-align: center;
-	font-family: 'Montserrat', sans-serif;
-} */
+
 form fieldset {
     margin: 2rem 0;
     border: 1px solid #fcbc0b;
@@ -711,6 +721,7 @@ section.services-content, div .services.familyhistory, .services-amenities, div 
 }
 section.services-content, section.services-amenities {
   border: 1px solid #fcbc0b;
+  background-color: #bed;
   border-radius: .5rem;
   padding: 1rem;
   width: 95%;
@@ -757,7 +768,7 @@ section.services-content, section.services-amenities {
 .missionary-content {
   border: 1px solid #fcbc0b;
   border-radius: .5rem;
-  padding: 1rem;
+  padding: 1rem 0;
   width: 95%;
 }
 .missionary-content p:nth-child(2) {
@@ -793,7 +804,7 @@ section.marriage p span.author {
   margin: 1rem auto;
 }
 .sealing-room picture img, .catering picture img {
-  width: 95%;
+  width: 100%;
 }
 #reception {
   border: 1px solid #fcbc0b;
@@ -801,6 +812,7 @@ section.marriage p span.author {
   padding: 1rem;
   width: 95%;
   margin: 1rem auto;
+  background-color: #bed;
 }
 .sealing-room picture figcaption, .catering picture figcaption {
   margin: 1%;

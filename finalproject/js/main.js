@@ -127,7 +127,6 @@ fetch(templeUrl)
                 .then((response2) => response2.json())
 
                 .then((jsObject2) => {
-                    // console.log(jsObject2);
                     // Data forecast tomorrow:
                     const iconsrcForecast1 = `https://openweathermap.org/img/w/${jsObject2.daily[1].weather[0].icon}.png`;
                     const descForecast1 = jsObject2.daily[1].weather[0].description;
@@ -346,8 +345,8 @@ fetch(templeUrl)
                     document.querySelector('#alert-start').textContent = weatherTimeStampAlert;
                     document.querySelector('#alert-end').textContent = weatherTimeStampAlert2;
                     document.querySelector('#alert-sender').textContent = alertSender;
-                }); //fetch jObject2
-                }); //fetch jsjObject1
+                });
+                });
             };
     });
 

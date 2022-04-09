@@ -1,0 +1,19 @@
+@media only screen and (min-width: 37.5rem) {
+    nav ul {
+        display: none;
+    }
+    
+    nav ul.open {
+        display: block;
+    }
+    p.forecast-header {
+        display: block;
+    }
+    table.forecast-tb {
+        display: block;
+        margin-left: 36%;
+        margin-right: 36%;
+        text-align: center;
+    }
+
+}

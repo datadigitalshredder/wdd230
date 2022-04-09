@@ -1,5 +1,128 @@
 @media only screen and (min-width: 64rem) {
+    nav ul li a {
+        padding: .5rem 1rem;
+    }
+    nav button {
+        display: none;
+    }
+
+    nav ul#primaryNavigation {
+        display: flex;
+        justify-content: center;
+        margin-left: 2vw;
+        border-left: 1px solid rgba(0, 0, 0, 0.3);
+    }
+    nav ul li a {
+        border: none;
+        border-right: 1px solid rgba(0, 0, 0, 0.3);
+    }
     .suite1, .suite2, .suite3 {
         display: block;
+    }
+    section.services-box {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .services h2 {
+        text-align: center;
+    }
+    section.services-content {
+        grid-area: 1/1/2/2;
+    }
+    div section.familyhistory {
+        grid-area: 1/2/2/3;
+        margin-top: 1rem;
+    }
+    div section.indoor-pool {
+        grid-area: 2/1/3/2;
+    }
+    section.services-amenities {
+        grid-area: 2/2/3/3;
+    }
+    div.missionary-page {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    section.missionary-content {
+        grid-area: 1/1/2/2;
+        width: 95%
+    }
+    div.couple1 section.missionary-couple1 {
+        grid-area: 1/2/2/3;
+    }
+    section.missionary-content2 {
+        grid-area: 2/1/3/2;
+        background-color: #bed;
+        padding: 1rem;
+        border: 1px solid #fcbc0b;
+        border-radius: .5rem;
+        margin: 0 auto;
+    }
+    section.missionary-couple2 {
+        grid-area: 2/2/3/3;
+    }
+    main.reception-page {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .marriage {
+        grid-area: 1/1/2/2;
+    }
+    .sealing-room {
+        grid-area: 1/2/2/3;
+    }
+    #reception {
+        grid-area: 2/1/3/2;
+    }
+    .catering   {
+        grid-area: 2/2/3/3;
+    }
+    main.contacts-page {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .contacts-image {
+        grid-area: 1/1/2/2;
+    }
+    iframe {
+        grid-area: 2/1/3/2;
+    }
+    form.form {
+        grid-area: 1/2/3/3;
+    }
+
+    .footer-items {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        justify-content: center;
+        align-items: center;
+        /* font-size: 2rem; */
+    }
+    picture.footer-img {
+        grid-area: 1/1/2/2;
+        width: 150%;
+    }
+    div.footer-social {
+        grid-area: 1/2/2/3;
+    }
+    div.footer-social img {
+        width: 10%;
+    }
+    div.footer-address {
+        grid-area: 1/3/2/4;
+    }
+    div.footer-address img {
+        width: 10%;
+    }
+    div.footer-info {
+        grid-area: 1/4/2/5;
+    }
+    div.footer-update {
+        grid-area: 2/1/3/5;
     }
 }

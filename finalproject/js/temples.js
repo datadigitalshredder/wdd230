@@ -8,8 +8,6 @@ fetch(templeUrl1)
 
             //Randomly select 1st temple
             let templeDetails1 = jsObject.temples[0];
-            // let randomTempleDetails1 = templeDetails1[Math.floor(Math.random() * templeDetails1.length)]; // Place this random selection variable outisde the for loop, unlike in the loop above, otherwise the randomly selected city weather might not match the city you want.
-            // for (let i = 0; i < templeDetails1.length; i++){
                 
             const iconsrcdetailed1 = `${templeDetails1.photo}`;
             const descdetailed1 = `Photo of ${templeDetails1.name}`;
@@ -25,11 +23,9 @@ fetch(templeUrl1)
             document.querySelector('#random-session1').innerHTML = templeDetails1.sessionschedule;
             document.querySelector('#random-dates1').innerHTML = templeDetails1.closuredates;
             document.querySelector('#random-history1').innerHTML = templeDetails1.history;
-            // };
+
             //Randomly select 2nd temple
             let templeDetails2 = jsObject.temples[2];
-            // let randomTempleDetails2 = templeDetails2[Math.floor(Math.random() * templeDetails2.length)]; // Place this random selection variable outisde the for loop, unlike in the loop above, otherwise the randomly selected city weather might not match the city you want.
-            // for (let i = 0; i < templeDetails2.length; i++){
                 
                 const iconsrcdetailed2 = `${templeDetails2.photo}`;
                 const descdetailed2 = `Photo of ${templeDetails2.name}`;
@@ -45,11 +41,9 @@ fetch(templeUrl1)
             document.querySelector('#random-session2').innerHTML = templeDetails2.sessionschedule;
             document.querySelector('#random-dates2').innerHTML = templeDetails2.closuredates;
             document.querySelector('#random-history2').innerHTML = templeDetails2.history;
-            // };
+
             //Randomly select 3rd temple
             let templeDetails3 = jsObject.temples[7];
-            // let randomTempleDetails3 = templeDetails3[Math.floor(Math.random() * templeDetails3.length)]; // Place this random selection variable outisde the for loop, unlike in the loop above, otherwise the randomly selected city weather might not match the city you want.
-            // for (let i = 0; i < templeDetails3.length; i++){
                 
             const iconsrcdetailed3 = `${templeDetails3.photo}`;
             const descdetailed3 = `Photo of ${templeDetails3.name}`;
@@ -65,11 +59,9 @@ fetch(templeUrl1)
             document.querySelector('#random-session3').innerHTML = templeDetails3.sessionschedule;
             document.querySelector('#random-dates3').innerHTML = templeDetails3.closuredates;
             document.querySelector('#random-history3').innerHTML = templeDetails3.history;
-            // };
+
             //Randomly select 4th temple
             let templeDetails4 = jsObject.temples[8];
-            // let randomTempleDetails4 = templeDetails4[Math.floor(Math.random() * templeDetails4.length)]; // Place this random selection variable outisde the for loop, unlike in the loop above, otherwise the randomly selected city weather might not match the city you want.
-            // for (let i = 0; i < templeDetails4.length; i++){
                 
             const iconsrcdetailed4 = `${templeDetails4.photo}`;
             const descdetailed4 = `Photo of ${templeDetails4.name}`;
@@ -88,8 +80,6 @@ fetch(templeUrl1)
 
             //Randomly select 5th temple
             let templeDetails5 = jsObject.temples[10];
-            // let randomTempleDetails4 = templeDetails4[Math.floor(Math.random() * templeDetails4.length)]; // Place this random selection variable outisde the for loop, unlike in the loop above, otherwise the randomly selected city weather might not match the city you want.
-            // for (let i = 0; i < templeDetails4.length; i++){
                 
             const iconsrcdetailed5 = `${templeDetails5.photo}`;
             const descdetailed5 = `Photo of ${templeDetails5.name}`;
@@ -108,8 +98,6 @@ fetch(templeUrl1)
 
             //Randomly select 6th temple
             let templeDetails6 = jsObject.temples[12];
-            // let randomTempleDetails4 = templeDetails4[Math.floor(Math.random() * templeDetails4.length)]; // Place this random selection variable outisde the for loop, unlike in the loop above, otherwise the randomly selected city weather might not match the city you want.
-            // for (let i = 0; i < templeDetails4.length; i++){
                 
             const iconsrcdetailed6 = `${templeDetails6.photo}`;
             const descdetailed6 = `Photo of ${templeDetails6.name}`;
@@ -125,7 +113,6 @@ fetch(templeUrl1)
             document.querySelector('#random-session6').innerHTML = templeDetails6.sessionschedule;
             document.querySelector('#random-dates6').innerHTML = templeDetails6.closuredates;
             document.querySelector('#random-history6').innerHTML = templeDetails6.history;
-            // };
     });
 
 // Get the modal Johannesburg temple
