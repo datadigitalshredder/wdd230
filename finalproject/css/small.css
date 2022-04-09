@@ -134,13 +134,13 @@ div.alerts {
   border-radius: .25rem;
 }
 .header-logo img {
-  width: 60%;
+  width: 10rem;
   border-radius: 50%;
   display: block;
   margin: .5rem auto;
 }
 .social-1 img, .social-2 img, .social-3 img {
-  width: 50%;
+  width: 5rem;
   border-radius: 50%;
 }
 
@@ -165,12 +165,29 @@ button.action-call a {
 }
 .suite1, .suite2, .suite3 {
   display: none;
-} 
-main img#home-image, picture img#random-suite1, main img#random-temple, picture img#random-suite2, picture img#random-suite3 {
+}
+section.home-image figure, section.suite1, div.temple-description-box, section.suite2, section.suite3 {
   border: 1px solid #fcbc0b;
+  overflow: hidden;
+  position: relative;
+}
+
+section.suite1 picture div, section.suite2 picture div, section.suite3 picture div {
+  margin: 1rem auto 1rem 1rem;
+  font-weight: 900;
+} 
+section.home-image figure img#home-image,  div.temple-description-box picture img,section.suite1 picture img, section.suite2 picture img, section.suite3 picture img {
+  width: 100%;
+  transition: transform 0.5s ease;
+}
+section.home-image figure img#home-image:hover, section.suite1 picture img:hover,  div.temple-description-box picture img:hover,section.suite2 picture img:hover, section.suite3 picture img:hover {
+  -ms-transform: scale(1.02); /* IE 9 */
+  -webkit-transform: scale(1.02); /* Safari 3-8 */
+  transform: scale(1.02); 
+}
+main img#home-image, picture img#random-suite1, main img#random-temple, picture img#random-suite2, picture img#random-suite3 {
   margin: 0 auto;
   display: block;
-  max-width: 37.5rem;
   width: 100%;
 }
 div.random-detail {
@@ -178,6 +195,7 @@ div.random-detail {
   display: block;
   background-color: #bed;
   padding: .5rem;
+  width: 100%;
 }
 .panel-group_btn {
   color: #aaa;
@@ -242,7 +260,6 @@ section.weather {
   background-color: #6893ee;
   margin: 1rem auto;
   width: 100%;
-  max-width: 35rem;
 }
 
 hr.footer-hr {
@@ -259,7 +276,6 @@ footer {
   margin: 1rem auto;
   padding: 1rem;
   width: 100%;
-  /* max-width: 35rem; */
   font-family: 'Montserrat', sans-serif;
 }
 picture.footer-img img {
@@ -574,26 +590,46 @@ main.temples {
   gap: 2px;
 }
 /* RESERVATION PAGE */
-.join-form {
+section.banner {
+  border: 1px solid #fcbc0b;
+  border-radius: 10px;
+  padding: .5rem 2%;
+  width: 95%;
+  margin: 1rem auto;
+}
+section.banner picture img {
+  width: 100%;
+}
+section.banner div {
+  margin: 1rem 0;
+  font-weight: 900;
+}
+.main-form h1 {
+  margin-left: 4rem;
+}
+/* .join-form {
 	display: flex;
 	flex-direction: column;
 	background-color: #416165;
 	max-width: 600px;
+  width: 100%;
 	border: 1px solid #0B3948;
 	margin: 2% auto;
 	padding: 0 2%;
 	border-radius: 10px;
-}
+} */
 .form {
 	background-color: #eee;
 	padding: 2%;
 	margin: 2%;
 	border-radius: 10px;
+  width: 95%;
+  margin: 1rem auto;
 }
-.join-form h1 {
+/* .join-form h1 {
 	text-align: center;
 	font-family: 'Montserrat', sans-serif;
-}
+} */
 form fieldset {
     margin: 2rem 0;
     border: 1px solid #fcbc0b;
@@ -663,7 +699,6 @@ form label.top input:required:valid {
 
 /* SERVICES PAGE */
 .services {
-  padding: 1rem;
   margin: 1rem auto;
 }
 section.services-content, div .services.familyhistory, .services-amenities, div section.indoor-pool {
@@ -678,22 +713,117 @@ section.services-content, section.services-amenities {
   border: 1px solid #fcbc0b;
   border-radius: .5rem;
   padding: 1rem;
-  width: 50%;
+  width: 95%;
 }
 .familyhistory, .indoor-pool {
   border: 1px solid #fcbc0b;
   border-radius: .5rem;
   padding: 1rem;
-  /* max-width: 100%; */
-  width: 50%;
-  /* border: 1px red dashed; */
-  /* margin: 0 0 0 2%; */
-  /* float: right; */
+  width: 95%;
 }
-.familyhistory figure img, .indoor-pool figure img {
+.familyhistory picture img, .indoor-pool picture img {
   width: 100%;
 }
-.familyhistory figure figcaption, .indoor-pool figure figcaption {
+.familyhistory picture div, .indoor-pool picture div {
+  margin: 1%;
+  font-weight: 900;
+}
+
+/* MISSIONARY PAGE */
+.standard {
+  background-color: #bed;
+}
+.author {
+  display: block;
+  font-weight: 900;
+  padding: 1rem 0;
+}
+.missionary-couple1, .missionary-couple2 {
+  width: 95%;
+  border: 1px solid #fcbc0b;
+  border-radius: .5rem;
+  padding: 1rem;
+  display: block;
+  margin: 0 auto;
+
+}
+.missionary-couple1 picture img, .missionary-couple2 picture img {
+  width: 100%;
+}
+.missionary-couple1 picture figcaption, .missionary-couple2 picture figcaption {
+  margin: 1%;
+  font-weight: 900;
+} 
+.missionary-content {
+  border: 1px solid #fcbc0b;
+  border-radius: .5rem;
+  padding: 1rem;
+  width: 95%;
+}
+.missionary-content p:nth-child(2) {
+  padding: 1rem 0;
+  font-weight: 600;
+}
+.missionary-couple1, .missionary-content, .missionary-couple2 {
+  padding: 1rem;
+  margin: 1rem auto;
+}
+
+/* RECEPTION PAGE */
+section.marriage {
+  width: 95%;
+  border: 1px solid #fcbc0b;
+  background-color: #bed;
+  border-radius: .5rem;
+  padding: 1rem;
+  display: block;
+  margin: 1rem auto;
+}
+section.marriage p span.author {
+  display: block;
+  padding: 1rem 0;
+  font-weight: 600;
+}
+.sealing-room, .catering {
+  width: 95%;
+  border: 1px solid #fcbc0b;
+  border-radius: .5rem;
+  padding: 1rem;
+  display: block;
+  margin: 1rem auto;
+}
+.sealing-room picture img, .catering picture img {
+  width: 95%;
+}
+#reception {
+  border: 1px solid #fcbc0b;
+  border-radius: .5rem;
+  padding: 1rem;
+  width: 95%;
+  margin: 1rem auto;
+}
+.sealing-room picture figcaption, .catering picture figcaption {
+  margin: 1%;
+  font-weight: 900;
+}
+
+/* CONTACTS PAGE */
+iframe, picture.contacts-image {
+  width: 95%;
+  border: 1px solid #fcbc0b;
+  border-radius: .5rem;
+  padding: 1rem;
+  display: block;
+  margin: 1rem auto;
+}
+.contacts-page form {
+  width: 95%;
+  margin: 0 auto;
+}
+picture.contacts-image img {
+  width: 100%;
+}
+picture.contacts-image figcaption {
   margin: 1%;
   font-weight: 900;
 }

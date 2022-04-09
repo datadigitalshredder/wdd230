@@ -15,9 +15,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- <script data-require="jquery@*" data-semver="2.1.4" src="https://code.jquery.com/jquery-2.1.4.js"></script> -->
+    <script data-require="jquery@*" data-semver="2.1.4" src="https://code.jquery.com/jquery-2.1.4.js"></script>
     <script defer src="js/main.js"></script>
-    <script defer src="js/services.js"></script>
+    <!-- <script defer src="js/services.js"></script> -->
     <script defer src="js/lazyloading.js"></script>
 
 </head>
@@ -39,7 +39,6 @@
                 <li><a href="reservation.html">Reservation</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="contacts.html">Contact Us</a></li>
-
             </ul>
         </nav>
         <aside></aside>
@@ -55,7 +54,9 @@
     <main class="home-elements">
         <p class="temples">This webpage contains information of 13 selected temples around the world. Refresh the page to learn more.</p>
         <section class="home-image">
-            <figure><img src="" alt="" id="home-image"></figure>
+            <figure>
+                <img src="" alt="" id="home-image">
+            </figure>
             <div>
                 <button class="action-call"><a href="reservation.html">Book Your Stay</a></button>
             </div>
@@ -63,7 +64,6 @@
         <section class="suite1">
             <picture>
                 <img src="images/placeholder.jpg" data-src="images/interior2.jpg" alt="Image of temple recommend desk" id="random-suite1">
-                <!-- <p><span id="random-suite1-name"></span></p> -->
                 <div>Recommend desk, San Salvador El Salvador Temple</div>
             </picture>
         </section>
@@ -87,7 +87,6 @@
             <picture>
                 <img src="images/placeholder.jpg" data-src="images/interior1.jpg" alt="Image of temple foyer" id="random-suite2">
                 <div>Foyer, Sapporo Japan Temple</div>
-                <!-- <p><span id="random-suite2-name"></span></p> -->
             </picture>
         </section>
         <section class="weather">
@@ -149,8 +148,8 @@
         </section>
         <section class="suite3">
             <picture>
-                <img src="images/placeholder.jpg" data-src="images/interior3.jpg" alt="Image of temple celestial room" id="random-suite3">
-                <p><span id="random-suite3-name"></span></p>
+                <img src="images/placeholder.jpg" data-src="images/interior3.jpg" alt="Image of temple celestial room" id="random-suite3"> 
+                <div>Sealing room, Philadelphia Pennsylvania Temple</div>
             </picture>
         </section>
     </main>

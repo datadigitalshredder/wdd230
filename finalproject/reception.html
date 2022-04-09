@@ -16,7 +16,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script defer src="js/main.js"></script>
-    <script defer src="js/temples.js"></script>
+    <!-- <script defer src="js/temples.js"></script> -->
+    <script defer src="js/lazyloading.js"></script>
 </head>
 <body>
     <header>
@@ -40,22 +41,38 @@
             </ul>
         </nav>
         <aside></aside>
-        <div class="alerts">
+        <!-- <div class="alerts">
             <span id="alerts"></span>
-        </div>
+        </div> -->
     </header>
     <main class="reception-page">
-        <div id="rbox1">
-            <section id="reception">
-              <h2>Reception Services</h2>
-              <article>
-                <p>Your day deserves to be celebrated and memorable. We offer elegant reception/ 
-                    ceremony rooms as well a catering services for your big day.
-                </p>
-                <p>Contact us <a href="contacts.html"> click here</a></p>
-              </article>
-            </section>
-          </div>
+        <section class="marriage">
+            <p>“The noblest yearning of the human heart is for a marriage that can endure beyond death. 
+                Fidelity to a temple marriage does that. It allows families to be together forever.
+                This goal is glorious. All Church activities, advancements, quorums, and classes are 
+                means to the end of an exalted family.”<br><span class="author">President Russell M. Nelson</span></p>
+        </section>
+        <section class="sealing-room">
+            <picture>
+                <img src="images/placeholder.jpg" data-src="images/sealingroom.jpg" alt="Image of temple sealing room" class="sealingroom">
+                <figcaption>Sealing room.</figcaption>
+            </picture>
+        </section>
+        <section id="reception">
+            <h2>Reception Services</h2>
+            <article>
+            <p>Your day deserves to be celebrated and memorable. We offer elegant reception/ 
+                ceremony rooms as well a catering services for your big day.
+            </p>
+            <p>For more on reception services, please <a href="contacts.html"> contact us</a></p>
+            </article>
+        </section>
+        <section class="catering">
+            <picture>
+                <img src="images/placeholder.jpg" data-src="images/catering.jpg" alt="Image of wedding catering" class="missionaries">
+                <figcaption>Wedding reception catering.</figcaption>
+            </picture>
+        </section>
     </main>
     <footer>
         <div class='footer-items'>
