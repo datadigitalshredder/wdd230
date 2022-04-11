@@ -60,8 +60,8 @@ fetch(templeUrl)
 
             // USING THE WEATHER API
             // Using the Open Weather API for the randomly selected temple
-            // const apiURL = `https://api.openweathermap.org/data/2.5/weather?id=${cityId}&units=imperial&appid=4522422b8c1f75f28bfe993038300cd1`;
-            const apiURL = `https://api.openweathermap.org/data/2.5/weather?id=${cityId}&units=imperial&appid=164e183ac818600411c3484dc71c4f9f`;
+            const apiURL = `https://api.openweathermap.org/data/2.5/weather?id=${cityId}&units=imperial&appid=4522422b8c1f75f28bfe993038300cd1`;
+            // const apiURL = `https://api.openweathermap.org/data/2.5/weather?id=${cityId}&units=imperial&appid=164e183ac818600411c3484dc71c4f9f`;
             
             fetch(apiURL)
                 .then((response1) => response1.json())
@@ -121,7 +121,7 @@ fetch(templeUrl)
                         return windChillFactorRounded;
                     }
                 // });
-            const apiURL2 = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&exclude=current,minutely,hourly&units=imperial&appid=164e183ac818600411c3484dc71c4f9f`;
+            const apiURL2 = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&exclude=current,minutely,hourly&units=imperial&appid=4522422b8c1f75f28bfe993038300cd1`;
             fetch(apiURL2)
                 .then((response2) => response2.json())
 

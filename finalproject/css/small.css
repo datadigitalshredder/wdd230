@@ -837,6 +837,11 @@ section.marriage p span.author {
   margin: 1rem auto;
   background-color: #bed;
 }
+#reception article span img {
+  padding: 1rem;
+  margin: 1rem auto;
+  border-radius: .5rem;
+}
 .sealing-room picture figcaption, .catering picture figcaption {
   margin: 1%;
   font-weight: 900;
