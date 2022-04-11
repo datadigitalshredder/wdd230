@@ -147,12 +147,10 @@ let span2 = document.getElementsByClassName("close2")[0];
 templeBtn2.onclick = function() {
     modal2.style.display = "block";
 }
-
 // When the user clicks on <span> (x), close the modal
 span2.onclick = function() {
     modal2.style.display = "none";
 }
-
 // Get the modal Chicago temple
 let modal3 = document.getElementById("myModal3");
 

@@ -1,15 +1,11 @@
-// select the elements to manipulate (output to)
-const datefieldUK = document.querySelector("aside"); // for european/family history format with day first.
+const datefieldUK = document.querySelector("aside");
 
-// derive the current date using a date object
 const now = new Date();
-// const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(now);
+
 const fulldateUK = new Intl.DateTimeFormat("en-UK", {dateStyle: "full"}).format(now);
-// long, medium, short options ... try them
 
 datefieldUK.innerHTML = `<em>${fulldateUK}</em>`;
 
-// Getting the last modified date for the footer.
 const year = document.querySelector("#year");
 year.innerHTML = new Date().getFullYear();
 const lastmod = document.querySelector('#lastmod');
@@ -71,8 +67,10 @@ fetch(templeUrl)
                 .then((response1) => response1.json())
 
                 .then((jsObject1) => {
+                    console.log(jsObject1);
                     document.querySelector('#random-current-temp').textContent = Math.round((jsObject1.main.temp) * 10) / 10; // Carefully follow the path to the temp. Note there are different temps for different parts to the city
                     const iconsrcWeather = `https://openweathermap.org/img/w/${jsObject1.weather[0].icon}.png`;
+                    const cityName = jsObject1.name;
                     const descWeather = jsObject1.weather[0].description;
                     const windSpeed = jsObject1.wind.speed;
                     const humidity = jsObject1.main.humidity;
@@ -94,6 +92,7 @@ fetch(templeUrl)
                     const formattedTime = `${hours} : ${minutes.substr(-2)} : ${seconds.substr(-2)}`;
                     const weatherTimeStamp = formattedTime;
 
+                    document.querySelector('#currently').innerHTML = cityName;
                     document.querySelector('#random-weathericon').setAttribute('src', iconsrcWeather);
                     document.querySelector('#random-weathericon').setAttribute('alt', descWeather);
                     document.querySelector('figcaption').textContent = descWeather;

@@ -7,7 +7,7 @@
     <meta name="description" content="WDD 230 Final Project - Innocent Hove">
     <title>Home | Temple Inn and Suites</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="shortcut icon" href="favicon (1).ico">
+    <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
@@ -15,9 +15,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script data-require="jquery@*" data-semver="2.1.4" src="https://code.jquery.com/jquery-2.1.4.js"></script>
     <script defer src="js/main.js"></script>
-    <script defer src="js/lazyloading.js"></script>
+    <script data-require="jquery@*" data-semver="2.1.4" src="https://code.jquery.com/jquery-2.1.4.js"></script>
 
 </head>
 <body>
@@ -46,7 +45,7 @@
             <div><p><strong>Government Weather Alert: </strong><span id="alerts"> </span></p>
             <p><strong>Time Period: </strong><span id="alert-start"> </span> to <span id="alert-end"></span></p>
             <p><strong>Alert by: </strong><span id="alert-sender"> </span></p>
-            <p class="disclaimer">Data from OpenWeatherMap. Government weather alerts data availability depends on location.</p>
+            <p class="disclaimer">Data from OpenWeatherMap. Government weather alerts data availability depends on location (unavailability returns error).</p>
         </div> 
         </div>
     </header>
@@ -62,7 +61,10 @@
         </section>
         <section class="suite1">
             <picture>
-                <img src="images/placeholder.jpg" data-src="images/interior2.jpg" alt="Image of temple recommend desk" id="random-suite1">
+                <source media="(max-width:559px)" srcset="images/interior2-300.jpg">
+                <source media="(max-width:1023px)" srcset="images/interior2-600.jpg">
+                <source media="(max-width:1600px)" srcset="images/interior2-900.jpg">
+                <img src="images/interior2.jpg" alt="Image of temple recommend desk" id="random-suite1">
                 <div>Recommend desk, San Salvador El Salvador Temple</div>
             </picture>
         </section>
@@ -84,12 +86,15 @@
         </section>
         <section class="suite2">
             <picture>
-                <img src="images/placeholder.jpg" data-src="images/interior1.jpg" alt="Image of temple foyer" id="random-suite2">
+                <source media="(max-width:559px)" srcset="images/interior1-300.jpg">
+                <source media="(max-width:1023px)" srcset="images/interior1-600.jpg">
+                <source media="(max-width:1600px)" srcset="images/interior1-900.jpg">
+                <img src="images/interior1.jpg" alt="Image of temple foyer" id="random-suite2">
                 <div>Foyer, Sapporo Japan Temple</div>
             </picture>
         </section>
         <section class="weather">
-            <p class="weather-header"><strong>Currently</strong></p>
+            <p class="weather-header"><span id="currently"></span></p>
             <div class="weather-box">
                 <figure style="text-transform:capitalize;"><img src="" alt="" id="random-weathericon"><figcaption></figcaption></figure><p><span id="random-current-temp" class="weather-temp"></span> &deg;F</p>
             </div>
@@ -147,7 +152,10 @@
         </section>
         <section class="suite3">
             <picture>
-                <img src="images/placeholder.jpg" data-src="images/interior3.jpg" alt="Image of temple celestial room" id="random-suite3"> 
+                <source media="(max-width:559px)" srcset="images/interior3-300.jpg">
+                <source media="(max-width:1023px)" srcset="images/interior3-600.jpg">
+                <source media="(max-width:1600px)" srcset="images/interior3-900.jpg">
+                <img src="images/interior3.jpg" alt="Image of temple sealing room" id="random-suite3">
                 <div>Sealing room, Philadelphia Pennsylvania Temple</div>
             </picture>
         </section>
@@ -164,8 +172,8 @@
             </div>
             <div class='footer-info'>
                 <p class="footer">information@tis.com</p>
-                <p class='footer'><a href='https://goo.gl/maps/MuwKEDuDAzVQMww78'>📌Location Map</a></p>
-                <p><a href="attribution.html">References</a></p>
+                <p class='footer'>📌<a href='https://goo.gl/maps/MuwKEDuDAzVQMww78'>Location Map</a></p>
+                <p><a href="attribution.html">Sources/ References</a></p>
             </div>
             <div class="footer-social">
                 <a class="social-1f" href="https://www.facebook.com/" target="_blank"><img src="images/facebookbw.png" alt="Facebook icon"></a>

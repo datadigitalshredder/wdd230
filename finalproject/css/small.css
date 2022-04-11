@@ -132,7 +132,9 @@ div.alerts {
 }
 .disclaimer, .weather-attribution {
   font-size: .7rem;
-  color: #fcbc0b;
+  padding: .5rem 0;
+  border: 1px solid red;
+  border-radius: .5rem;
 }
 
 .close-alert {
@@ -170,7 +172,7 @@ button.action-call a {
   text-decoration: none;
   font-weight: 800;
 }
-.suite1, .suite2, .suite3, p.forecast-header, table.forecast-tb {
+p.forecast-header, table.forecast-tb {
   display: none;
 }
 
@@ -272,6 +274,9 @@ section.weather {
   padding: 1rem;
   text-align: center;
 }
+.weather-header {
+  font-weight: 900;
+}
 hr.weather {
   width: 95%;
 }
@@ -306,6 +311,12 @@ picture.footer-img img {
 div.footer-social img, div.footer-address img {
   width: 3%;
   border-radius: .5rem;
+}
+.footer-items div p a {
+  text-decoration: none;
+} 
+.footer-items div p a:hover {
+  color: #fcbc0b;
 }
 /* TEMPLE PAGE */
 /* The Modal (background) */
@@ -779,7 +790,19 @@ section.services-content, section.services-amenities {
   padding: 1rem;
   margin: 1rem auto;
 }
-
+.missionary-content img, .missionary-content2 img {
+  border-radius: .25rem;
+  margin: 1rem auto;
+}
+.missionary-content2 img:nth-child(2) {
+  margin-left: 1rem;
+}
+section.missionary-content2 {
+  border: 1px solid #fcbc0b;
+  background-color: #bed;
+  border-radius: .5rem;
+  padding: 1rem;
+}
 /* RECEPTION PAGE */
 section.marriage {
   width: 95%;
@@ -838,4 +861,9 @@ picture.contacts-image img {
 picture.contacts-image figcaption {
   margin: 1%;
   font-weight: 900;
+}
+main.thanks {
+  text-align: center;
+  padding: .5rem;
+  background-color: #bed;
 }
