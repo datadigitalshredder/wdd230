@@ -94,6 +94,9 @@ nav ul.open {
 nav ul.open {
 	display: block;
 }
+.header-logo img, .header-name, .header-social img {
+  max-width: 95%;
+}
 .header-logo {
   grid-area: 1/1/2/2;
 }
