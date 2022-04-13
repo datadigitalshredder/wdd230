@@ -661,7 +661,9 @@ button#myBtn, button#myBtn2, button#myBtn3, button#myBtn4, button#myBtn5, button
   background: radial-gradient(white, #98c2fb);
   border-radius: .5rem;
 }
-
+button#myBtn:hover, button#myBtn2:hover, button#myBtn3:hover, button#myBtn4:hover, button#myBtn5:hover, button#myBtn6:hover {
+  background: radial-gradient(white, #fcbc0b);
+}
 main.temples section {
   margin: .5rem auto;
   border-radius: .5rem;
