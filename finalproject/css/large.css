@@ -26,6 +26,7 @@
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto, repeat(3, 1fr);
         gap: .5rem;
+        align-items: center;
     }
     .temples {
         grid-area: 1/1/2/3;
@@ -65,7 +66,8 @@
     section.services-box {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+        align-items: center;
     }
     .services h2 {
         text-align: center;
@@ -86,7 +88,8 @@
     div.missionary-page {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: auto auto;
+        align-items: center;
     }
     section.missionary-content {
         grid-area: 1/1/2/2;
@@ -108,7 +111,8 @@
     main.reception-page {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: auto auto;
+        align-items: center;
     }
     .marriage {
         grid-area: 1/1/2/2;
@@ -125,7 +129,7 @@
     main.contacts-page {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: auto auto;
     }
     .contacts-image {
         grid-area: 1/1/2/2;

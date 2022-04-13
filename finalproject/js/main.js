@@ -60,8 +60,8 @@ fetch(templeUrl)
 
             // USING THE WEATHER API
             // Using the Open Weather API for the randomly selected temple
-            const apiURL = `https://api.openweathermap.org/data/2.5/weather?id=${cityId}&units=imperial&appid=4522422b8c1f75f28bfe993038300cd1`;
-            // const apiURL = `https://api.openweathermap.org/data/2.5/weather?id=${cityId}&units=imperial&appid=164e183ac818600411c3484dc71c4f9f`;
+            // const apiURL = `https://api.openweathermap.org/data/2.5/weather?id=${cityId}&units=imperial&appid=4522422b8c1f75f28bfe993038300cd1`;
+            const apiURL = `https://api.openweathermap.org/data/2.5/weather?id=${cityId}&units=imperial&appid=164e183ac818600411c3484dc71c4f9f`;
             
             fetch(apiURL)
                 .then((response1) => response1.json())
@@ -389,3 +389,22 @@ $( ".panel-group_btn span" ).each(function() {
 }
 
 });
+
+// Get the modal Random temple
+let randomModal = document.getElementById("myRandomModal");
+
+// Get the button that opens the modal
+let templeRandomBtn = document.getElementById("myRandomBtn");
+
+// Get the <span> element that closes the modal
+let randomSpan = document.getElementsByClassName("randomClose")[0];
+
+// When the user clicks the button, open the modal 
+templeRandomBtn.onclick = function() {
+    randomModal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+randomSpan.onclick = function() {
+    randomModal.style.display = "none";
+}

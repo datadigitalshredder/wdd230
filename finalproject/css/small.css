@@ -66,6 +66,7 @@ nav ul.open {
   padding: 0;
   margin: 0 auto;
 }
+
 #hamburgerButton span {
   text-align: center;
   justify-content: center;
@@ -96,6 +97,10 @@ nav ul.open {
 }
 .header-logo img, .header-name, .header-social img {
   max-width: 95%;
+}
+header p.header-name {
+  margin-left: 10%;
+  font-size: .8rem;
 }
 .header-logo {
   grid-area: 1/1/2/2;
@@ -175,12 +180,15 @@ button.action-call a {
   text-decoration: none;
   font-weight: 800;
 }
+button.action-call:hover, button#myRandomBtn:hover {
+  background: radial-gradient(white, #fcbc0b);
+}
 p.forecast-header, table.forecast-tb {
   display: none;
 }
 
 section.suite1 picture div, section.suite2 picture div, section.suite3 picture div {
-  margin: 1rem auto 1rem 1rem;
+  margin: 1rem auto .5rem 1rem;
   font-weight: 900;
 } 
 /* ZOOM ON HOVER */
@@ -216,13 +224,69 @@ main img#home-image, picture img#random-suite1, main img#random-temple, picture 
   display: block;
   width: 100%;
 }
+div.temple-description-box {
+  position: relative;
+}
 div.random-detail {
   margin: 0 auto;
   display: block;
-  background-color: #bed;
+  color: #bed;
   padding: .5rem;
   width: 100%;
+  position: absolute;
+  left: 0%;
+  bottom: 0%;
 }
+/* Random Temple */
+#myRandomBtn {
+  font-size: 20px;
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  padding: .2rem;
+  background: radial-gradient(white, #98c2fb);
+  border-radius: .5rem;
+}
+.randomModal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 1%;
+  top: 10%;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  border-radius: 10px;
+}
+
+/* Modal Content/Box */
+.random-modal-content {
+  background-color: #bed;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+/* The Close Button */
+.randomClose {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.randomClose:hover,
+.randomClose:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .panel-group_btn {
   color: #aaa;
   margin-left: 2.5%;
@@ -738,7 +802,11 @@ section.services-content, section.services-amenities {
   background-color: #bed;
   border-radius: .5rem;
   padding: 1rem;
+  line-height: 1.5rem;
   width: 95%;
+}
+section.services-amenities {
+  line-height: 3rem;
 }
 .familyhistory, .indoor-pool {
   border: 1px solid #fcbc0b;
@@ -761,7 +829,6 @@ section.services-content, section.services-amenities {
 .author {
   display: block;
   font-weight: 900;
-  padding: 1rem 0;
 }
 .missionary-couple1, .missionary-couple2 {
   width: 95%;
@@ -783,13 +850,20 @@ section.services-content, section.services-amenities {
   border: 1px solid #fcbc0b;
   border-radius: .5rem;
   padding: 1rem 0;
-  width: 95%;
+  line-height: 1.5rem;
+}
+section.missionary-content2 {
+  border: 1px solid #fcbc0b;
+  background-color: #bed;
+  border-radius: .5rem;
+  line-height: 1.5rem;
+  padding: 1rem 0;
 }
 .missionary-content p:nth-child(2) {
   padding: 1rem 0;
   font-weight: 600;
 }
-.missionary-couple1, .missionary-content, .missionary-couple2 {
+.missionary-couple1, .missionary-content, .missionary-content2 .missionary-couple2 {
   padding: 1rem;
   margin: 1rem auto;
 }
@@ -800,12 +874,7 @@ section.services-content, section.services-amenities {
 .missionary-content2 img:nth-child(2) {
   margin-left: 1rem;
 }
-section.missionary-content2 {
-  border: 1px solid #fcbc0b;
-  background-color: #bed;
-  border-radius: .5rem;
-  padding: 1rem;
-}
+
 /* RECEPTION PAGE */
 section.marriage {
   width: 95%;
@@ -813,6 +882,7 @@ section.marriage {
   background-color: #bed;
   border-radius: .5rem;
   padding: 1rem;
+  line-height: 1.5rem;
   display: block;
   margin: 1rem auto;
 }
@@ -833,21 +903,22 @@ section.marriage p span.author {
   width: 100%;
 }
 #reception {
-  border: 1px solid #fcbc0b;
-  border-radius: .5rem;
-  padding: 1rem;
   width: 95%;
-  margin: 1rem auto;
+  border: 1px solid #fcbc0b;
   background-color: #bed;
-}
-#reception article span img {
-  padding: 1rem;
-  margin: 1rem auto;
   border-radius: .5rem;
+  padding: 1rem;
+  line-height: 1.5rem;
+  display: block;
+  margin: 1rem auto;
 }
 .sealing-room picture figcaption, .catering picture figcaption {
   margin: 1%;
   font-weight: 900;
+}
+.marriage picture img, #reception picture img {
+  border-radius: .5rem;
+  margin-top: 1rem;
 }
 
 /* CONTACTS PAGE */

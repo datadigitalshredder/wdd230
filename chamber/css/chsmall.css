@@ -82,6 +82,10 @@ nav button {
 	font-size: 2rem;
 	color: white;
 }
+p.header-name {
+	margin-left: 10%;
+	font-size: .8rem;
+}
 
 .banner {
 	background-color: #416165;
@@ -138,9 +142,9 @@ main.boxes {
 }
 .join-action {
 	position: absolute;
-	top: 5%;
-	left: 10%;
-	right: 10%;
+	top: 10%;
+	left: 5%;
+	right: 5%;
 	background: radial-gradient(#eee, #0B3948);
 	border: 1px solid #eee;
 	padding: 1.5rem;
@@ -160,9 +164,14 @@ main.boxes {
 	color: black;
 	text-shadow: 1px 1px #0B3948;
 }
+.action-call, .join-action {
+ font-size: 1rem;
+}
+section.action-call a, div.join-action a {
+	text-decoration: none;
+}
 section.action-call a:hover, div.join-action a:hover {
 	color: yellow;
-	text-decoration: none;
 }
 /* ---------------*/ 
 .hero,.news,.spotlight,.join,.event,.weather {
@@ -395,12 +404,15 @@ div.discover-demographics {
 	margin: 2% auto;
 	padding: 0 2%;
 	border-radius: 10px;
+	width: 60%;
 }
 .form {
 	background-color: #eee;
 	padding: 2%;
 	margin: 2%;
 	border-radius: 10px;
+	width: 95%;
+	margin: 1rem auto;
 }
 .join-form h1 {
 	text-align: center;

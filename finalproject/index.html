@@ -50,7 +50,8 @@
         </div>
     </header>
     <main class="home-elements">
-        <p class="temples">This webpage contains information of 13 selected temples around the world. Refresh the page every few minutes to learn more.</p>
+        <p class="temples">This webpage contains information of 13 selected temples around the world. Refresh the page every few minutes to learn more.<br>
+            The Temple Inn & Suites is a hotel chain with specialized hotel accommodations near temple locations of The Church of Jesus Christ of Latter-day Saints.</p>
         <section class="home-image">
             <figure>
                 <img src="" alt="" id="home-image">
@@ -73,14 +74,18 @@
                 <picture class="random-temple">
                     <img src="" alt="" id="random-temple">
                 </picture>
-                <div class="random-detail">
-                    <p><strong><span id="random-name"></span></strong></p>
-                    <p><strong>Floor area: </strong><span id="random-floorarea"></span></p>
-                    <p><strong>Address: </strong><span id="random-address"></span></p>
-                    <p><strong>Telephone: </strong><span id="random-telephone"></span></p>
-                    <p><strong>Services: </strong><span id="random-services"></span></p>
-                    <p><strong>Closure dates: </strong><span id="random-dates"></span></p>
-                    <p><strong>History: </strong><span id="random-history"></span></p>
+                <button id="myRandomBtn">More...</button>
+                <div id="myRandomModal" class="randomModal">
+                    <div class="random-modal-content">
+                        <span class="randomClose">&times;</span>
+                        <p><strong><span id="random-name"></span></strong></p>
+                        <p><strong>Floor area: </strong><span id="random-floorarea"></span></p>
+                        <p><strong>Address: </strong><span id="random-address"></span></p>
+                        <p><strong>Telephone: </strong><span id="random-telephone"></span></p>
+                        <p><strong>Services: </strong><span id="random-services"></span></p>
+                        <p><strong>Closure dates: </strong><span id="random-dates"></span></p>
+                        <p><strong>History: </strong><span id="random-history"></span></p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -96,7 +101,8 @@
         <section class="weather">
             <p class="weather-header"><span id="currently"></span></p>
             <div class="weather-box">
-                <figure style="text-transform:capitalize;"><img src="" alt="" id="random-weathericon"><figcaption></figcaption></figure><p><span id="random-current-temp" class="weather-temp"></span> &deg;F</p>
+                <figure style="text-transform:capitalize;"><img src="" alt="" id="random-weathericon"><figcaption></figcaption></figure>
+                <p><span id="random-current-temp" class="weather-temp"></span> &deg;F</p>
             </div>
             <hr class="weather">
             <table class="weather-tb">
