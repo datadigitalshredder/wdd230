@@ -149,6 +149,11 @@ div.alerts {
   padding: .1rem;
   border: 1px solid white;
   border-radius: .25rem;
+  color: #191970;
+  background-color: #fcbc0b;
+}
+div.alerts div:nth-child(2) {
+  margin-top: 1rem;
 }
 .header-logo img {
   width: 10rem;
