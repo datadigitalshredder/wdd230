@@ -842,7 +842,6 @@ section.services-amenities {
   padding: 1rem;
   display: block;
   margin: 1rem auto;
-
 }
 .missionary-couple1 picture img, .missionary-couple2 picture img {
   width: 100%;
@@ -868,7 +867,7 @@ section.missionary-content2 {
 }
 .missionary-content p:nth-child(2) {
   padding: 1rem 0;
-  font-weight: 600;
+  /* font-weight: 600; */
 }
 .missionary-couple1, .missionary-content, .missionary-content2 .missionary-couple2 {
   padding: 1rem;
