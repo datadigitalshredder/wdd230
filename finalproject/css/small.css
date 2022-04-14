@@ -324,13 +324,12 @@ div.like-button {
 }
 
 span.clicked {
-border: 2px solid #fcbc0b;
-background-color: #6893ee;
 color: red;
 border-radius: .5rem;
-padding: 1rem;
-font-size: 2rem;
+padding: 1rem 0;
+font-size: 1.5rem;
 }
+
 div.like-button {
 margin: 2rem 0 3rem 0;
 }
@@ -826,6 +825,9 @@ section.services-amenities {
 }
 
 /* MISSIONARY PAGE */
+.missionary-page {
+  margin: 1rem auto;
+}
 .standard {
   background-color: #bed;
 }
@@ -839,7 +841,7 @@ section.services-amenities {
   border-radius: .5rem;
   padding: 1rem;
   display: block;
-  margin: 0 auto;
+  margin: 1rem auto;
 
 }
 .missionary-couple1 picture img, .missionary-couple2 picture img {
@@ -849,18 +851,20 @@ section.services-amenities {
   margin: 1%;
   font-weight: 900;
 } 
-.missionary-content {
+section.missionary-content {
   border: 1px solid #fcbc0b;
   border-radius: .5rem;
-  padding: 1rem 0;
+  padding: 1rem;
   line-height: 1.5rem;
+  margin: 1rem auto;
 }
 section.missionary-content2 {
   border: 1px solid #fcbc0b;
   background-color: #bed;
   border-radius: .5rem;
+  padding: 1rem;
   line-height: 1.5rem;
-  padding: 1rem 0;
+  margin: 1rem auto;
 }
 .missionary-content p:nth-child(2) {
   padding: 1rem 0;
@@ -869,13 +873,15 @@ section.missionary-content2 {
 .missionary-couple1, .missionary-content, .missionary-content2 .missionary-couple2 {
   padding: 1rem;
   margin: 1rem auto;
+  padding: 1rem;
+  display: block;
+  margin: 0 auto;
+  width: 95%;
 }
-.missionary-content img, .missionary-content2 img {
+.missionary-content picture img, .missionary-content2 picture img {
   border-radius: .25rem;
   margin: 1rem auto;
-}
-.missionary-content2 img:nth-child(2) {
-  margin-left: 1rem;
+  width: 100%;
 }
 
 /* RECEPTION PAGE */
@@ -894,6 +900,7 @@ section.marriage p span.author {
   padding: 1rem 0;
   font-weight: 600;
 }
+
 .sealing-room, .catering {
   width: 95%;
   border: 1px solid #fcbc0b;
@@ -921,7 +928,8 @@ section.marriage p span.author {
 }
 .marriage picture img, #reception picture img {
   border-radius: .5rem;
-  margin-top: 1rem;
+  margin: 1rem 1rem 1rem auto;
+  width: 100%;
 }
 
 /* CONTACTS PAGE */

@@ -19,5 +19,16 @@
         margin-right: 36%;
         text-align: center;
     }
-
+    .missionary-content picture img, .missionary-content2 picture img {
+        border-radius: .25rem;
+        margin: 1rem auto;
+        width: 50%;
+    }
+    .missionary-content2 picture img:nth-child(2) {
+        width: 45%;
+        margin: 1rem .5rem;
+    }
+    .marriage picture img, #reception picture img {
+        width: 75%;
+    }
 }

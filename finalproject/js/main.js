@@ -408,3 +408,9 @@ templeRandomBtn.onclick = function() {
 randomSpan.onclick = function() {
     randomModal.style.display = "none";
 }
+// When the user clicks outside the window, close the modal
+window.onclick = function(event) {
+    if (event.target == randomModal) {
+        randomModal.style.display = "none";
+    }
+}

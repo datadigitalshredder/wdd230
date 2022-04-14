@@ -151,6 +151,7 @@ templeBtn2.onclick = function() {
 span2.onclick = function() {
     modal2.style.display = "none";
 }
+
 // Get the modal Chicago temple
 let modal3 = document.getElementById("myModal3");
 
@@ -225,3 +226,25 @@ templeBtn6.onclick = function() {
 span6.onclick = function() {
   modal6.style.display = "none";
 }
+
+// When the user clicks outside the window, close the modal
+window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+    if (event.target == modal2) {
+        modal2.style.display = "none";
+      }
+    if (event.target == modal3) {
+    modal3.style.display = "none";
+    }
+    if (event.target == modal4) {
+        modal4.style.display = "none";
+    }
+    if (event.target == modal5) {
+    modal5.style.display = "none";
+    }
+    if (event.target == modal6) {
+        modal6.style.display = "none";
+    }
+  }

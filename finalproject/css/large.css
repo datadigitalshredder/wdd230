@@ -140,6 +140,9 @@
     form.form {
         grid-area: 1/2/3/3;
     }
+    .marriage picture img, #reception picture img {
+        width: 50%;
+    }
 
     .footer-items {
         display: grid;
