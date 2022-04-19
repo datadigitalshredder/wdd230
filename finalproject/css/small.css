@@ -141,13 +141,13 @@ div.alerts {
 }
 .disclaimer {
   margin: 0 auto;
-  font-size: .7rem;
+  font-size: .85rem;
   padding: .5rem 0;
   color: #fcbc0b;
 }
 
 .close-alert {
-  padding: .1rem;
+  padding: .25rem;
   border: 1px solid white;
   border-radius: .25rem;
   color: #191970;
@@ -156,6 +156,7 @@ div.alerts {
 .close-alert:hover {
   color: white;
   background-color: #191970;
+  cursor: pointer;
 }
 div.alerts div:nth-child(2) {
   margin-top: 1rem;
@@ -371,7 +372,7 @@ section.weather {
   width: 100%;
 }
 .weather-attribution {
-  font-size: .7rem;
+  font-size: .8rem;
   color: #fcbc0b;
   padding: .5rem 0;
 }
