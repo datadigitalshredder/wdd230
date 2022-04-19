@@ -51,6 +51,7 @@ fetch(templeUrl)
             document.querySelector('#random-temple').setAttribute('src', iconsrcdetailed);
             document.querySelector('#random-temple').setAttribute('alt', descdetailed);
             document.querySelector('#random-name').innerHTML = randomTempleDetails.name;
+            document.querySelector('#this-temple').innerHTML = randomTempleDetails.name;
             document.querySelector('#random-floorarea').innerHTML = randomTempleDetails.floorarea;
             document.querySelector('#random-address').innerHTML = randomTempleDetails.address;
             document.querySelector('#random-telephone').innerHTML = randomTempleDetails.telephone;
@@ -89,7 +90,7 @@ fetch(templeUrl)
                     // Seconds part from the timestamp
                     const seconds = "0" + date.getSeconds();
                     // Will display time in 10:30:23 format
-                    const formattedTime = `${hours} : ${minutes.substr(-2)} : ${seconds.substr(-2)}`;
+                    const formattedTime = `${hours} : ${minutes.substr(-2)}`;
                     const weatherTimeStamp = formattedTime;
 
                     document.querySelector('#currently').innerHTML = cityName;

@@ -16,14 +16,15 @@ main {
 header {
 	margin: 0 auto;
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: auto auto 1fr 1fr;
   grid-template-rows: 1fr auto;
 	align-items: center;
-	background-color: #000080;
+	background-color: #0B3948;
 	padding: 1rem;
 	border: 1px solid rgba(0, 0, 0, 0.1);
   font-family: 'Montserrat', sans-serif;
 	color: white;
+  box-shadow: 0 15px 15px 0 #191970;
 }
 
 nav ul li a {
@@ -38,7 +39,7 @@ nav ul li.active {
 	background-color: #191970;
 }
 
-.social, nav ul li a {
+.header-social, nav ul li a {
 	align-items: end;
 	text-align: center;
 }
@@ -138,11 +139,11 @@ div.alerts {
   width: 95%;
   margin: .25rem auto;
 }
-.disclaimer, .weather-attribution {
+.disclaimer {
+  margin: 0 auto;
   font-size: .7rem;
   padding: .5rem 0;
-  border: 1px solid red;
-  border-radius: .5rem;
+  color: #fcbc0b;
 }
 
 .close-alert {
@@ -151,6 +152,10 @@ div.alerts {
   border-radius: .25rem;
   color: #191970;
   background-color: #fcbc0b;
+}
+.close-alert:hover {
+  color: white;
+  background-color: #191970;
 }
 div.alerts div:nth-child(2) {
   margin-top: 1rem;
@@ -349,8 +354,14 @@ section.weather {
 .weather-header {
   font-weight: 900;
 }
+div.weather-box p {
+  padding-bottom: .5rem;
+}
+td.windspeed {
+  padding-top: .5rem;
+}
 hr.weather {
-  width: 95%;
+  width: 75%;
 }
 section.weather {
   border: 1px solid #fcbc0b;
@@ -359,6 +370,20 @@ section.weather {
   margin: 1rem auto;
   width: 100%;
 }
+.weather-attribution {
+  font-size: .7rem;
+  color: #fcbc0b;
+  padding: .5rem 0;
+}
+
+/* ADDING A SOLID BORDER TO A TABLE ROW */
+/* .forecast-tb {
+  border-collapse: collapse;
+}
+.forecast-tb tr:nth-child(6) {
+  border: 1px solid red;
+  border-radius: .5rem;
+} */
 
 hr.footer-hr {
   width: 95%;
@@ -695,7 +720,7 @@ main.temples {
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: .5rem;
 }
-/* RESERVATION PAGE */
+/* RESERVATIONS PAGE */
 section.banner {
   border: 1px solid #fcbc0b;
   border-radius: 10px;
@@ -719,14 +744,14 @@ section.banner div {
   max-width: 37.5rem;
 	background-color: #eee;
 	padding: 2%;
-	margin: 2%;
+	/* margin: 2%; */
 	border-radius: 10px;
   width: 95%;
   margin: 1rem auto;
 }
 
 form fieldset {
-    margin: 2rem 0;
+    margin: .5rem 0;
     border: 1px solid #fcbc0b;
     border-radius: 10px;
     padding: .5rem 2%;
@@ -947,7 +972,7 @@ iframe, picture.contacts-image {
 }
 .contacts-page form {
   width: 95%;
-  margin: 0 auto;
+  margin: 1rem auto;
 }
 picture.contacts-image img {
   width: 100%;

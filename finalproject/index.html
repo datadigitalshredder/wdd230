@@ -34,14 +34,14 @@
             <button id='hamburgerButton'><span>&#9776;</span><span>❌</span></button>
             <ul id='primaryNavigation'>
                 <li><a href="temple.html">Temples</a></li>
-                <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="reservation.html">Reservations</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="contacts.html">Contacts</a></li>
             </ul>
         </nav>
         <aside></aside>
-        <div id="alerts-close" class="alerts" onclick="alert()">
-            <div><p><span class="close-alert"><strong>Close</strong></span></p></div>
+        <div id="alerts-close" class="alerts">
+            <div><p><span class="close-alert" onclick="alert()"><strong>Close</strong></span></p></div>
             <div><p><strong>Government Weather Alert: </strong><span id="alerts"> </span></p>
             <p><strong>Time Period: </strong><span id="alert-start"> </span> to <span id="alert-end"></span></p>
             <p><strong>Alert source: </strong><span id="alert-sender"> </span></p>
@@ -74,7 +74,7 @@
                 <picture class="random-temple">
                     <img src="" alt="" id="random-temple">
                 </picture>
-                <button id="myRandomBtn">More on this temple...</button>
+                <button id="myRandomBtn">More on <span id="this-temple"></span>...</button>
                 <div id="myRandomModal" class="randomModal">
                     <div class="random-modal-content">
                         <span class="randomClose">&times;</span>
@@ -108,7 +108,7 @@
             <table class="weather-tb">
                 <tr>
                     <td class="windspeed">Wind Speed:</td>
-                    <td><span id="random-windspeed"></span> mph</td>
+                    <td class="windspeed"><span id="random-windspeed"></span> mph</td>
                 </tr>
                 <tr>
                     <td class="windchill">Wind Chill (Feels like):</td>
@@ -117,12 +117,7 @@
                 <tr>
                     <td class="humidity">Humidity:</td>
                     <td><span id="random-humidity"></span> %</td>
-                </tr>
-                
-                <tr class="weather-timestamp">
-                    <td>Data receiving time:</td>
-                    <td><span id="random-weather-timestamp"></span></td>
-                </tr>
+                </tr>               
             </table>
             <p class="forecast-header"><strong>Weather Forecast</strong></p>
             <table class="forecast-tb">
@@ -151,8 +146,9 @@
                     <td><span id="forecast-humidity2"></span> % humid</td>
                     <td><span id="forecast-humidity3"></span> % humid</td>
                 </tr>
-                <tr>
-                    <td colspan="3" class="weather-attribution"><em>Weather Data Retrieved from OpenWeatherMap</em></td>
+                <tr class="weather-attribution">
+                    <td colspan="2"><em>Weather Data Retrieved from OpenWeatherMap</em></td>
+                    <td class="weather-timestamp"><em>Time <span id="random-weather-timestamp"></span></em></td>
                 </tr>
             </table>
         </section>
