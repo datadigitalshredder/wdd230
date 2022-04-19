@@ -388,7 +388,6 @@ $( ".panel-group_btn span" ).each(function() {
 } else {
     $(this).removeClass("clicked");
 }
-
 });
 
 // Get the modal Random temple
