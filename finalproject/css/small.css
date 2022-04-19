@@ -171,7 +171,9 @@ div.alerts div:nth-child(2) {
   width: 5rem;
   border-radius: 50%;
 }
-
+p.temples {
+  margin: 1rem auto;
+}
 .home-image {
   position: relative;
   margin: 1rem auto;
