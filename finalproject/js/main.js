@@ -174,6 +174,18 @@ fetch(templeUrl)
                         case 3:
                             order = `${dateFisrtDay}rd`;
                             break;
+                        case 21:
+                            order = `${dateFisrtDay}st`;
+                            break;
+                        case 22:
+                            order = `${dateFisrtDay}nd`;
+                            break;
+                        case 23:
+                            order = `${dateFisrtDay}rd`;
+                            break;
+                        case 31:
+                            order = `${dateFisrtDay}st`;
+                            break;
                         default:
                             order = `${dateFisrtDay}th`;
                             break;
@@ -228,6 +240,18 @@ fetch(templeUrl)
                         case 3:
                             order2 = `${dateSecondDay}rd`;
                             break;
+                        case 21:
+                            order2 = `${dateSecondDay}st`;
+                            break;
+                        case 22:
+                            order2 = `${dateSecondDay}nd`;
+                            break;
+                        case 23:
+                            order2 = `${dateSecondDay}rd`;
+                            break;
+                        case 31:
+                            order2 = `${dateSecondDay}st`;
+                            break;
                         default:
                             order2 = `${dateSecondDay}th`;
                             break;
@@ -280,6 +304,18 @@ fetch(templeUrl)
                             break;
                         case 3:
                             order3 = `${dateThirdDay}rd`;
+                            break;
+                        case 21:
+                            order3 = `${dateThirdDay}st`;
+                            break;
+                        case 22:
+                            order3 = `${dateThirdDay}nd`;
+                            break;
+                        case 23:
+                            order3 = `${dateThirdDay}rd`;
+                            break;
+                        case 31:
+                            order3 = `${dateThirdDay}st`;
                             break;
                         default:
                             order3 = `${dateThirdDay}th`;
