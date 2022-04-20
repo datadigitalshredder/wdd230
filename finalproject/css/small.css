@@ -374,7 +374,7 @@ section.weather {
   width: 100%;
 }
 p.forecast-header {
-  padding-top: 1.25rem;
+  padding-top: .8rem;
 }
 .weather-attribution {
   font-size: .8rem;
