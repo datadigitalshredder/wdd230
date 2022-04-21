@@ -1,17 +1,16 @@
+// UK date format in the header
 const datefieldUK = document.querySelector("aside");
-
 const now = new Date();
-
 const fulldateUK = new Intl.DateTimeFormat("en-UK", {dateStyle: "full"}).format(now);
-
 datefieldUK.innerHTML = `<em>${fulldateUK}</em>`;
 
+// Date year in the footer
 const year = document.querySelector("#year");
 year.innerHTML = new Date().getFullYear();
 const lastmod = document.querySelector('#lastmod');
 lastmod.innerHTML = `<strong>Last updated</strong>: ${document.lastModified}`;
 
-// The Menu button
+// The header menu button
 function toggleMenu (){
     document.getElementById('primaryNavigation').classList.toggle('open');
     document.getElementById('hamburgerButton').classList.toggle('open');
@@ -31,8 +30,6 @@ fetch(templeUrl)
             let temple =  jsObject.temples;
             randomTemple = temple[Math.floor(Math.random() * temple.length)];
             for (let i = 0; i < temple.length; i++){
-
-                
                 const iconsrc = randomTemple.photo;
                 const desc = `Photo of ${randomTemple.name}`;
                 document.querySelector('#home-image').setAttribute('src', iconsrc);
@@ -42,11 +39,9 @@ fetch(templeUrl)
             //Randomly select a temple to share details
             let templeDetails = jsObject.temples;
             let randomTempleDetails = templeDetails[Math.floor(Math.random() * templeDetails.length)]; // Place this random selection variable outisde the for loop, unlike in the loop above, otherwise the randomly selected city weather might not match the city you want.
-            for (let i = 0; i < templeDetails.length; i++){
-                
+            for (let i = 0; i < templeDetails.length; i++){  
                 const iconsrcdetailed = `${randomTempleDetails.photo}`;
                 const descdetailed = `Photo of ${randomTempleDetails.name}`;
-            
             const cityId = randomTempleDetails.cityID;
             document.querySelector('#random-temple').setAttribute('src', iconsrcdetailed);
             document.querySelector('#random-temple').setAttribute('alt', descdetailed);
