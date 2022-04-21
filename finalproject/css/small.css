@@ -20,7 +20,7 @@ header {
   grid-template-rows: 1fr auto;
 	align-items: center;
 	/* background-color: #00316E; */
-	background-color: #191970;
+	background-color: #00316E;
 	padding: 1rem;
 	border: 1px solid rgba(0, 0, 0, 0.1);
   font-family: 'Montserrat', sans-serif;
