@@ -19,12 +19,12 @@ header {
 	grid-template-columns: auto auto 1fr 1fr;
   grid-template-rows: 1fr auto;
 	align-items: center;
-	background-color: #0B3948;
+	background-color: #00316E;
 	padding: 1rem;
 	border: 1px solid rgba(0, 0, 0, 0.1);
   font-family: 'Montserrat', sans-serif;
 	color: white;
-  box-shadow: 0 15px 15px 0 #191970;
+  box-shadow: 0 5px 5px 0 #191970;
 }
 
 nav ul li a {
