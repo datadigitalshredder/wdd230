@@ -154,9 +154,7 @@ div.alerts {
   color: #191970;
   background-color: #fcbc0b;
 }
-.alert {
-  margin-left: 3%;
-}
+
 .close-alert:hover {
   color: white;
   background-color: #191970;
