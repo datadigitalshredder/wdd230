@@ -50,6 +50,7 @@ fetch(templeUrl)
             document.querySelector('#random-floorarea').innerHTML = randomTempleDetails.floorarea;
             document.querySelector('#random-address').innerHTML = randomTempleDetails.address;
             document.querySelector('#random-telephone').innerHTML = randomTempleDetails.telephone;
+            document.querySelector('#random-email').innerHTML = randomTempleDetails.email;
             document.querySelector('#random-services').innerHTML = randomTempleDetails.services;
             document.querySelector('#random-dates').innerHTML = randomTempleDetails.closuredates;
             document.querySelector('#random-history').innerHTML = randomTempleDetails.history;

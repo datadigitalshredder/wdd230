@@ -54,10 +54,6 @@
         grid-area: 4/1/5/2;
         margin: 0 auto;
     }
-    table.forecast-tb {
-        margin-left: 30%;
-        margin-right: 30%;
-    }
     .suite3 picture {
         grid-area: 4/2/5/3;
         margin: auto;

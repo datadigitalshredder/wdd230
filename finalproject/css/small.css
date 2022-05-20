@@ -154,6 +154,9 @@ div.alerts {
   color: #191970;
   background-color: #fcbc0b;
 }
+.alert {
+  margin-left: 3%;
+}
 .close-alert:hover {
   color: white;
   background-color: #191970;
@@ -407,6 +410,10 @@ footer {
   padding: 1rem;
   width: 100%;
   font-family: 'Montserrat', sans-serif;
+}
+.footer img {
+  vertical-align: middle;
+  margin-right: 2%;
 }
 picture.footer-img img {
   width: 15%;
