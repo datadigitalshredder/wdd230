@@ -12,6 +12,7 @@
     }
     p.forecast-header {
         display: block;
+        margin-top: 1rem;
     }
     table.forecast-tb {
         display: block;
