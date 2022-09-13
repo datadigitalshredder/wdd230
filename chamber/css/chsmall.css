@@ -264,7 +264,7 @@ tr.weather-timestamp td, tr.attribution td {
 }
 tr.attribution td {
 	color: yellow;
-	font-size: .5rem;
+	font-size: .7rem;
 }
 #weathericon {
 	width: 75px;

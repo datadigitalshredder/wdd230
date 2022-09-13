@@ -17,6 +17,7 @@ fetch(templeUrl1)
             document.querySelector('#random-temple1').setAttribute('alt', descdetailed1);
             document.querySelector('#random-address1').innerHTML = templeDetails1.address;
             document.querySelector('#random-telephone1').innerHTML = templeDetails1.telephone;
+            document.querySelector('#random-email1').innerHTML = templeDetails1.emailadd;
             document.querySelector('#random-services1').innerHTML = templeDetails1.services;
             document.querySelector('#random-floorarea1').innerHTML = templeDetails1.floorarea;
             document.querySelector('#random-ordinances1').innerHTML = templeDetails1.ordschedule;
@@ -35,6 +36,7 @@ fetch(templeUrl1)
             document.querySelector('#random-temple2').setAttribute('alt', descdetailed2);
             document.querySelector('#random-address2').innerHTML = templeDetails2.address;
             document.querySelector('#random-telephone2').innerHTML = templeDetails2.telephone;
+            document.querySelector('#random-email2').innerHTML = templeDetails2.emailadd;
             document.querySelector('#random-services2').innerHTML = templeDetails2.services;
             document.querySelector('#random-floorarea2').innerHTML = templeDetails2.floorarea;
             document.querySelector('#random-ordinances2').innerHTML = templeDetails2.ordschedule;
@@ -53,6 +55,7 @@ fetch(templeUrl1)
             document.querySelector('#random-temple3').setAttribute('alt', descdetailed3);
             document.querySelector('#random-address3').innerHTML = templeDetails3.address;
             document.querySelector('#random-telephone3').innerHTML = templeDetails3.telephone;
+            document.querySelector('#random-email3').innerHTML = templeDetails3.emailadd;
             document.querySelector('#random-services3').innerHTML = templeDetails3.services;
             document.querySelector('#random-floorarea3').innerHTML = templeDetails3.floorarea;
             document.querySelector('#random-ordinances3').innerHTML = templeDetails3.ordschedule;
@@ -71,6 +74,7 @@ fetch(templeUrl1)
             document.querySelector('#random-temple4').setAttribute('alt', descdetailed4);
             document.querySelector('#random-address4').innerHTML = templeDetails4.address;
             document.querySelector('#random-telephone4').innerHTML = templeDetails4.telephone;
+            document.querySelector('#random-email4').innerHTML = templeDetails4.emailadd;
             document.querySelector('#random-services4').innerHTML = templeDetails4.services;
             document.querySelector('#random-floorarea4').innerHTML = templeDetails4.floorarea;
             document.querySelector('#random-ordinances4').innerHTML = templeDetails4.ordschedule;
@@ -89,6 +93,7 @@ fetch(templeUrl1)
             document.querySelector('#random-temple5').setAttribute('alt', descdetailed5);
             document.querySelector('#random-address5').innerHTML = templeDetails5.address;
             document.querySelector('#random-telephone5').innerHTML = templeDetails5.telephone;
+            document.querySelector('#random-email5').innerHTML = templeDetails5.emailadd;
             document.querySelector('#random-services5').innerHTML = templeDetails5.services;
             document.querySelector('#random-floorarea5').innerHTML = templeDetails5.floorarea;
             document.querySelector('#random-ordinances5').innerHTML = templeDetails5.ordschedule;
@@ -107,6 +112,7 @@ fetch(templeUrl1)
             document.querySelector('#random-temple6').setAttribute('alt', descdetailed6);
             document.querySelector('#random-address6').innerHTML = templeDetails6.address;
             document.querySelector('#random-telephone6').innerHTML = templeDetails6.telephone;
+            document.querySelector('#random-email6').innerHTML = templeDetails6.emailadd;
             document.querySelector('#random-services6').innerHTML = templeDetails6.services;
             document.querySelector('#random-floorarea6').innerHTML = templeDetails6.floorarea;
             document.querySelector('#random-ordinances6').innerHTML = templeDetails6.ordschedule;

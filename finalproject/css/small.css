@@ -19,6 +19,7 @@ header {
 	grid-template-columns: auto auto 1fr 1fr;
   grid-template-rows: 1fr auto;
 	align-items: center;
+	/* background-color: #00316E; */
 	background-color: #00316E;
 	padding: 1rem;
 	border: 1px solid rgba(0, 0, 0, 0.1);
@@ -153,10 +154,12 @@ div.alerts {
   color: #191970;
   background-color: #fcbc0b;
 }
+
 .close-alert:hover {
   color: white;
   background-color: #191970;
   cursor: pointer;
+  color: #fcbc0b;
 }
 div.alerts div:nth-child(2) {
   margin-top: 1rem;
@@ -406,6 +409,10 @@ footer {
   padding: 1rem;
   width: 100%;
   font-family: 'Montserrat', sans-serif;
+}
+.footer img {
+  vertical-align: middle;
+  margin-right: 2%;
 }
 picture.footer-img img {
   width: 15%;
